@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>De | Sentometrics</title>
+    <link>/author/de/</link>
+      <atom:link href="/author/de/index.xml" rel="self" type="application/rss+xml" />
+    <description>De</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>De</title>
+      <link>/author/de/</link>
+    </image>
+    
+    <item>
+      <title>Wisdom of Crowds: The Value of Stock Opinions Transmitted Through Social Media</title>
+      <link>/publication/116/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/116/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cukier | Sentometrics</title>
+    <link>/author/cukier/</link>
+      <atom:link href="/author/cukier/index.xml" rel="self" type="application/rss+xml" />
+    <description>Cukier</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><lastBuildDate>Tue, 01 Jan 2013 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Cukier</title>
+      <link>/author/cukier/</link>
+    </image>
+    
+    <item>
+      <title>The Rise of Big Data: How It&#39;s Changing the Way We Think About the World</title>
+      <link>/publication/135/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/publication/135/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

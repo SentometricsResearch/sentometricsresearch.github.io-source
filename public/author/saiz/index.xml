@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Saiz | Sentometrics</title>
+    <link>/author/saiz/</link>
+      <atom:link href="/author/saiz/index.xml" rel="self" type="application/rss+xml" />
+    <description>Saiz</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Saiz</title>
+      <link>/author/saiz/</link>
+    </image>
+    
+    <item>
+      <title>Economic policy uncertainty in the Euro area: An unsupervised machine learning approach</title>
+      <link>/publication/3/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/3/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

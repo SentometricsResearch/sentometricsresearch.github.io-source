@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Najand | Sentometrics</title>
+    <link>/author/najand/</link>
+      <atom:link href="/author/najand/index.xml" rel="self" type="application/rss+xml" />
+    <description>Najand</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Najand</title>
+      <link>/author/najand/</link>
+    </image>
+    
+    <item>
+      <title>Stock return predictability and investor sentiment: A high-frequency perspective</title>
+      <link>/publication/90/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/90/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

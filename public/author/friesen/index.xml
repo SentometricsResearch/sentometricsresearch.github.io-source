@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Friesen | Sentometrics</title>
+    <link>/author/friesen/</link>
+      <atom:link href="/author/friesen/index.xml" rel="self" type="application/rss+xml" />
+    <description>Friesen</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><lastBuildDate>Thu, 01 Jan 1976 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Friesen</title>
+      <link>/author/friesen/</link>
+    </image>
+    
+    <item>
+      <title>Measuring Facial Movement</title>
+      <link>/publication/226/</link>
+      <pubDate>Thu, 01 Jan 1976 00:00:00 +0000</pubDate>
+      <guid>/publication/226/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Borms | Sentometrics</title>
+    <link>/author/borms/</link>
+      <atom:link href="/author/borms/index.xml" rel="self" type="application/rss+xml" />
+    <description>Borms</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Borms</title>
+      <link>/author/borms/</link>
+    </image>
+    
+    <item>
+      <title>Econometrics Meets Sentiment: An Overview of Methodology and Applications</title>
+      <link>/publication/2/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Economic Policy Uncertainty index for Flanders, Wallonia and Belgium</title>
+      <link>/publication/5/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The R Package sentometrics to Compute, Aggregate and Predict with Textual Sentiment</title>
+      <link>/publication/8/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/8/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

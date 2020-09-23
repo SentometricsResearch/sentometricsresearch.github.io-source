@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python | Sentometrics</title>
+    <link>/tag/python/</link>
+      <atom:link href="/tag/python/index.xml" rel="self" type="application/rss+xml" />
+    <description>Python</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Python</title>
+      <link>/tag/python/</link>
+    </image>
+    
+    <item>
+      <title>NLTK</title>
+      <link>/software/nltk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/software/nltk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>scikit-learn</title>
+      <link>/software/scikit-learn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/software/scikit-learn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>spaCy</title>
+      <link>/software/spacy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/software/spacy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TextBlob</title>
+      <link>/software/textblob/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/software/textblob/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>transformers</title>
+      <link>/software/transformers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/software/transformers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VADER</title>
+      <link>/software/vader/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/software/vader/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

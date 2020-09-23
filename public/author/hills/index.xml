@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hills | Sentometrics</title>
+    <link>/author/hills/</link>
+      <atom:link href="/author/hills/index.xml" rel="self" type="application/rss+xml" />
+    <description>Hills</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Hills</title>
+      <link>/author/hills/</link>
+    </image>
+    
+    <item>
+      <title>Historical analysis of national subjective wellbeing using millions of digitized books</title>
+      <link>/publication/20/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/20/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Roberts | Sentometrics</title>
+    <link>/author/roberts/</link>
+      <atom:link href="/author/roberts/index.xml" rel="self" type="application/rss+xml" />
+    <description>Roberts</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Roberts</title>
+      <link>/author/roberts/</link>
+    </image>
+    
+    <item>
+      <title>A Model of Text for Experimentation in the Social Sciences</title>
+      <link>/publication/89/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/89/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

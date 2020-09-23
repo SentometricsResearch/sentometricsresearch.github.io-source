@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts | Sentometrics</title>
+    <link>/post/</link>
+      <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <description>Posts</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><lastBuildDate>Tue, 08 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Posts</title>
+      <link>/post/</link>
+    </image>
+    
+    <item>
+      <title>The R package sentometrics</title>
+      <link>/post/r-package-sentometrics/</link>
+      <pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>/post/r-package-sentometrics/</guid>
+      <description>&lt;p&gt;The &lt;strong&gt;sentometrics&lt;/strong&gt; package offers an integrated framework for textual sentiment time series aggregation and prediction. It accounts for the intrinsic challenge that textual sentiment can be computed in many different ways, as well as the large number of possibilities to pool sentiment into a time series index. The package integrates the fast quantification of sentiment from texts, the aggregation into different sentiment time series, and the prediction based on these measures. All in one coherent workflow!&lt;/p&gt;
+&lt;p&gt;Check out the 
+&lt;a href=&#34;https://sentometricsresearch.github.io/sentometrics&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;dedicated package website&lt;/a&gt; to find out more.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Introducing the sentometrics field</title>
+      <link>/post/introducing-sentometrics/</link>
+      <pubDate>Tue, 01 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>/post/introducing-sentometrics/</guid>
+      <description>&lt;p&gt;The advent of massive amounts of textual, audio, and visual data has spurred the
+development of econometric methodology to transform qualitative sentiment data into quantitative
+sentiment variables, and to use those variables in an econometric analysis of the relationships between sentiment and other variables. This emerging research field is referred to as sentometrics, which is a portmanteau of sentiment (analysis) and econometrics.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;vub-sento-hec.png&#34; alt=&#34;logos VUB and HEC&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Below is an initial list of relevant papers. These research projects are carried out by a joint group of collaborators mainly at the Vrije Universiteit Brussel (in Belgium) and HEC Montréal (in Canada) working on sentometrics.&lt;/p&gt;
+&lt;h3 id=&#34;survey&#34;&gt;Survey&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;An overview of the required steps in a typical econometric analysis of sentiment from textual data.&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Algaba, A., Ardia, D., Bluteau, K., Borms &amp;amp; S., Boudt, K. (2020). &lt;strong&gt;Econometrics meets sentiment: An overview of methodology and applications&lt;/strong&gt;. Journal of Economic Surveys 34, 512-547. 
+&lt;a href=&#34;https://doi.org/10.1111/joes.12370&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Link&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;vignette&#34;&gt;Vignette&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;An extensive introduction to the R package &lt;strong&gt;sentometrics&lt;/strong&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ardia, D., Bluteau, K., Borms, S. &amp;amp; Boudt, K. (2020). &lt;strong&gt;The R package sentometrics to compute, aggregate and predict with textual sentiment&lt;/strong&gt;. Forthcoming in Journal of Statistical Software. 
+&lt;a href=&#34;https://doi.org/10.2139/ssrn.3067734&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Link&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;empirical-applications&#34;&gt;Empirical applications&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Borms, S., Boudt, K., Van Holle, F. &amp;amp; Willems, J. (2020). &lt;strong&gt;Semi-supervised text mining for monitoring the news about the ESG performance of companies&lt;/strong&gt;. Working paper.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Algaba, A., Borms, S., Boudt, K. &amp;amp; Verbeken, B. (2020). &lt;strong&gt;Constructing a real-time consumer confidence index using media news articles&lt;/strong&gt;. Working paper. 
+&lt;a href=&#34;https://ssrn.com/abstract=3609297&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Link&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Algaba, A., Borms, S., Boudt, K. &amp;amp; Van Pelt, J. (2020). &lt;strong&gt;The Economic Policy Uncertainty index for Flanders, Wallonia and Belgium&lt;/strong&gt;. Bank- en Financiewezen digitaal 2020/6. 
+&lt;a href=&#34;https://www.financialforum.be/nl/articles/economic-policy-uncertainty-index-flanders-wallonia-and-belgium&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Link&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ardia, D., Bluteau, K. &amp;amp; Boudt, K. (2019). &lt;strong&gt;Media abnormal tone, earnings announcements, and the stock market&lt;/strong&gt;. Working paper. 
+&lt;a href=&#34;http://dx.doi.org/10.2139/ssrn.3192064&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Link&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ardia, D., Bluteau, K. &amp;amp; Boudt, K. (2019). &lt;strong&gt;Questioning the news about economic growth: Sparse forecasting using thousands of news-based sentiment values&lt;/strong&gt;. International Journal of Forecasting 35, 1370-1386. 
+&lt;a href=&#34;https://doi.org/10.1016/j.ijforecast.2018.10.010&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Link&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Explore the rest of this website if you are interested in a more exhaustive account of related research literature.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

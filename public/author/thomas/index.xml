@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Thomas | Sentometrics</title>
+    <link>/author/thomas/</link>
+      <atom:link href="/author/thomas/index.xml" rel="self" type="application/rss+xml" />
+    <description>Thomas</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Thomas</title>
+      <link>/author/thomas/</link>
+    </image>
+    
+    <item>
+      <title>Do Media Data Help to Predict German Industrial Production?</title>
+      <link>/publication/73/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/73/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

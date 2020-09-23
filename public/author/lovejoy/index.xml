@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lovejoy | Sentometrics</title>
+    <link>/author/lovejoy/</link>
+      <atom:link href="/author/lovejoy/index.xml" rel="self" type="application/rss+xml" />
+    <description>Lovejoy</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><lastBuildDate>Thu, 01 Jan 2015 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Lovejoy</title>
+      <link>/author/lovejoy/</link>
+    </image>
+    
+    <item>
+      <title>Issues and Best Practices in Content Analysis</title>
+      <link>/publication/102/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/102/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

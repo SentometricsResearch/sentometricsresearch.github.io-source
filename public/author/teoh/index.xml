@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Teoh | Sentometrics</title>
+    <link>/author/teoh/</link>
+      <atom:link href="/author/teoh/index.xml" rel="self" type="application/rss+xml" />
+    <description>Teoh</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Teoh</title>
+      <link>/author/teoh/</link>
+    </image>
+    
+    <item>
+      <title>The promise and challenges of new datasets for accounting research</title>
+      <link>/publication/47/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/47/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tone Management</title>
+      <link>/publication/120/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/120/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

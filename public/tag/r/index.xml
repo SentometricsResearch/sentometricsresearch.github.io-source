@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R | Sentometrics</title>
+    <link>/tag/r/</link>
+      <atom:link href="/tag/r/index.xml" rel="self" type="application/rss+xml" />
+    <description>R</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>R</title>
+      <link>/tag/r/</link>
+    </image>
+    
+    <item>
+      <title>caret</title>
+      <link>/software/caret/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/software/caret/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>glmnet</title>
+      <link>/software/glmnet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/software/glmnet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GWP</title>
+      <link>/software/gwp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/software/gwp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>quanteda</title>
+      <link>/software/quanteda/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/software/quanteda/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SentimentAnalysis</title>
+      <link>/software/sentimentanalysis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/software/sentimentanalysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sentometrics</title>
+      <link>/software/sentometrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/software/sentometrics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sentometrics.app</title>
+      <link>/software/sentometrics.app/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/software/sentometrics.app/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sentopics</title>
+      <link>/software/sentopics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/software/sentopics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>STM</title>
+      <link>/software/stm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/software/stm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>textir</title>
+      <link>/software/textir/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/software/textir/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tidytext</title>
+      <link>/software/tidytext/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/software/tidytext/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>UDPipe</title>
+      <link>/software/udpipe/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/software/udpipe/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

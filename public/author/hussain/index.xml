@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hussain | Sentometrics</title>
+    <link>/author/hussain/</link>
+      <atom:link href="/author/hussain/index.xml" rel="self" type="application/rss+xml" />
+    <description>Hussain</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Hussain</title>
+      <link>/author/hussain/</link>
+    </image>
+    
+    <item>
+      <title>Fusing audio, visual and textual clues for sentiment analysis from multimodal content</title>
+      <link>/publication/87/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/87/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

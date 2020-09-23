@@ -1,0 +1,1864 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publications | Sentometrics</title>
+    <link>/publication/</link>
+      <atom:link href="/publication/index.xml" rel="self" type="application/rss+xml" />
+    <description>Publications</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Publications</title>
+      <link>/publication/</link>
+    </image>
+    
+    <item>
+      <title>COVID-Induced Economic Uncertainty</title>
+      <link>/publication/4/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Econometrics Meets Sentiment: An Overview of Methodology and Applications</title>
+      <link>/publication/2/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Economic policy uncertainty in the Euro area: An unsupervised machine learning approach</title>
+      <link>/publication/3/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Forecasting the equity premium: Mind the news!</title>
+      <link>/publication/1/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hedging Climate Change News</title>
+      <link>/publication/6/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/6/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>News-driven inflation expectations and information rigidities</title>
+      <link>/publication/7/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/7/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Economic Policy Uncertainty index for Flanders, Wallonia and Belgium</title>
+      <link>/publication/5/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The R Package sentometrics to Compute, Aggregate and Predict with Textual Sentiment</title>
+      <link>/publication/8/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Words are the New Numbers: A Newsy Coincident Index of the Business Cycle</title>
+      <link>/publication/9/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/9/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Analyzing media messages: Using quantitative content analysis in research</title>
+      <link>/publication/25/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/25/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Content analysis of business communication: Introducing a German dictionary</title>
+      <link>/publication/13/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/13/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Does Unusual News Forecast Market Stress?</title>
+      <link>/publication/19/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/19/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fad or future? Automated analysis of financial text and its implications for corporate reporting</title>
+      <link>/publication/23/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/23/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Financial Stability and the Fed: Evidence from Congressional Hearings</title>
+      <link>/publication/29/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/29/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Historical analysis of national subjective wellbeing using millions of digitized books</title>
+      <link>/publication/20/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/20/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>How news and its context drive risk and returns around the world</title>
+      <link>/publication/16/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/16/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Inference in Group Factor Models with an Application to Mixed Frequency Data</title>
+      <link>/publication/10/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/10/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jockeying for position in CEO letters: Impression management and sentiment analytics</title>
+      <link>/publication/15/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/15/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Measuring Group Differences in High-Dimensional Choices: Method and Application to Congressional Speech</title>
+      <link>/publication/18/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/18/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Media and the stock market: Their relationship and abnormal dynamics around earnings announcements</title>
+      <link>/publication/11/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/11/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>News media and delegated information choice</title>
+      <link>/publication/24/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/24/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Questioning the News about Economic Growth: Sparse Forecasting using Thousands of News-Based Sentiment Values</title>
+      <link>/publication/12/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/12/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rJST: Joint Sentiment Topic Modelling</title>
+      <link>/publication/26/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/26/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SentimentAnalysis: Dictionary-Based Sentiment Analysis</title>
+      <link>/publication/27/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/27/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sentiments and economic activity: Evidence from US states</title>
+      <link>/publication/14/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/14/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Text as data</title>
+      <link>/publication/17/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/17/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Text selection</title>
+      <link>/publication/21/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/21/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TextBlob: Simplified Text Processing</title>
+      <link>/publication/28/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/28/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The value of news for economic developments</title>
+      <link>/publication/22/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/22/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Measure of Directional Outlyingness With Applications to Image Data and Video</title>
+      <link>/publication/44/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/44/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Belgian economic policy uncertainty index: Improvement through text mining</title>
+      <link>/publication/49/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/49/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding</title>
+      <link>/publication/31/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/31/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Business Cycle Narratives</title>
+      <link>/publication/40/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/40/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>caret: Classification and Regression Training</title>
+      <link>/publication/34/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/34/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Central bank sentiment</title>
+      <link>/publication/38/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/38/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Economic News and Personal Economic Expectations</title>
+      <link>/publication/39/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/39/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Measuring News Sentiment</title>
+      <link>/publication/45/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/45/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>quanteda: An R package for the quantitative analysis of textual data</title>
+      <link>/publication/43/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/43/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Quantifying Confidence</title>
+      <link>/publication/30/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/30/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Quantifying sentiment with news media across local housing markets</title>
+      <link>/publication/46/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/46/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sentiment analysis under temporal shift</title>
+      <link>/publication/41/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/41/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Seq2Seq2Sentiment: Multimodal Sequence to Sequence Models for Sentiment Analysis</title>
+      <link>/publication/42/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/42/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Talk Bursts: The Role of Spikes in Pre-release Word-of-Mouth Dynamics</title>
+      <link>/publication/36/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/36/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Text Preprocessing For Unsupervised Learning: Why It Matters, When It Misleads, And What To Do About It</title>
+      <link>/publication/35/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/35/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>textir: Inverse Regression for Text Analysis</title>
+      <link>/publication/48/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/48/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The effects of conference call tones on market perceptions of value uncertainty</title>
+      <link>/publication/32/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/32/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The promise and challenges of new datasets for accounting research</title>
+      <link>/publication/47/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/47/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Transparency and Deliberation Within the FOMC: A Computational Linguistics Approach</title>
+      <link>/publication/37/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/37/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>When does the tone of earnings press releases matter?</title>
+      <link>/publication/33/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/33/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A survey of multimodal sentiment analysis</title>
+      <link>/publication/71/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/71/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Building News Measures from Textual Data and an Application to Volatility Forecasting</title>
+      <link>/publication/54/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/54/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Content aggregation by platforms: The case of the news media</title>
+      <link>/publication/56/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/56/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Creating Domain-Specific Sentiment Lexicons via Text Mining</title>
+      <link>/publication/63/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/63/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Developing news-based economic policy uncertainty index with unsupervised machine learning</title>
+      <link>/publication/51/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/51/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Do Media Data Help to Predict German Industrial Production?</title>
+      <link>/publication/73/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/73/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Double/debiased/Neyman machine learning of treatment effects</title>
+      <link>/publication/55/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/55/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Enriching Word Vectors with Subword Information</title>
+      <link>/publication/58/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/58/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Estimation of structural vector autoregressive models</title>
+      <link>/publication/64/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/64/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Forecasted economic change and the self-fulfilling prophecy in economic decision-making</title>
+      <link>/publication/67/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/67/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Intraday Stochastic Volatility in Discrete Price Changes: the Dynamic Skellam Model</title>
+      <link>/publication/61/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/61/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>It pays to write well</title>
+      <link>/publication/60/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/60/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Media sentiment and IPO underpricing</title>
+      <link>/publication/52/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/52/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Media, sentiment and market performance in the long run</title>
+      <link>/publication/62/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/62/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Narrative Economics</title>
+      <link>/publication/70/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/70/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>News implied volatility and disaster concerns</title>
+      <link>/publication/65/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/65/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>News vs. Sentiment: Predicting Stock Returns from News Stories</title>
+      <link>/publication/59/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/59/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SenSR: A sentiment-based systemic risk indicator</title>
+      <link>/publication/53/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/53/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Social Media and Fake News in the 2016 Election</title>
+      <link>/publication/50/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/50/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>spaCy 2: Natural language understanding with Bloom embeddings, convolutional neural networks and incremental parsing</title>
+      <link>/publication/72/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/72/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TexRep: A Text Mining Framework for Online Reputation Monitoring</title>
+      <link>/publication/69/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/69/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Textual Analysis in Real Estate</title>
+      <link>/publication/66/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/66/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Towards an integrated pipeline for aspect-based sentiment analysis in various domains</title>
+      <link>/publication/57/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/57/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Words are not all created equal: A new measure of ECB communication</title>
+      <link>/publication/68/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/68/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Model of Text for Experimentation in the Social Sciences</title>
+      <link>/publication/89/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/89/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Filter bubbles, echo chambers, and online news consumption</title>
+      <link>/publication/79/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/79/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>FRED-MD: A monthly database for macroeconomic research</title>
+      <link>/publication/85/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/85/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fusing audio, visual and textual clues for sentiment analysis from multimodal content</title>
+      <link>/publication/87/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/87/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>How Translation Alters Sentiment</title>
+      <link>/publication/86/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/86/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>iFeel 2.0: A Multilingual Benchmarking System for Sentence-Level Sentiment Analysis</title>
+      <link>/publication/74/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/74/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Inducing Domain-Specific Sentiment Lexicons from Unlabeled Corpora</title>
+      <link>/publication/80/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/80/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Machine Translation: Mining Text for Social Theory</title>
+      <link>/publication/77/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/77/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Managers set the tone: Equity incentives and the tone of earnings press releases</title>
+      <link>/publication/75/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/75/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Measuring Economic Policy Uncertainty</title>
+      <link>/publication/76/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/76/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Measuring Qualitative Information in Capital Markets Research: Comparison of Alternative Methodologies to Measure Disclosure Tone</title>
+      <link>/publication/82/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/82/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>News sentiment and overshooting of exchange rates</title>
+      <link>/publication/78/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/78/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SentiBench - A benchmark comparison of state-of-the-practice sentiment analysis methods</title>
+      <link>/publication/88/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/88/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sentiment Analysis: An Overview from Linguistics</title>
+      <link>/publication/91/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/91/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Shocking language: Understanding the macroeconomic effects of central bank communication</title>
+      <link>/publication/81/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/81/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Stock return predictability and investor sentiment: A high-frequency perspective</title>
+      <link>/publication/90/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/90/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TensorFlow: A system for large-scale machine learning</title>
+      <link>/publication/92/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/92/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Text-based Network Industries and Endogenous Product Differentiation</title>
+      <link>/publication/83/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/83/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Textual Analysis in Accounting and Finance: A Survey</title>
+      <link>/publication/84/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/84/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tidytext: Text Mining and Analysis Using Tidy Data Principles in R</title>
+      <link>/publication/93/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/93/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A survey on opinion mining and sentiment analysis: Tasks, approaches and applications</title>
+      <link>/publication/108/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/108/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Accounting Variables, Deception, and a Bag of Words: Assessing the Tools of Fraud Detection</title>
+      <link>/publication/107/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/107/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Beyond the hype: Big data concepts, methods, and analytics</title>
+      <link>/publication/101/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/101/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Character-level Convolutional Networks for Text Classification</title>
+      <link>/publication/113/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/113/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Distributed Multinomial Regression</title>
+      <link>/publication/109/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/109/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Document Classification by Inversion of Distributed Language Representations</title>
+      <link>/publication/110/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/110/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dynamic non-parametric joint sentiment topic mixture model</title>
+      <link>/publication/100/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/100/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fine-grained analysis of explicit and implicit sentiment in financial news articles</title>
+      <link>/publication/111/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/111/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Generating Domain-Specific Dictionaries Using Bayesian Learning</title>
+      <link>/publication/106/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/106/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Issues and Best Practices in Content Analysis</title>
+      <link>/publication/102/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/102/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sentiment Analysis: Mining Opinions, Sentiments, and Emotions</title>
+      <link>/publication/104/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/104/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sophistication, Sentiment, and Misreaction</title>
+      <link>/publication/97/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/97/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Text mining for central banks</title>
+      <link>/publication/95/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/95/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Textual analysis and international financial reporting: Large sample evidence</title>
+      <link>/publication/103/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/103/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The effect of manager-specific optimism on the tone of earnings conference calls</title>
+      <link>/publication/99/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/99/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The good, the bad and the implicit: A comprehensive approach to annotating explicit and implicit sentiment</title>
+      <link>/publication/112/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/112/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Structure of Voluntary Disclosure Narratives: Evidence from Tone Dispersion</title>
+      <link>/publication/94/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/94/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Sum of All FEARS Investor Sentiment and Asset Prices</title>
+      <link>/publication/98/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/98/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Use of Word Lists in Textual Analysis</title>
+      <link>/publication/105/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/105/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Using 10-K Text to Gauge Financial Constraints</title>
+      <link>/publication/96/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/96/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Review on Multi-Label Learning Algorithms</title>
+      <link>/publication/131/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/131/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Are They Different? Affect, Feeling, Emotion, Sentiment, and Opinion Detection in Text</title>
+      <link>/publication/124/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/124/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Big Data: New Tricks for Econometrics</title>
+      <link>/publication/128/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/128/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Deep Speech: Scaling up end-to-end speech recognition</title>
+      <link>/publication/118/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/118/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Every tweet counts? How sentiment analysis of social media can improve our knowledge of citizens&#39; political preferences with an application to Italy and France</title>
+      <link>/publication/115/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/115/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GloVe: Global Vectors for Word Representation</title>
+      <link>/publication/125/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/125/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Good news and bad news: Evidence of media bias in unemployment reports</title>
+      <link>/publication/117/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/117/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hashing for Similarity Search: A Survey</title>
+      <link>/publication/130/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/130/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Housing booms and media coverage</title>
+      <link>/publication/129/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/129/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Measuring Readability in Financial Disclosures</title>
+      <link>/publication/123/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/123/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Media Makes Momentum</title>
+      <link>/publication/119/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/119/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Textual sentiment in finance: A survey of methods and models</title>
+      <link>/publication/122/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/122/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tone Management</title>
+      <link>/publication/120/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/120/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VADER: A Parsimonious Rule-based Model for Sentiment Analysis of Social Media Text</title>
+      <link>/publication/121/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/121/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>When the Use of Positive Language Backfires: The Joint Effect of Tone, Readability, and Investor Sophistication on Earnings Judgments</title>
+      <link>/publication/127/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/127/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Who writes the news? Corporate press releases during merger negotiations</title>
+      <link>/publication/114/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/114/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Winners in the spotlight: Media coverage of fund holdings as a driver of flows</title>
+      <link>/publication/126/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/126/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Wisdom of Crowds: The Value of Stock Opinions Transmitted Through Social Media</title>
+      <link>/publication/116/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/116/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A biterm topic model for short texts</title>
+      <link>/publication/133/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/publication/133/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Crowdsourcing a word-emotion association lexicon</title>
+      <link>/publication/144/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/publication/144/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Distributed Representations of Words and Phrases and Their Compositionality</title>
+      <link>/publication/143/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/publication/143/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dynamic Joint Sentiment-Topic Model</title>
+      <link>/publication/139/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/publication/139/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Good news, bad news, and consumer confidence</title>
+      <link>/publication/134/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/publication/134/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>IPO first-day returns, offer price revisions, volatility, and form S-1 language</title>
+      <link>/publication/142/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/publication/142/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Measuring Political Sentiment on Twitter: Factor Optimal Design for Multinomial Inverse Regression</title>
+      <link>/publication/146/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/publication/146/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Multinomial Inverse Regression for Text Analysis</title>
+      <link>/publication/145/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/publication/145/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Recent Developments in openSMILE, the Munich Open-source Multimedia Feature Extractor</title>
+      <link>/publication/136/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/publication/136/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sentiment during Recessions</title>
+      <link>/publication/137/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/publication/137/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sentiments</title>
+      <link>/publication/132/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/publication/132/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Text as Data: The Promise and Pitfalls of Automatic Content Analysis Methods for Political Texts</title>
+      <link>/publication/138/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/publication/138/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Rise of Big Data: How It&#39;s Changing the Way We Think About the World</title>
+      <link>/publication/135/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/publication/135/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The role of the media in corporate governance: Do the media influence managers&#39; capital allocation decisions?</title>
+      <link>/publication/141/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/publication/141/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Word power: A new approach for content analysis</title>
+      <link>/publication/140/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/publication/140/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Affective News: The Automated Coding of Sentiment in Political Texts</title>
+      <link>/publication/156/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/publication/156/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Breaking news online</title>
+      <link>/publication/153/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/publication/153/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Don&#39;t Believe the Hype: Local Media Slant, Local Advertising, and Firm Value</title>
+      <link>/publication/149/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/publication/149/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Earnings conference calls and stock returns: The incremental informativeness of textual tone</title>
+      <link>/publication/151/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/publication/151/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Exploring the validity of electronic newspaper databases</title>
+      <link>/publication/152/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/publication/152/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Information, Animal Spirits, and the Meaning of Innovations in Consumer Confidence</title>
+      <link>/publication/147/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/publication/147/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Managers&#39; Use of Language Across Alternative Disclosure Outlets: Earnings Press Releases versus MD&amp;A</title>
+      <link>/publication/148/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/publication/148/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reading between the lines: An empirical examination of qualitative attributes of financial analystsâ€™ reports</title>
+      <link>/publication/155/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/publication/155/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Selective Publicity and Stock Prices</title>
+      <link>/publication/154/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/publication/154/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Power of Voice: Managerial Affective States and Future Firm Performance</title>
+      <link>/publication/150/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/publication/150/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>All the News That&#39;s Fit to Reprint: Do Investors React to Stale Information?</title>
+      <link>/publication/169/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/publication/169/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>An intraday market risk management approach based on textual analysis</title>
+      <link>/publication/159/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/publication/159/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Barron&#39;s Red Flags: Do They Actually Work?</title>
+      <link>/publication/162/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/publication/162/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Beyond the Numbers: Measuring the Information Content of Earnings Press Release Language</title>
+      <link>/publication/158/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/publication/158/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cooooooooooooooollllllllllllll!!!!!!!!!!!!!!: using word lengthening to detect sentiment in microblogs</title>
+      <link>/publication/157/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/publication/157/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Disclosure Tone and Shareholder Litigation</title>
+      <link>/publication/165/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/publication/165/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Discovering Fine-Grained Sentiment with Latent Variable Structured Prediction Models</title>
+      <link>/publication/168/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/publication/168/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lexicon-Based Methods for Sentiment Analysis</title>
+      <link>/publication/167/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/publication/167/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rise of VAR Modelling Approach</title>
+      <link>/publication/164/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/publication/164/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scikit-learn: Machine Learning in Python</title>
+      <link>/publication/166/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/publication/166/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Model Confidence Set</title>
+      <link>/publication/160/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/publication/160/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>What Makes Conference Calls Useful? The Information Content of Managers&#39; Presentations and Analysts&#39; Discussion Sessions</title>
+      <link>/publication/163/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/publication/163/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>When Is a Liability Not a Liability? Textual Analysis, Dictionaries, and 10-Ks</title>
+      <link>/publication/161/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/publication/161/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Method of Automated Nonparametric Content Analysis for Social Science</title>
+      <link>/publication/176/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publication/176/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Management&#39;s tone change, post earnings announcement drift and accruals</title>
+      <link>/publication/172/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publication/172/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>On the Construction of the European Economic Sentiment Indicator</title>
+      <link>/publication/173/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publication/173/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Regularization Paths for Generalized Linear Models via Coordinate Descent</title>
+      <link>/publication/175/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publication/175/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SentiWordNet 3.0: An Enhanced Lexical Resource for Sentiment Analysis and Opinion Mining</title>
+      <link>/publication/170/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publication/170/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SentiWS - A Publicly Available German-language Resource for Sentiment Analysis</title>
+      <link>/publication/178/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publication/178/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Information Content of Forward-Looking Statements in Corporate Filings - A Naive Bayesian Machine Learning Approach</title>
+      <link>/publication/177/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publication/177/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Tone of Local Presidential News Coverage</title>
+      <link>/publication/171/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publication/171/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>What Drives Media Slant? Evidence From U.S. Daily Newspapers</title>
+      <link>/publication/174/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publication/174/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Wolf in Sheep&#39;s Clothing: The Use of Ethics-Related Terms in 10-K Reports</title>
+      <link>/publication/182/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>/publication/182/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data Mining for Business Applications</title>
+      <link>/publication/181/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>/publication/181/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Joint Sentiment/Topic Model for Sentiment Analysis</title>
+      <link>/publication/180/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>/publication/180/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Natural Language Processing with Python</title>
+      <link>/publication/183/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>/publication/183/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Effect of Disclosures by Management, Analysts, and Business Press on Cost of Capital, Return Volatility, and Analyst Forecasts: A Study Using Content Analysis</title>
+      <link>/publication/179/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>/publication/179/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Annual report readability, current earnings, and earnings persistence</title>
+      <link>/publication/185/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/publication/185/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Are Investors Influenced By How Earnings Press Releases Are Written?</title>
+      <link>/publication/184/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/publication/184/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Finding News Stories: A Comparison of Searches using LexisNexis and Google News</title>
+      <link>/publication/189/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/publication/189/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>More Than Words: Quantifying Language to Measure Firms&#39; Fundamentals</title>
+      <link>/publication/187/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/publication/187/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Network TV news framing of good vs. bad economic news under Democrat and Republican presidents: A lexical analysis of political bias</title>
+      <link>/publication/186/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/publication/186/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Text Mining Infrastructure in R</title>
+      <link>/publication/188/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/publication/188/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A correlated topic model of Science</title>
+      <link>/publication/191/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>/publication/191/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Framing, Agenda Setting, and Priming: The Evolution of Three Media Effects Models</title>
+      <link>/publication/194/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>/publication/194/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Giving Content to Investor Sentiment: The Role of Media in the Stock Market</title>
+      <link>/publication/195/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>/publication/195/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Investor Sentiment in the Stock Market</title>
+      <link>/publication/190/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>/publication/190/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sports Sentiment and Stock Returns</title>
+      <link>/publication/193/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>/publication/193/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Yahoo! For Amazon: Sentiment Extraction from Small Talk on the Web</title>
+      <link>/publication/192/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>/publication/192/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dynamic Topic Models</title>
+      <link>/publication/197/</link>
+      <pubDate>Sun, 01 Jan 2006 00:00:00 +0000</pubDate>
+      <guid>/publication/197/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fully automatic lexicon expansion for domain-oriented sentiment analysis</title>
+      <link>/publication/200/</link>
+      <pubDate>Sun, 01 Jan 2006 00:00:00 +0000</pubDate>
+      <guid>/publication/200/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Handbook of Economic Forecasting</title>
+      <link>/publication/201/</link>
+      <pubDate>Sun, 01 Jan 2006 00:00:00 +0000</pubDate>
+      <guid>/publication/201/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Investor Sentiment and the Cross-Section of Stock Returns</title>
+      <link>/publication/196/</link>
+      <pubDate>Sun, 01 Jan 2006 00:00:00 +0000</pubDate>
+      <guid>/publication/196/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Market Reaction to Verbal Components of Earnings Press Releases: Event Study Using a Predictive Algorithm</title>
+      <link>/publication/199/</link>
+      <pubDate>Sun, 01 Jan 2006 00:00:00 +0000</pubDate>
+      <guid>/publication/199/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sentiment Retrieval using Generative Models</title>
+      <link>/publication/198/</link>
+      <pubDate>Sun, 01 Jan 2006 00:00:00 +0000</pubDate>
+      <guid>/publication/198/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Investor Sentiment and Asset Valuation</title>
+      <link>/publication/202/</link>
+      <pubDate>Sat, 01 Jan 2005 00:00:00 +0000</pubDate>
+      <guid>/publication/202/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Regularization and Variable Selection via the Elastic Net</title>
+      <link>/publication/203/</link>
+      <pubDate>Sat, 01 Jan 2005 00:00:00 +0000</pubDate>
+      <guid>/publication/203/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Consumer Confidence and Consumer Spending</title>
+      <link>/publication/207/</link>
+      <pubDate>Thu, 01 Jan 2004 00:00:00 +0000</pubDate>
+      <guid>/publication/207/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Investor sentiment and the near-term stock market</title>
+      <link>/publication/205/</link>
+      <pubDate>Thu, 01 Jan 2004 00:00:00 +0000</pubDate>
+      <guid>/publication/205/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Is all that talk just noise? The information content of internet stock message boards</title>
+      <link>/publication/204/</link>
+      <pubDate>Thu, 01 Jan 2004 00:00:00 +0000</pubDate>
+      <guid>/publication/204/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mining Opinion Features in Customer Reviews</title>
+      <link>/publication/206/</link>
+      <pubDate>Thu, 01 Jan 2004 00:00:00 +0000</pubDate>
+      <guid>/publication/206/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WordNet-Affect: An Affective Extension of WordNet</title>
+      <link>/publication/208/</link>
+      <pubDate>Thu, 01 Jan 2004 00:00:00 +0000</pubDate>
+      <guid>/publication/208/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A real-time data set for macroeconomists: Does the data vintage matter?</title>
+      <link>/publication/210/</link>
+      <pubDate>Wed, 01 Jan 2003 00:00:00 +0000</pubDate>
+      <guid>/publication/210/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Latent Dirichlet Allocation</title>
+      <link>/publication/209/</link>
+      <pubDate>Wed, 01 Jan 2003 00:00:00 +0000</pubDate>
+      <guid>/publication/209/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Survey of compressed-domain features used in audio-visual indexing and analysis</title>
+      <link>/publication/211/</link>
+      <pubDate>Wed, 01 Jan 2003 00:00:00 +0000</pubDate>
+      <guid>/publication/211/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Thumbs up or thumbs down? Semantic orientation applied to unsupervised classification of reviews</title>
+      <link>/publication/214/</link>
+      <pubDate>Tue, 01 Jan 2002 00:00:00 +0000</pubDate>
+      <guid>/publication/214/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Thumbs Up? Sentiment Classification Using Machine Learning Techniques</title>
+      <link>/publication/213/</link>
+      <pubDate>Tue, 01 Jan 2002 00:00:00 +0000</pubDate>
+      <guid>/publication/213/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Two-Sided Equivalence Testing Of The Difference Between Two Means</title>
+      <link>/publication/212/</link>
+      <pubDate>Tue, 01 Jan 2002 00:00:00 +0000</pubDate>
+      <guid>/publication/212/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Is Sound Just Noise?</title>
+      <link>/publication/215/</link>
+      <pubDate>Mon, 01 Jan 2001 00:00:00 +0000</pubDate>
+      <guid>/publication/215/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Unsupervised Learning by Probabilistic Latent Semantic Analysis</title>
+      <link>/publication/216/</link>
+      <pubDate>Mon, 01 Jan 2001 00:00:00 +0000</pubDate>
+      <guid>/publication/216/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Affective norms for English words (ANEW): Instruction manual and affective ratings</title>
+      <link>/publication/217/</link>
+      <pubDate>Fri, 01 Jan 1999 00:00:00 +0000</pubDate>
+      <guid>/publication/217/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Predicting the semantic orientation of adjectives</title>
+      <link>/publication/218/</link>
+      <pubDate>Wed, 01 Jan 1997 00:00:00 +0000</pubDate>
+      <guid>/publication/218/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Regression Shrinkage and Selection via the Lasso</title>
+      <link>/publication/219/</link>
+      <pubDate>Mon, 01 Jan 1996 00:00:00 +0000</pubDate>
+      <guid>/publication/219/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WordNet: A lexical database for English</title>
+      <link>/publication/220/</link>
+      <pubDate>Sun, 01 Jan 1995 00:00:00 +0000</pubDate>
+      <guid>/publication/220/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Noise trader risk in financial markets</title>
+      <link>/publication/221/</link>
+      <pubDate>Mon, 01 Jan 1990 00:00:00 +0000</pubDate>
+      <guid>/publication/221/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>How Useful Is the Sentiment Index?</title>
+      <link>/publication/222/</link>
+      <pubDate>Fri, 01 Jan 1988 00:00:00 +0000</pubDate>
+      <guid>/publication/222/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bank Runs, Deposit Insurance, and Liquidity</title>
+      <link>/publication/223/</link>
+      <pubDate>Sat, 01 Jan 1983 00:00:00 +0000</pubDate>
+      <guid>/publication/223/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Framing of Decisions and the Psychology of Choice</title>
+      <link>/publication/224/</link>
+      <pubDate>Thu, 01 Jan 1981 00:00:00 +0000</pubDate>
+      <guid>/publication/224/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Econometrics - Alchemy or Science?</title>
+      <link>/publication/225/</link>
+      <pubDate>Tue, 01 Jan 1980 00:00:00 +0000</pubDate>
+      <guid>/publication/225/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Measuring Facial Movement</title>
+      <link>/publication/226/</link>
+      <pubDate>Thu, 01 Jan 1976 00:00:00 +0000</pubDate>
+      <guid>/publication/226/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Statistical Interpretation of Term Specificity and Its Application in Retrieval</title>
+      <link>/publication/227/</link>
+      <pubDate>Sat, 01 Jan 1972 00:00:00 +0000</pubDate>
+      <guid>/publication/227/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ridge Regression: Biased Estimation for Nonorthogonal Problems</title>
+      <link>/publication/228/</link>
+      <pubDate>Thu, 01 Jan 1970 00:00:00 +0000</pubDate>
+      <guid>/publication/228/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Two Storage Mechanisms in Free Recall</title>
+      <link>/publication/229/</link>
+      <pubDate>Sat, 01 Jan 1966 00:00:00 +0000</pubDate>
+      <guid>/publication/229/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The General Inquirer: A computer approach to content analysis</title>
+      <link>/publication/230/</link>
+      <pubDate>Tue, 01 Jan 1963 00:00:00 +0000</pubDate>
+      <guid>/publication/230/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The General Theory of Employment, Interest, and Money</title>
+      <link>/publication/231/</link>
+      <pubDate>Wed, 01 Jan 1936 00:00:00 +0000</pubDate>
+      <guid>/publication/231/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

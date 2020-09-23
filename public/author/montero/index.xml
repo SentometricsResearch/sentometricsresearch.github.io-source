@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Montero | Sentometrics</title>
+    <link>/author/montero/</link>
+      <atom:link href="/author/montero/index.xml" rel="self" type="application/rss+xml" />
+    <description>Montero</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><lastBuildDate>Wed, 01 Jan 2014 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Montero</title>
+      <link>/author/montero/</link>
+    </image>
+    
+    <item>
+      <title>Are They Different? Affect, Feeling, Emotion, Sentiment, and Opinion Detection in Text</title>
+      <link>/publication/124/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/124/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

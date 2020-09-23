@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chen | Sentometrics</title>
+    <link>/author/chen/</link>
+      <atom:link href="/author/chen/index.xml" rel="self" type="application/rss+xml" />
+    <description>Chen</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Chen</title>
+      <link>/author/chen/</link>
+    </image>
+    
+    <item>
+      <title>TensorFlow: A system for large-scale machine learning</title>
+      <link>/publication/92/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/92/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Wisdom of Crowds: The Value of Stock Opinions Transmitted Through Social Media</title>
+      <link>/publication/116/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/116/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Distributed Representations of Words and Phrases and Their Compositionality</title>
+      <link>/publication/143/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/publication/143/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Yahoo! For Amazon: Sentiment Extraction from Small Talk on the Web</title>
+      <link>/publication/192/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>/publication/192/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

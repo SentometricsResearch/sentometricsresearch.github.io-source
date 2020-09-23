@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Timmerman | Sentometrics</title>
+    <link>/author/timmerman/</link>
+      <atom:link href="/author/timmerman/index.xml" rel="self" type="application/rss+xml" />
+    <description>Timmerman</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><lastBuildDate>Sun, 01 Jan 2006 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Timmerman</title>
+      <link>/author/timmerman/</link>
+    </image>
+    
+    <item>
+      <title>Handbook of Economic Forecasting</title>
+      <link>/publication/201/</link>
+      <pubDate>Sun, 01 Jan 2006 00:00:00 +0000</pubDate>
+      <guid>/publication/201/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

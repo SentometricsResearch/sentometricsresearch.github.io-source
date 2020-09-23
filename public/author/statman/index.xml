@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Statman | Sentometrics</title>
+    <link>/author/statman/</link>
+      <atom:link href="/author/statman/index.xml" rel="self" type="application/rss+xml" />
+    <description>Statman</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><lastBuildDate>Fri, 01 Jan 1988 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Statman</title>
+      <link>/author/statman/</link>
+    </image>
+    
+    <item>
+      <title>How Useful Is the Sentiment Index?</title>
+      <link>/publication/222/</link>
+      <pubDate>Fri, 01 Jan 1988 00:00:00 +0000</pubDate>
+      <guid>/publication/222/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

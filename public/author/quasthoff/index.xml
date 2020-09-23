@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Quasthoff | Sentometrics</title>
+    <link>/author/quasthoff/</link>
+      <atom:link href="/author/quasthoff/index.xml" rel="self" type="application/rss+xml" />
+    <description>Quasthoff</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><lastBuildDate>Fri, 01 Jan 2010 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Quasthoff</title>
+      <link>/author/quasthoff/</link>
+    </image>
+    
+    <item>
+      <title>SentiWS - A Publicly Available German-language Resource for Sentiment Analysis</title>
+      <link>/publication/178/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publication/178/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

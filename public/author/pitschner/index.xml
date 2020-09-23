@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pitschner | Sentometrics</title>
+    <link>/author/pitschner/</link>
+      <atom:link href="/author/pitschner/index.xml" rel="self" type="application/rss+xml" />
+    <description>Pitschner</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Pitschner</title>
+      <link>/author/pitschner/</link>
+    </image>
+    
+    <item>
+      <title>News media and delegated information choice</title>
+      <link>/publication/24/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/24/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Thewissen | Sentometrics</title>
+    <link>/author/thewissen/</link>
+      <atom:link href="/author/thewissen/index.xml" rel="self" type="application/rss+xml" />
+    <description>Thewissen</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Thewissen</title>
+      <link>/author/thewissen/</link>
+    </image>
+    
+    <item>
+      <title>Jockeying for position in CEO letters: Impression management and sentiment analytics</title>
+      <link>/publication/15/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/15/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>When does the tone of earnings press releases matter?</title>
+      <link>/publication/33/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/33/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Managers set the tone: Equity incentives and the tone of earnings press releases</title>
+      <link>/publication/75/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/75/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

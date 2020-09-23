@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Baccianella | Sentometrics</title>
+    <link>/author/baccianella/</link>
+      <atom:link href="/author/baccianella/index.xml" rel="self" type="application/rss+xml" />
+    <description>Baccianella</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><lastBuildDate>Fri, 01 Jan 2010 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Baccianella</title>
+      <link>/author/baccianella/</link>
+    </image>
+    
+    <item>
+      <title>SentiWordNet 3.0: An Enhanced Lexical Resource for Sentiment Analysis and Opinion Mining</title>
+      <link>/publication/170/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publication/170/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

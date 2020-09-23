@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pröllochs | Sentometrics</title>
+    <link>/author/prollochs/</link>
+      <atom:link href="/author/prollochs/index.xml" rel="self" type="application/rss+xml" />
+    <description>Pröllochs</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Pröllochs</title>
+      <link>/author/prollochs/</link>
+    </image>
+    
+    <item>
+      <title>SentimentAnalysis: Dictionary-Based Sentiment Analysis</title>
+      <link>/publication/27/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/27/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Generating Domain-Specific Dictionaries Using Bayesian Learning</title>
+      <link>/publication/106/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/106/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

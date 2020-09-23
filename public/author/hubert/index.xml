@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hubert | Sentometrics</title>
+    <link>/author/hubert/</link>
+      <atom:link href="/author/hubert/index.xml" rel="self" type="application/rss+xml" />
+    <description>Hubert</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Hubert</title>
+      <link>/author/hubert/</link>
+    </image>
+    
+    <item>
+      <title>A Measure of Directional Outlyingness With Applications to Image Data and Video</title>
+      <link>/publication/44/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/44/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Central bank sentiment</title>
+      <link>/publication/38/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/38/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

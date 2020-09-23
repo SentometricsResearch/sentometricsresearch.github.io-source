@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mirgorodskaya | Sentometrics</title>
+    <link>/author/mirgorodskaya/</link>
+      <atom:link href="/author/mirgorodskaya/index.xml" rel="self" type="application/rss+xml" />
+    <description>Mirgorodskaya</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Mirgorodskaya</title>
+      <link>/author/mirgorodskaya/</link>
+    </image>
+    
+    <item>
+      <title>Media, sentiment and market performance in the long run</title>
+      <link>/publication/62/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/62/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

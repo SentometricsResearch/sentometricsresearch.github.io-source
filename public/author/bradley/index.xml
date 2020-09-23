@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bradley | Sentometrics</title>
+    <link>/author/bradley/</link>
+      <atom:link href="/author/bradley/index.xml" rel="self" type="application/rss+xml" />
+    <description>Bradley</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><lastBuildDate>Fri, 01 Jan 1999 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Bradley</title>
+      <link>/author/bradley/</link>
+    </image>
+    
+    <item>
+      <title>Affective norms for English words (ANEW): Instruction manual and affective ratings</title>
+      <link>/publication/217/</link>
+      <pubDate>Fri, 01 Jan 1999 00:00:00 +0000</pubDate>
+      <guid>/publication/217/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

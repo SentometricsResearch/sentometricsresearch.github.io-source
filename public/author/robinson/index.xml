@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Robinson | Sentometrics</title>
+    <link>/author/robinson/</link>
+      <atom:link href="/author/robinson/index.xml" rel="self" type="application/rss+xml" />
+    <description>Robinson</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Robinson</title>
+      <link>/author/robinson/</link>
+    </image>
+    
+    <item>
+      <title>tidytext: Text Mining and Analysis Using Tidy Data Principles in R</title>
+      <link>/publication/93/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/93/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kearney | Sentometrics</title>
+    <link>/author/kearney/</link>
+      <atom:link href="/author/kearney/index.xml" rel="self" type="application/rss+xml" />
+    <description>Kearney</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><lastBuildDate>Wed, 01 Jan 2014 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Kearney</title>
+      <link>/author/kearney/</link>
+    </image>
+    
+    <item>
+      <title>Textual sentiment in finance: A survey of methods and models</title>
+      <link>/publication/122/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/122/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

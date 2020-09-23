@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Søgaard | Sentometrics</title>
+    <link>/author/s%C3%B8gaard/</link>
+      <atom:link href="/author/s%C3%B8gaard/index.xml" rel="self" type="application/rss+xml" />
+    <description>Søgaard</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Søgaard</title>
+      <link>/author/s%C3%B8gaard/</link>
+    </image>
+    
+    <item>
+      <title>Sentiment analysis under temporal shift</title>
+      <link>/publication/41/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/41/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

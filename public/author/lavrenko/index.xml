@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lavrenko | Sentometrics</title>
+    <link>/author/lavrenko/</link>
+      <atom:link href="/author/lavrenko/index.xml" rel="self" type="application/rss+xml" />
+    <description>Lavrenko</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><lastBuildDate>Sun, 01 Jan 2006 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Lavrenko</title>
+      <link>/author/lavrenko/</link>
+    </image>
+    
+    <item>
+      <title>Sentiment Retrieval using Generative Models</title>
+      <link>/publication/198/</link>
+      <pubDate>Sun, 01 Jan 2006 00:00:00 +0000</pubDate>
+      <guid>/publication/198/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

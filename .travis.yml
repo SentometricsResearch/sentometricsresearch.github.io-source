@@ -1,0 +1,23 @@
+language: r
+dist: xenial
+latex: false
+
+cache:
+  packages: yes
+  directories:
+    - $HOME/bin
+
+branches:
+  only:
+    - dev
+
+script:
+  - Rscript build_website.R
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: public
+  on:
+    branch: SentometricsResearch/sentometricsresearch.github.io 

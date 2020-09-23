@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Engelberg | Sentometrics</title>
+    <link>/author/engelberg/</link>
+      <atom:link href="/author/engelberg/index.xml" rel="self" type="application/rss+xml" />
+    <description>Engelberg</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><lastBuildDate>Thu, 01 Jan 2015 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Engelberg</title>
+      <link>/author/engelberg/</link>
+    </image>
+    
+    <item>
+      <title>The Sum of All FEARS Investor Sentiment and Asset Prices</title>
+      <link>/publication/98/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/98/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

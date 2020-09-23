@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hendry | Sentometrics</title>
+    <link>/author/hendry/</link>
+      <atom:link href="/author/hendry/index.xml" rel="self" type="application/rss+xml" />
+    <description>Hendry</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><lastBuildDate>Tue, 01 Jan 1980 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Hendry</title>
+      <link>/author/hendry/</link>
+    </image>
+    
+    <item>
+      <title>Econometrics - Alchemy or Science?</title>
+      <link>/publication/225/</link>
+      <pubDate>Tue, 01 Jan 1980 00:00:00 +0000</pubDate>
+      <guid>/publication/225/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

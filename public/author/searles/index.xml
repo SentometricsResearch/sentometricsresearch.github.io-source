@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Searles | Sentometrics</title>
+    <link>/author/searles/</link>
+      <atom:link href="/author/searles/index.xml" rel="self" type="application/rss+xml" />
+    <description>Searles</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><lastBuildDate>Sun, 01 Jan 2012 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Searles</title>
+      <link>/author/searles/</link>
+    </image>
+    
+    <item>
+      <title>Exploring the validity of electronic newspaper databases</title>
+      <link>/publication/152/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/publication/152/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

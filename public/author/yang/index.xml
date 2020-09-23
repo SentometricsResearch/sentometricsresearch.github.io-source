@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Yang | Sentometrics</title>
+    <link>/author/yang/</link>
+      <atom:link href="/author/yang/index.xml" rel="self" type="application/rss+xml" />
+    <description>Yang</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><lastBuildDate>Thu, 01 Jan 2015 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Yang</title>
+      <link>/author/yang/</link>
+    </image>
+    
+    <item>
+      <title>Dynamic non-parametric joint sentiment topic mixture model</title>
+      <link>/publication/100/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/100/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

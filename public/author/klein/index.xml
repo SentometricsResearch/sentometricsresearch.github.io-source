@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Klein | Sentometrics</title>
+    <link>/author/klein/</link>
+      <atom:link href="/author/klein/index.xml" rel="self" type="application/rss+xml" />
+    <description>Klein</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><lastBuildDate>Thu, 01 Jan 2009 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Klein</title>
+      <link>/author/klein/</link>
+    </image>
+    
+    <item>
+      <title>Natural Language Processing with Python</title>
+      <link>/publication/183/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>/publication/183/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

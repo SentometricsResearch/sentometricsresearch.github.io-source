@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tama-Sweet | Sentometrics</title>
+    <link>/author/tama-sweet/</link>
+      <atom:link href="/author/tama-sweet/index.xml" rel="self" type="application/rss+xml" />
+    <description>Tama-Sweet</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><lastBuildDate>Sun, 01 Jan 2012 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Tama-Sweet</title>
+      <link>/author/tama-sweet/</link>
+    </image>
+    
+    <item>
+      <title>Managers&#39; Use of Language Across Alternative Disclosure Outlets: Earnings Press Releases versus MD&amp;A</title>
+      <link>/publication/148/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/publication/148/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

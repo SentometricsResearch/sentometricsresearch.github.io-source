@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Voll | Sentometrics</title>
+    <link>/author/voll/</link>
+      <atom:link href="/author/voll/index.xml" rel="self" type="application/rss+xml" />
+    <description>Voll</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><lastBuildDate>Sat, 01 Jan 2011 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Voll</title>
+      <link>/author/voll/</link>
+    </image>
+    
+    <item>
+      <title>Lexicon-Based Methods for Sentiment Analysis</title>
+      <link>/publication/167/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/publication/167/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

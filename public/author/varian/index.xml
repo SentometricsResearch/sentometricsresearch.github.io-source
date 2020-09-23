@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Varian | Sentometrics</title>
+    <link>/author/varian/</link>
+      <atom:link href="/author/varian/index.xml" rel="self" type="application/rss+xml" />
+    <description>Varian</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><lastBuildDate>Wed, 01 Jan 2014 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Varian</title>
+      <link>/author/varian/</link>
+    </image>
+    
+    <item>
+      <title>Big Data: New Tricks for Econometrics</title>
+      <link>/publication/128/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/128/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

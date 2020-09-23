@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Soo | Sentometrics</title>
+    <link>/author/soo/</link>
+      <atom:link href="/author/soo/index.xml" rel="self" type="application/rss+xml" />
+    <description>Soo</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Soo</title>
+      <link>/author/soo/</link>
+    </image>
+    
+    <item>
+      <title>Quantifying sentiment with news media across local housing markets</title>
+      <link>/publication/46/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/46/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

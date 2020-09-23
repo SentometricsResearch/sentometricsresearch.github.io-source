@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sun | Sentometrics</title>
+    <link>/author/sun/</link>
+      <atom:link href="/author/sun/index.xml" rel="self" type="application/rss+xml" />
+    <description>Sun</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Sun</title>
+      <link>/author/sun/</link>
+    </image>
+    
+    <item>
+      <title>Stock return predictability and investor sentiment: A high-frequency perspective</title>
+      <link>/publication/90/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/90/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Survey of compressed-domain features used in audio-visual indexing and analysis</title>
+      <link>/publication/211/</link>
+      <pubDate>Wed, 01 Jan 2003 00:00:00 +0000</pubDate>
+      <guid>/publication/211/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

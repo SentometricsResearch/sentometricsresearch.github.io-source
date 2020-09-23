@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Liu | Sentometrics</title>
+    <link>/author/liu/</link>
+      <atom:link href="/author/liu/index.xml" rel="self" type="application/rss+xml" />
+    <description>Liu</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><lastBuildDate>Thu, 01 Jan 2015 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Liu</title>
+      <link>/author/liu/</link>
+    </image>
+    
+    <item>
+      <title>Sentiment Analysis: Mining Opinions, Sentiments, and Emotions</title>
+      <link>/publication/104/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/104/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Textual sentiment in finance: A survey of methods and models</title>
+      <link>/publication/122/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/122/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The role of the media in corporate governance: Do the media influence managers&#39; capital allocation decisions?</title>
+      <link>/publication/141/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/publication/141/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data Mining for Business Applications</title>
+      <link>/publication/181/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>/publication/181/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mining Opinion Features in Customer Reviews</title>
+      <link>/publication/206/</link>
+      <pubDate>Thu, 01 Jan 2004 00:00:00 +0000</pubDate>
+      <guid>/publication/206/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

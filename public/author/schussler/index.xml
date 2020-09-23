@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Schüssler | Sentometrics</title>
+    <link>/author/schussler/</link>
+      <atom:link href="/author/schussler/index.xml" rel="self" type="application/rss+xml" />
+    <description>Schüssler</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Schüssler</title>
+      <link>/author/schussler/</link>
+    </image>
+    
+    <item>
+      <title>Forecasting the equity premium: Mind the news!</title>
+      <link>/publication/1/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/1/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

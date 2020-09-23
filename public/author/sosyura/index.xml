@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sosyura | Sentometrics</title>
+    <link>/author/sosyura/</link>
+      <atom:link href="/author/sosyura/index.xml" rel="self" type="application/rss+xml" />
+    <description>Sosyura</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><lastBuildDate>Wed, 01 Jan 2014 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Sosyura</title>
+      <link>/author/sosyura/</link>
+    </image>
+    
+    <item>
+      <title>Who writes the news? Corporate press releases during merger negotiations</title>
+      <link>/publication/114/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/114/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Winners in the spotlight: Media coverage of fund holdings as a driver of flows</title>
+      <link>/publication/126/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/126/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

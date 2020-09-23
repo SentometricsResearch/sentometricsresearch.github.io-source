@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Baker | Sentometrics</title>
+    <link>/author/baker/</link>
+      <atom:link href="/author/baker/index.xml" rel="self" type="application/rss+xml" />
+    <description>Baker</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Baker</title>
+      <link>/author/baker/</link>
+    </image>
+    
+    <item>
+      <title>COVID-Induced Economic Uncertainty</title>
+      <link>/publication/4/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Measuring Economic Policy Uncertainty</title>
+      <link>/publication/76/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/76/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Investor Sentiment in the Stock Market</title>
+      <link>/publication/190/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>/publication/190/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Investor Sentiment and the Cross-Section of Stock Returns</title>
+      <link>/publication/196/</link>
+      <pubDate>Sun, 01 Jan 2006 00:00:00 +0000</pubDate>
+      <guid>/publication/196/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sims | Sentometrics</title>
+    <link>/author/sims/</link>
+      <atom:link href="/author/sims/index.xml" rel="self" type="application/rss+xml" />
+    <description>Sims</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><lastBuildDate>Sun, 01 Jan 2012 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Sims</title>
+      <link>/author/sims/</link>
+    </image>
+    
+    <item>
+      <title>Information, Animal Spirits, and the Meaning of Innovations in Consumer Confidence</title>
+      <link>/publication/147/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/publication/147/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

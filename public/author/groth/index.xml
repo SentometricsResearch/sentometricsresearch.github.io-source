@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Groth | Sentometrics</title>
+    <link>/author/groth/</link>
+      <atom:link href="/author/groth/index.xml" rel="self" type="application/rss+xml" />
+    <description>Groth</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><lastBuildDate>Sat, 01 Jan 2011 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Groth</title>
+      <link>/author/groth/</link>
+    </image>
+    
+    <item>
+      <title>An intraday market risk management approach based on textual analysis</title>
+      <link>/publication/159/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/publication/159/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

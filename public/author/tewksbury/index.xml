@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tewksbury | Sentometrics</title>
+    <link>/author/tewksbury/</link>
+      <atom:link href="/author/tewksbury/index.xml" rel="self" type="application/rss+xml" />
+    <description>Tewksbury</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><lastBuildDate>Mon, 01 Jan 2007 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Tewksbury</title>
+      <link>/author/tewksbury/</link>
+    </image>
+    
+    <item>
+      <title>Framing, Agenda Setting, and Priming: The Evolution of Three Media Effects Models</title>
+      <link>/publication/194/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>/publication/194/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

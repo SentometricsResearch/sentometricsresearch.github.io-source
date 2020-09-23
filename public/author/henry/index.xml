@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Henry | Sentometrics</title>
+    <link>/author/henry/</link>
+      <atom:link href="/author/henry/index.xml" rel="self" type="application/rss+xml" />
+    <description>Henry</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Henry</title>
+      <link>/author/henry/</link>
+    </image>
+    
+    <item>
+      <title>Measuring Qualitative Information in Capital Markets Research: Comparison of Alternative Methodologies to Measure Disclosure Tone</title>
+      <link>/publication/82/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/82/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Are Investors Influenced By How Earnings Press Releases Are Written?</title>
+      <link>/publication/184/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/publication/184/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Market Reaction to Verbal Components of Earnings Press Releases: Event Study Using a Predictive Algorithm</title>
+      <link>/publication/199/</link>
+      <pubDate>Sun, 01 Jan 2006 00:00:00 +0000</pubDate>
+      <guid>/publication/199/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

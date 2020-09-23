@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gross | Sentometrics</title>
+    <link>/author/gross/</link>
+      <atom:link href="/author/gross/index.xml" rel="self" type="application/rss+xml" />
+    <description>Gross</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><lastBuildDate>Tue, 01 Jan 2013 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Gross</title>
+      <link>/author/gross/</link>
+    </image>
+    
+    <item>
+      <title>Recent Developments in openSMILE, the Munich Open-source Multimedia Feature Extractor</title>
+      <link>/publication/136/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/publication/136/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Croux | Sentometrics</title>
+    <link>/author/croux/</link>
+      <atom:link href="/author/croux/index.xml" rel="self" type="application/rss+xml" />
+    <description>Croux</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><lastBuildDate>Fri, 01 Jan 2010 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Croux</title>
+      <link>/author/croux/</link>
+    </image>
+    
+    <item>
+      <title>On the Construction of the European Economic Sentiment Indicator</title>
+      <link>/publication/173/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publication/173/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

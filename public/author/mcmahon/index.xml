@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>McMahon | Sentometrics</title>
+    <link>/author/mcmahon/</link>
+      <atom:link href="/author/mcmahon/index.xml" rel="self" type="application/rss+xml" />
+    <description>McMahon</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>McMahon</title>
+      <link>/author/mcmahon/</link>
+    </image>
+    
+    <item>
+      <title>Transparency and Deliberation Within the FOMC: A Computational Linguistics Approach</title>
+      <link>/publication/37/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/37/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Shocking language: Understanding the macroeconomic effects of central bank communication</title>
+      <link>/publication/81/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/81/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
