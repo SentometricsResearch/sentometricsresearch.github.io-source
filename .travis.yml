@@ -9,7 +9,7 @@ cache:
 
 branches:
   only:
-    - dev
+    - master
 
 script:
   - Rscript build_website.R
