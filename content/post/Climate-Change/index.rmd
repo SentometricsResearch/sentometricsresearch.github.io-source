@@ -1,0 +1,41 @@
+---
+draft: true
+date: "2024-09-23"
+diagram: true
+image:
+  caption: ""
+  placement: 3
+math: true
+title: Media Climate Change Concern Index
+active: true  # Activate this widget? true/false
+---
+
+Many consider climate change as one of the biggest challenges of our times. However,
+there is disagreement on the magnitude of the climate change problem and how to solve it.
+Conditional on their view on the issue, some people may have high preferences for sustain-
+able solutions and investments tackling the climate change problem, while others may not.
+Moreover, these preferences can evolve on the arrival of new information. In general, preferences
+about sustainable solutions is laregly a function of how concerned people are about cliamte change.
+
+Being able to observe  concerns about climate change in almost in real-time can be useful for many application,
+and in particular regarding the pricing of assets. In fact, the model of Pastor et al. (2020) implies that the return
+of green stocks vs. the returns of brown stocks is a function of unexpected increase in climate change concerns. In 
+particular, when there is an unexpeceted increase about cliamte change, green stocks outperforms brown stocks.
+
+An issue however is that climate change concerns is latent, and thus need to be proxied. We present here and index derived
+from major U.S newspaper that proxy for unexpected increase in climate change concerns. Our corpus to derive this index is divided in 
+multiple topics and theme, for which the most reprentative words are shown below:
+
+
+![](topics.png)
+
+Moreover, we provide here an interactive graph to explore the overall and topical climate change concerns indices dynamics. In particular, we report the monthly 30-day moving average.
+
+<div>
+<iframe height="700" width="100%" frameborder="no" src="../../widget/climatechangewidget.html"> </iframe>
+</div>
+The full daily dataset is provided here is CSV format:
+
+[Download file](/files/MCCC_index.csv)
+
+

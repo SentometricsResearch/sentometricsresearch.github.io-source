@@ -17,46 +17,68 @@ design:
 
 ---
 
+
 ```{r, echo=FALSE, message=FALSE,  warning=FALSE}
 library(httr)
 library(data.table)
 library(plotly)    
-
+library(RcppRoll)
+dates_total = seq(as.Date("2000-01-01"),as.Date(Sys.time()), by = 1)
+#dates_total = dates_total[grepl("S(at|un)", weekdays(dates_total))]
 auth <- POST("https://api-dev.sentometrics.com/token", body = list(username=Sys.getenv("sento_username"),
                                                                 password=Sys.getenv("sento_password")))
+EPU_belgium = data.frame(timestamp = dates_total)
+EPU_flanders = data.frame(timestamp = dates_total)
+EPU_wal = data.frame(timestamp = dates_total)
 
-EPU_belgium_daily <- data.table::rbindlist(content(GET("https://api-dev.sentometrics.com/index/values/epu-belgium", query = list(version="1.4.0",
+EPU_flanders_tmp <- data.table::rbindlist(content(GET("https://api-dev.sentometrics.com/index/values/epu-flanders", query = list(version="1.4.0",
                                                                 frequency="D",
                                                                 start= "2000-01-01",
-                                                                end= "2020-09-23"),add_headers(Authorization = paste0("Bearer ", content(auth)$access_token)))))
+                                                                end= as.character(as.Date(Sys.time()))),add_headers(Authorization = paste0("Bearer ", content(auth)$access_token)))))
+EPU_flanders_tmp$timestamp =as.Date(EPU_flanders_tmp$timestamp)
+id.match = match(EPU_flanders$timestamp,EPU_flanders_tmp$timestamp)
+EPU_flanders$name = EPU_flanders_tmp$name[1]
+EPU_flanders$value[!is.na(id.match)] = EPU_flanders_tmp$value
+EPU_flanders$value[is.na(EPU_flanders$value)] = 0
+EPU_flanders$MA = NA
+EPU_flanders$MA[-1:-29] = RcppRoll::roll_mean(EPU_flanders$value, 30)
+EPU_flanders$value = EPU_flanders$MA
+EPU_flanders = EPU_flanders[-1:-29,]
 
-EPU_flanders <- data.table::rbindlist(content(GET("https://api-dev.sentometrics.com/index/values/epu-flanders", query = list(version="1.4.0",
-                                                                frequency="M",
+
+EPU_belgium_tmp <- data.table::rbindlist(content(GET("https://api-dev.sentometrics.com/index/values/epu-belgium", query = list(version="1.4.0",
+                                                                frequency="D",
                                                                 start= "2000-01-01",
-                                                                end= "2020-09-23"),add_headers(Authorization = paste0("Bearer ", content(auth)$access_token)))))
+                                                                end= as.character(as.Date(Sys.time()))),add_headers(Authorization = paste0("Bearer ", content(auth)$access_token)))))
+EPU_belgium_tmp$timestamp =as.Date(EPU_belgium_tmp$timestamp)
+id.match = match(EPU_belgium$timestamp,EPU_belgium_tmp$timestamp)
+EPU_belgium$name = EPU_belgium_tmp$name[1]
+EPU_belgium$value[!is.na(id.match)] = EPU_belgium_tmp$value
+EPU_belgium$value[is.na(EPU_belgium$value)] = 0
+EPU_belgium$MA = NA
+EPU_belgium$MA[-1:-29] = RcppRoll::roll_mean(EPU_belgium$value, 30)
+EPU_belgium$value = EPU_belgium$MA
+EPU_belgium = EPU_belgium[-1:-29,]
 
-
-ECN_Sentiment <- data.table::rbindlist(content(GET("https://api-dev.sentometrics.com/index/values/economic-sentiment", query = list(version="1.0.0",
-                                                                frequency="M",
+EPU_wal_tmp <- data.table::rbindlist(content(GET("https://api-dev.sentometrics.com/index/values/epu-wallonia", query = list(version="1.4.0",
+                                                                frequency="D",
                                                                 start= "2000-01-01",
-                                                                end= "2020-09-23"),add_headers(Authorization = paste0("Bearer ", content(auth)$access_token)))))
+                                                                end= as.character(as.Date(Sys.time()))),add_headers(Authorization = paste0("Bearer ", content(auth)$access_token)))))
+EPU_wal_tmp$timestamp =as.Date(EPU_wal_tmp$timestamp)
+id.match = match(EPU_wal$timestamp,EPU_wal_tmp$timestamp)
+EPU_wal$name = EPU_wal_tmp$name[1]
+EPU_wal$value[!is.na(id.match)] = EPU_wal_tmp$value
+EPU_wal$value[is.na(EPU_wal$value)] = 0
+EPU_wal$value[lubridate::year(EPU_wal$timestamp) == "2006"] = NA
+EPU_wal$MA = NA
+EPU_wal$MA[-1:-29] = RcppRoll::roll_mean(EPU_wal$value, 30)
+EPU_wal = EPU_wal[-1:-29,]
+EPU_wal$value = EPU_wal$MA
 
-
-EPU_belgium <- data.table::rbindlist(content(GET("https://api-dev.sentometrics.com/index/values/epu-belgium", query = list(version="1.4.0",
-                                                                frequency="M",
-                                                                start= "2000-01-01",
-                                                                end= "2020-09-23"),add_headers(Authorization = paste0("Bearer ", content(auth)$access_token)))))
-
-
-EPU_wal <- data.table::rbindlist(content(GET("https://api-dev.sentometrics.com/index/values/epu-wallonia", query = list(version="1.4.0",
-                                                                frequency="M",
-                                                                start= "2000-01-01",
-                                                                end= "2020-09-23"),add_headers(Authorization = paste0("Bearer ", content(auth)$access_token)))))
-
-Indices = rbind(EPU_belgium,EPU_belgium_daily,EPU_flanders, EPU_wal, ECN_Sentiment)
-Indices$name = paste0(Indices$name,"-",Indices$frequency) 
-Indices$date = as.Date(Indices$timestamp)
+Indices = rbind(EPU_belgium[,c(1:3)],EPU_flanders[,c(1:3)], EPU_wal[,c(1:3)])
+colnames(Indices)[1] = "date"
 ```
+
 ```{r, echo=FALSE, message=FALSE,  warning=FALSE, out.width = "98%", out.height="95%"}
 p <- Indices %>%
   plot_ly(
@@ -89,13 +111,7 @@ p <- Indices %>%
                label = unique(Indices$name)[2]),
           list(method = "restyle",
                args = list("transforms[0].value", unique(Indices$name)[3]),
-               label = unique(Indices$name)[3]),
-          list(method = "restyle",
-               args = list("transforms[0].value", unique(Indices$name)[4]),
-               label = unique(Indices$name)[4]),
-          list(method = "restyle",
-               args = list("transforms[0].value", unique(Indices$name)[5]),
-               label = unique(Indices$name)[5])
+               label = unique(Indices$name)[3])
         )
       )
     )
