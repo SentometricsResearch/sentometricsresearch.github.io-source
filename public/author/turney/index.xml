@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Turney | Sentometrics</title>
+    <title>Turney | Sentometrics Research</title>
     <link>/author/turney/</link>
       <atom:link href="/author/turney/index.xml" rel="self" type="application/rss+xml" />
     <description>Turney</description>

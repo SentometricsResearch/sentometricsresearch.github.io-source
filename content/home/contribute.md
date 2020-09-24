@@ -3,7 +3,7 @@
 widget = "contact"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
-weight = 7 # Order that this section will appear.
+weight = 8 # Order that this section will appear.
 
 title = "Contribute"
 subtitle = ""
@@ -22,7 +22,6 @@ email_form = 2
   captcha = false  # Enable CAPTCHA challenge to reduce spam?
 +++
 
-You can contribute by submitting a resource as a pull request to the website [repository](https://github.com/SentometricsResearch/SentometricsResearch). In the repository, go to the `/content` folder, and then to either `/post` (to add a written blog post), `/software` (to add an open-source software package), or `/publication` (to add a research paper). Add a new folder (give it a sensible name) and put your content in the `index.md` file. Take over the structure from the already existing content in the respective folder.
+You can contribute by submitting a resource using this form. Please include what type of ressources (index, post, software, publications) as well as a link to the ressource and we will get in touch!
 
-If you struggle, just send a message using below form with the content you would like to add.
 

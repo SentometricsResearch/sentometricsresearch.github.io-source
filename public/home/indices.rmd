@@ -1,0 +1,91 @@
+---
+# A Demo section created with the Blank widget.
+# Any elements can be added in the body: https://sourcethemes.com/academic/docs/writing-markdown-latex/
+# Add more sections by duplicating this file and customizing to your requirements.
+
+widget: "blank"  # See https://sourcethemes.com/academic/docs/page-builder/
+headless: true  # This file represents a page section.
+active: true  # Activate this widget? true/false
+weight: 3 # Order that this section will appear.
+
+title: "Indices"
+subtitle: ""
+
+design:
+  columns: "1"
+
+
+---
+
+```{r, echo=FALSE, message=FALSE,  warning=FALSE}
+library(httr)
+library(data.table)
+library(plotly)    
+
+auth <- POST("https://api-dev.sentometrics.com/token", body = list(username=Sys.getenv("sento_username"),
+                                                                password=Sys.getenv("sento_password")))
+
+EPU_flanders <- data.table::rbindlist(content(GET("https://api-dev.sentometrics.com/index/values/epu-flanders", query = list(version="1.4.0",
+                                                                frequency="M",
+                                                                start= "2000-01-01",
+                                                                end= "2020-09-23"),add_headers(Authorization = paste0("Bearer ", content(auth)$access_token)))))
+
+ECN_Sentiment <- data.table::rbindlist(content(GET("https://api-dev.sentometrics.com/index/values/economic-sentiment", query = list(version="1.0.0",
+                                                                frequency="M",
+                                                                start= "2000-01-01",
+                                                                end= "2020-09-23"),add_headers(Authorization = paste0("Bearer ", content(auth)$access_token)))))
+
+EPU_belgium <- data.table::rbindlist(content(GET("https://api-dev.sentometrics.com/index/values/epu-belgium", query = list(version="1.4.0",
+                                                                frequency="M",
+                                                                start= "2000-01-01",
+                                                                end= "2020-09-23"),add_headers(Authorization = paste0("Bearer ", content(auth)$access_token)))))
+
+EPU_wal <- data.table::rbindlist(content(GET("https://api-dev.sentometrics.com/index/values/epu-wallonia", query = list(version="1.4.0",
+                                                                frequency="M",
+                                                                start= "2000-01-01",
+                                                                end= "2020-09-23"),add_headers(Authorization = paste0("Bearer ", content(auth)$access_token)))))
+
+Indices = rbind(EPU_belgium, EPU_flanders, EPU_wal, ECN_Sentiment)
+Indices$date = as.Date(Indices$timestamp)
+```
+```{r, echo=FALSE, message=FALSE,  warning=FALSE, out.width = "98%", out.height="95%"}
+p <- Indices %>%
+  plot_ly(
+   type = 'scatter', 
+   mode = 'lines+markers',
+    x = ~date, 
+    y = ~value,
+    text = ~name,
+    hoverinfo = 'x+y',
+    transforms = list(
+      list(
+        type = 'filter',
+        target = ~name,
+        operation = '=',
+        value = unique(Indices$name)[3]
+      )
+  )) %>% layout(
+    updatemenus = list(
+      list(
+        type = 'dropdown',
+        active = 0,
+        buttons = list(
+          list(method = "restyle",
+               args = list("transforms[0].value", unique(Indices$name)[1]),
+               label = unique(Indices$name)[1]),
+          list(method = "restyle",
+               args = list("transforms[0].value", unique(Indices$name)[2]),
+               label = unique(Indices$name)[2]),
+          list(method = "restyle",
+               args = list("transforms[0].value", unique(Indices$name)[3]),
+               label = unique(Indices$name)[3]),
+          list(method = "restyle",
+               args = list("transforms[0].value", unique(Indices$name)[4]),
+               label = unique(Indices$name)[4])
+        )
+      )
+    )
+  )  %>% layout(autosize=T,height = 700)
+
+p
+```

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Weaver | Sentometrics</title>
+    <title>Weaver | Sentometrics Research</title>
     <link>/author/weaver/</link>
       <atom:link href="/author/weaver/index.xml" rel="self" type="application/rss+xml" />
     <description>Weaver</description>

@@ -3,14 +3,14 @@
 widget = "portfolio"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
-weight = 6# Order that this section will appear.
+weight = 7# Order that this section will appear.
 
-title = "Supported by"
+title = "Sponsors"
 subtitle = ""
 
 [content]
   # Page type to display. E.g. project.
-  page_type = "support"
+  page_type = "sponsors"
   
 [design]
   # Choose how many columns the section has. Valid values: 1 or 2.

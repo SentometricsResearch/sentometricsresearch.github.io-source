@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sponsors | Sentometrics Research</title>
+    <link>/sponsors/</link>
+      <atom:link href="/sponsors/index.xml" rel="self" type="application/rss+xml" />
+    <description>Sponsors</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Sponsors</title>
+      <link>/sponsors/</link>
+    </image>
+    
+    <item>
+      <title>HEC Montreal</title>
+      <link>/sponsors/hec/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/sponsors/hec/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Team Up</title>
+      <link>/sponsors/innoviris/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/sponsors/innoviris/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

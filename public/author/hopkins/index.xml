@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hopkins | Sentometrics</title>
+    <title>Hopkins | Sentometrics Research</title>
     <link>/author/hopkins/</link>
       <atom:link href="/author/hopkins/index.xml" rel="self" type="application/rss+xml" />
     <description>Hopkins</description>
