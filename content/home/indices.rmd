@@ -85,7 +85,7 @@ p <- Indices %>%
                args = list("transforms[0].value", unique(Indices$name)[1]),
                label = unique(Indices$name)[1]),
           list(method = "restyle",
-               args = list("transforms[0].value", unique(Indices$name)[2]),W
+               args = list("transforms[0].value", unique(Indices$name)[2]),
                label = unique(Indices$name)[2]),
           list(method = "restyle",
                args = list("transforms[0].value", unique(Indices$name)[3]),
@@ -94,7 +94,7 @@ p <- Indices %>%
                args = list("transforms[0].value", unique(Indices$name)[4]),
                label = unique(Indices$name)[4]),
           list(method = "restyle",
-               args = list("transforms[0].value", unique(Indices$name)[4]),
+               args = list("transforms[0].value", unique(Indices$name)[5]),
                label = unique(Indices$name)[5])
         )
       )
