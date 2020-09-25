@@ -6,7 +6,6 @@ image:
   placement: 3
 math: true
 title: The Economic Policy Uncertainty Index for Flanders, Wallonia and Belgium
-active: true  # Activate this widget? true/false
 ---
 
 
