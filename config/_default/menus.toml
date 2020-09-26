@@ -4,9 +4,16 @@
 #   The weight parameter defines the order that the links will appear in.
 
 [[main]]
+  name = " "
+  identifier = "github"
+  pre = "<i class=\"fab fa-github\"></i>"
+  url = "https://github.com/SentometricsResearch/"
+  weight = 1
+
+[[main]]
   name = "Home"
   url = "#home-1"
-  weight = 1
+  weight = 2
 
 [[main]]
   name = "Indices"
@@ -37,3 +44,4 @@
   name = "Contribute"
   url = "#contribute"
   weight = 8
+  
