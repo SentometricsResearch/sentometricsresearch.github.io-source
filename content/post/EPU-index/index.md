@@ -15,7 +15,7 @@ The EPU index is derived daily from significant newspapers in french and dutch p
 
 To showcase the power of the Economic Policy Uncertainty Index, here is the monthly index for Belgium zoomed-in from January 2020 to May 2020, which includes the start of the COVID-19 pandemic.
 
-![](corona_EPU.png)
+![EPU during coronavirus](coronaEPU.png)
 
 The dynamics are interesting. January and February are calm months with a level around 100, which indicates the same degree of uncertainty as on average up to 2011. After that, the uncertainty unequivocally drives up, becomes more volatile transitioning from March to April, and decreasing in the last three weeks of April. Most of the uncertainty increased before the lockdown in Belgium was officially imposed. The uncertainty remains high in May, but at a fairly constant, and lower, daily level.
 
