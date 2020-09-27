@@ -17,83 +17,74 @@ design:
 
 ---
 
-
 ```{r, echo=FALSE, message=FALSE,  warning=FALSE}
 library(httr)
 library(data.table)
 library(plotly)    
 library(RcppRoll)
 library(lubridate)
-dates_total = seq(as.Date("2000-01-01"),as.Date(Sys.time()), by = 1)
-#dates_total = dates_total[grepl("S(at|un)", weekdays(dates_total))]
-auth <- POST("https://api-dev.sentometrics.com/token", body = list(username=Sys.getenv("sento_username"),
-                                                                password=Sys.getenv("sento_password")))
-EPU_belgium = data.frame(timestamp = dates_total)
-EPU_flanders = data.frame(timestamp = dates_total)
-EPU_wal = data.frame(timestamp = dates_total)
+transform_data = function(x){
+  dates_total = seq(as.Date("2000-01-01"),as.Date(Sys.time()), by = 1)
+  dat  = data.frame(timestamp = dates_total)
+    
+  x$timestamp =as.Date(x$timestamp)
+  id.match = match(dat$timestamp,x$timestamp)
+  dat$name = x$name[1]
+  dat$value[!is.na(id.match)] = x$value
+  dat$value[is.na(dat$value)] = 0
+  dat$value[lubridate::wday(dat$timestamp) == 1] = NA
+  if(dat$name[1] == "epu-wallonia"){
+    dat$value[lubridate::year(dat$timestamp) == 2006] = NA
+  }
+  dat$MA = NA
+  dat$ind = NA
+  dat$MA[-1:-29] = RcppRoll::roll_mean(dat$value, 30,na.rm = TRUE)
+  dat$ind[-1:-29] = RcppRoll::roll_sum(!is.na(dat$value), 30,na.rm = TRUE)
+  dat$value = dat$MA
+  dat = dat[-1:-29,]
+  dat$value[lubridate::wday(dat$timestamp) == 1] = NA
+  dat$value[dat$ind < 20] = NA
+  dat = dat[-1,]
+  return(dat)
 
-EPU_flanders_tmp <- data.table::rbindlist(content(GET("https://api-dev.sentometrics.com/index/values/epu-flanders", query = list(version="1.4.0",
+}
+```
+```{r, echo=FALSE, message=FALSE,  warning=FALSE}
+auth <- POST("https://api-dev.sentometrics.com/token", 
+             body = list(username=Sys.getenv("sento_username"),
+                         password=Sys.getenv("sento_password")))
+
+EPU_flanders_tmp <- data.table::rbindlist(content(GET("https://api-dev.sentometrics.com/index/values/epu-flanders", 
+                                                        query = list(version="1.4.0",
                                                                 frequency="D",
                                                                 start= "2000-01-01",
-                                                                end= as.character(as.Date(Sys.time()))),add_headers(Authorization = paste0("Bearer ", content(auth)$access_token)))))
-EPU_flanders_tmp$timestamp =as.Date(EPU_flanders_tmp$timestamp)
-id.match = match(EPU_flanders$timestamp,EPU_flanders_tmp$timestamp)
-EPU_flanders$name = EPU_flanders_tmp$name[1]
-EPU_flanders$value[!is.na(id.match)] = EPU_flanders_tmp$value
-EPU_flanders$value[is.na(EPU_flanders$value)] = 0
-EPU_flanders$value[lubridate::wday(EPU_flanders$timestamp) == 1] = NA
-EPU_flanders$MA = NA
-EPU_flanders$ind = NA
-EPU_flanders$MA[-1:-29] = RcppRoll::roll_mean(EPU_flanders$value, 30,na.rm = TRUE)
-EPU_flanders$ind[-1:-29] = RcppRoll::roll_sum(!is.na(EPU_flanders$value), 30,na.rm = TRUE)
-EPU_flanders$value = EPU_flanders$MA
-EPU_flanders = EPU_flanders[-1:-29,]
-EPU_flanders$value[lubridate::wday(EPU_flanders$timestamp) == 1] = NA
-EPU_flanders$value[EPU_flanders$ind < 20] = NA
-EPU_flanders = EPU_flanders[-1,]
+                                                                end= as.character(as.Date(Sys.time()))),
+                                                        add_headers(Authorization = paste0("Bearer ", content(auth)$access_token)))))
 
-EPU_belgium_tmp <- data.table::rbindlist(content(GET("https://api-dev.sentometrics.com/index/values/epu-belgium", query = list(version="1.4.0",
+EPU_flanders = transform_data(EPU_flanders_tmp)
+
+EPU_belgium_tmp <- data.table::rbindlist(content(GET("https://api-dev.sentometrics.com/index/values/epu-belgium", 
+                                                     query = list(version="1.4.0",
                                                                 frequency="D",
                                                                 start= "2000-01-01",
-                                                                end= as.character(as.Date(Sys.time()))),add_headers(Authorization = paste0("Bearer ", content(auth)$access_token)))))
-EPU_belgium_tmp$timestamp =as.Date(EPU_belgium_tmp$timestamp)
-id.match = match(EPU_belgium$timestamp,EPU_belgium_tmp$timestamp)
-EPU_belgium$name = EPU_belgium_tmp$name[1]
-EPU_belgium$value[!is.na(id.match)] = EPU_belgium_tmp$value
-EPU_belgium$value[is.na(EPU_belgium$value)] = 0
-EPU_belgium$value[lubridate::wday(EPU_belgium$timestamp) == 1] = NA
-EPU_belgium$MA = NA
-EPU_belgium$ind = NA
-EPU_belgium$MA[-1:-29] = RcppRoll::roll_mean(EPU_belgium$value, 30,na.rm = TRUE,)
-EPU_belgium$ind[-1:-29] = RcppRoll::roll_sum(!is.na(EPU_belgium$value), 30,na.rm = TRUE)
+                                                                end= as.character(as.Date(Sys.time()))),
+                                                     add_headers(Authorization = paste0("Bearer ", content(auth)$access_token)))))
 
-EPU_belgium$value = EPU_belgium$MA
-EPU_belgium = EPU_belgium[-1:-29,]
-EPU_belgium$value[lubridate::wday(EPU_belgium$timestamp) == 1] = NA
-EPU_belgium$value[EPU_belgium$ind < 20] = NA
-EPU_belgium = EPU_belgium[-1,]
+EPU_belgium = transform_data(EPU_belgium_tmp)
 
-EPU_wal_tmp <- data.table::rbindlist(content(GET("https://api-dev.sentometrics.com/index/values/epu-wallonia", query = list(version="1.4.0",
+EPU_wal_tmp <- data.table::rbindlist(content(GET("https://api-dev.sentometrics.com/index/values/epu-wallonia", 
+                                                    query = list(version="1.4.0",
                                                                 frequency="D",
                                                                 start= "2000-01-01",
-                                                                end= as.character(as.Date(Sys.time()))),add_headers(Authorization = paste0("Bearer ", content(auth)$access_token)))))
-EPU_wal_tmp$timestamp =as.Date(EPU_wal_tmp$timestamp)
-id.match = match(EPU_wal$timestamp,EPU_wal_tmp$timestamp)
-EPU_wal$name = EPU_wal_tmp$name[1]
-EPU_wal$value[!is.na(id.match)] = EPU_wal_tmp$value
-EPU_wal$value[is.na(EPU_wal$value)] = 0
-EPU_wal$value[lubridate::wday(EPU_wal$timestamp) == 1] = NA
-EPU_wal$value[lubridate::year(EPU_wal$timestamp) == "2006"] = NA
-EPU_wal$MA = NA
-EPU_wal$ind = NA
-EPU_wal$MA[-1:-29] = RcppRoll::roll_mean(EPU_wal$value, 30,na.rm = TRUE)
-EPU_wal$ind[-1:-29] = RcppRoll::roll_sum(!is.na(EPU_wal$value), 30,na.rm = TRUE)
-EPU_wal = EPU_wal[-1:-29,]
-EPU_wal$value = EPU_wal$MA
-EPU_wal$value[lubridate::wday(EPU_wal$timestamp) == 1] = NA
-EPU_wal$value[EPU_wal$ind < 20] = NA
-EPU_wal = EPU_wal[-1,]
-Indices = rbind(EPU_belgium[,c(1:3)],EPU_flanders[,c(1:3)], EPU_wal[,c(1:3)])
+                                                                end= as.character(as.Date(Sys.time()))),
+                                                    add_headers(Authorization = paste0("Bearer ", content(auth)$access_token)))))
+
+EPU_wal = transform_data(EPU_wal_tmp)
+
+Indices = rbind(EPU_belgium[,c(1:3)],
+                EPU_flanders[,c(1:3)],
+                EPU_wal[,c(1:3)])
+
 colnames(Indices)[1] = "date"
 ```
 
