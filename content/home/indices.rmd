@@ -41,10 +41,15 @@ id.match = match(EPU_flanders$timestamp,EPU_flanders_tmp$timestamp)
 EPU_flanders$name = EPU_flanders_tmp$name[1]
 EPU_flanders$value[!is.na(id.match)] = EPU_flanders_tmp$value
 EPU_flanders$value[is.na(EPU_flanders$value)] = 0
+EPU_flanders$value[lubridate::wday(EPU_flanders$timestamp) == 1] = NA
 EPU_flanders$MA = NA
-EPU_flanders$MA[-1:-29] = RcppRoll::roll_mean(EPU_flanders$value, 30)
+EPU_flanders$ind = NA
+EPU_flanders$MA[-1:-29] = RcppRoll::roll_mean(EPU_flanders$value, 30,na.rm = TRUE)
+EPU_flanders$ind[-1:-29] = RcppRoll::roll_sum(!is.na(EPU_flanders$value), 30,na.rm = TRUE)
 EPU_flanders$value = EPU_flanders$MA
 EPU_flanders = EPU_flanders[-1:-29,]
+EPU_flanders$value[lubridate::wday(EPU_flanders$timestamp) == 1] = NA
+EPU_flanders$value[EPU_flanders$ind < 20] = NA
 
 
 EPU_belgium_tmp <- data.table::rbindlist(content(GET("https://api-dev.sentometrics.com/index/values/epu-belgium", query = list(version="1.4.0",
@@ -56,10 +61,16 @@ id.match = match(EPU_belgium$timestamp,EPU_belgium_tmp$timestamp)
 EPU_belgium$name = EPU_belgium_tmp$name[1]
 EPU_belgium$value[!is.na(id.match)] = EPU_belgium_tmp$value
 EPU_belgium$value[is.na(EPU_belgium$value)] = 0
+EPU_belgium$value[lubridate::wday(EPU_belgium$timestamp) == 1] = NA
 EPU_belgium$MA = NA
-EPU_belgium$MA[-1:-29] = RcppRoll::roll_mean(EPU_belgium$value, 30)
+EPU_belgium$ind = NA
+EPU_belgium$MA[-1:-29] = RcppRoll::roll_mean(EPU_belgium$value, 30,na.rm = TRUE,)
+EPU_belgium$ind[-1:-29] = RcppRoll::roll_sum(!is.na(EPU_belgium$value), 30,na.rm = TRUE)
+
 EPU_belgium$value = EPU_belgium$MA
 EPU_belgium = EPU_belgium[-1:-29,]
+EPU_belgium$value[lubridate::wday(EPU_belgium$timestamp) == 1] = NA
+EPU_belgium$value[EPU_belgium$ind < 20] = NA
 
 EPU_wal_tmp <- data.table::rbindlist(content(GET("https://api-dev.sentometrics.com/index/values/epu-wallonia", query = list(version="1.4.0",
                                                                 frequency="D",
@@ -70,11 +81,16 @@ id.match = match(EPU_wal$timestamp,EPU_wal_tmp$timestamp)
 EPU_wal$name = EPU_wal_tmp$name[1]
 EPU_wal$value[!is.na(id.match)] = EPU_wal_tmp$value
 EPU_wal$value[is.na(EPU_wal$value)] = 0
+EPU_wal$value[lubridate::wday(EPU_wal$timestamp) == 1] = NA
 EPU_wal$value[lubridate::year(EPU_wal$timestamp) == "2006"] = NA
 EPU_wal$MA = NA
-EPU_wal$MA[-1:-29] = RcppRoll::roll_mean(EPU_wal$value, 30)
+EPU_wal$ind = NA
+EPU_wal$MA[-1:-29] = RcppRoll::roll_mean(EPU_wal$value, 30,na.rm = TRUE)
+EPU_wal$ind[-1:-29] = RcppRoll::roll_sum(!is.na(EPU_wal$value), 30,na.rm = TRUE)
 EPU_wal = EPU_wal[-1:-29,]
 EPU_wal$value = EPU_wal$MA
+EPU_wal$value[lubridate::wday(EPU_wal$timestamp) == 1] = NA
+EPU_wal$value[EPU_wal$ind < 20] = NA
 
 Indices = rbind(EPU_belgium[,c(1:3)],EPU_flanders[,c(1:3)], EPU_wal[,c(1:3)])
 colnames(Indices)[1] = "date"
