@@ -23,3 +23,4 @@ deploy:
   local_dir: public
   repo: SentometricsResearch/sentometricsresearch.github.io 
   target_branch: master
+  committer_from_gh: true
