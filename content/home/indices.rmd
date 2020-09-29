@@ -40,6 +40,7 @@ transform_data = function(x){
   dat$ind = NA
   dat$MA[-1:-29] = RcppRoll::roll_mean(dat$value, 30,na.rm = TRUE)
   dat$ind[-1:-29] = RcppRoll::roll_sum(!is.na(dat$value), 30,na.rm = TRUE)
+  dat$value2 = dat$value
   dat$value = dat$MA
   dat = dat[-1:-29,]
   dat$value[lubridate::wday(dat$timestamp) == 1] = NA
@@ -81,10 +82,10 @@ EPU_wal_tmp <- data.table::rbindlist(content(GET("https://api-dev.sentometrics.c
 
 EPU_wal = transform_data(EPU_wal_tmp)
 
-Indices = rbind(EPU_belgium[,c(1:3)],
-                EPU_flanders[,c(1:3)],
-                EPU_wal[,c(1:3)])
-
+Indices = rbind(EPU_belgium[,c(1:3,6)],
+                EPU_flanders[,c(1:3,6)],
+                EPU_wal[,c(1:3,6)])
+Indices = Indices[Indices$value2 != 0,]
 colnames(Indices)[1] = "date"
 ```
 
@@ -97,7 +98,8 @@ p <- Indices %>%
     y = ~value,
     text      = ~paste('Date: ', date, '\n',
                            'Index: ', name, '\n',
-                           'Value: ', value, '\n'),
+                           '30-day moving average: ', value, '\n',
+                           'Daily Value: ', value2, '\n'),
     hoverinfo = 'text',
     transforms = list(
       list(
