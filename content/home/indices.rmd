@@ -23,7 +23,7 @@ library(data.table)
 library(plotly)    
 library(RcppRoll)
 library(lubridate)
-
+library(timeDate)
 Holidays = function(country, start, end){
     year = unique(lubridate::year(  seq(start, end, by = 1)))
     easter = timeDate::Easter(year)
