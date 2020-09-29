@@ -23,10 +23,34 @@ library(data.table)
 library(plotly)    
 library(RcppRoll)
 library(lubridate)
-transform_data = function(x){
-  dates_total = seq(as.Date("2000-01-01"),as.Date(Sys.time()), by = 1)
-  dat  = data.frame(timestamp = dates_total)
+
+Holidays = function(country, start, end){
+    year = unique(lubridate::year(  seq(start, end, by = 1)))
+    easter = timeDate::Easter(year)
+    if(country == "BE"){
+    easter = as.Date(easter)
+    holiday = easter
+    holiday = c(holiday, easter+1)
+    holiday = c(holiday, easter+39)
+    holiday = c(holiday, easter+49)
+    holiday = c(holiday, easter+50)
+    holiday = c(holiday,
+                as.Date(paste0(year,"-05-01")),
+                 as.Date(paste0(year,"-07-21")),
+                 as.Date(paste0(year,"-08-15")),
+                 as.Date(paste0(year,"-11-01")),
+                 as.Date(paste0(year,"-11-11")),
+                 as.Date(paste0(year,"-12-25")))
+    }
+    return(as.Date(holiday))
     
+}
+transform_data = function(x, country){
+  start = as.Date("2000-01-01")
+  end = as.Date(Sys.time())
+  dates_total = seq(start, end, by = 1)
+  dat  = data.frame(timestamp = dates_total)
+  
   x$timestamp =as.Date(x$timestamp)
   id.match = match(dat$timestamp,x$timestamp)
   dat$name = x$name[1]
@@ -36,18 +60,21 @@ transform_data = function(x){
   if(dat$name[1] == "epu-wallonia"){
     dat$value[lubridate::year(dat$timestamp) == 2006] = NA
   }
+  holiday = Holidays(country = country, start = start,end = end)
+  dat$value[!is.na(match(dat$timestamp, holiday))] = NA
   dat$MA = NA
   dat$ind = NA
   dat$MA[-1:-29] = RcppRoll::roll_mean(dat$value, 30,na.rm = TRUE)
   dat$ind[-1:-29] = RcppRoll::roll_sum(!is.na(dat$value), 30,na.rm = TRUE)
-  dat$value2 = dat$value
-  dat$value = dat$MA
   dat = dat[-1:-29,]
+  
+  dat$MA[lubridate::wday(dat$timestamp) == 1] = NA
+  dat$MA[dat$ind < 20] = NA
   dat$value[lubridate::wday(dat$timestamp) == 1] = NA
-  dat$value[dat$ind < 20] = NA
+  dat$MA[!is.na(match(dat$timestamp, holiday))] = NA
   dat = dat[-1,]
   return(dat)
-
+  
 }
 ```
 ```{r, echo=FALSE, message=FALSE,  warning=FALSE}
@@ -62,7 +89,7 @@ EPU_flanders_tmp <- data.table::rbindlist(content(GET("https://api-dev.sentometr
                                                                 end= as.character(as.Date(Sys.time()))),
                                                         add_headers(Authorization = paste0("Bearer ", content(auth)$access_token)))))
 
-EPU_flanders = transform_data(EPU_flanders_tmp)
+EPU_flanders = transform_data(EPU_flanders_tmp, country = "BE")
 
 EPU_belgium_tmp <- data.table::rbindlist(content(GET("https://api-dev.sentometrics.com/index/values/epu-belgium", 
                                                      query = list(version="1.4.0",
@@ -71,7 +98,7 @@ EPU_belgium_tmp <- data.table::rbindlist(content(GET("https://api-dev.sentometri
                                                                 end= as.character(as.Date(Sys.time()))),
                                                      add_headers(Authorization = paste0("Bearer ", content(auth)$access_token)))))
 
-EPU_belgium = transform_data(EPU_belgium_tmp)
+EPU_belgium = transform_data(EPU_belgium_tmp, country = "BE")
 
 EPU_wal_tmp <- data.table::rbindlist(content(GET("https://api-dev.sentometrics.com/index/values/epu-wallonia", 
                                                     query = list(version="1.4.0",
@@ -80,56 +107,96 @@ EPU_wal_tmp <- data.table::rbindlist(content(GET("https://api-dev.sentometrics.c
                                                                 end= as.character(as.Date(Sys.time()))),
                                                     add_headers(Authorization = paste0("Bearer ", content(auth)$access_token)))))
 
-EPU_wal = transform_data(EPU_wal_tmp)
+EPU_wal = transform_data(EPU_wal_tmp, country = "BE")
 
-Indices = rbind(EPU_belgium[,c(1:3,6)],
-                EPU_flanders[,c(1:3,6)],
-                EPU_wal[,c(1:3,6)])
-if(all(Indices$value2[Indices$timestamp == Sys.Date()] ==0)){
+Indices = data.frame(EPU_belgium[,c(1:2)],
+                     epu_belgium_MA = EPU_belgium[,"MA"],
+                        epu_belgium_DV = EPU_belgium[,"value"],
+                     epu_flanders_MA = EPU_flanders[,"MA"],
+                       epu_flanders_DV = EPU_flanders[,"value"],
+                     epu_walloon_MA = EPU_wal[,"MA"],
+                      epu_walloon_DV = EPU_wal[,"value"])
+if(any(Indices[Indices$timestamp == Sys.Date(),c(-1,-2)] ==0)){
  Indices =  Indices[Indices$timestamp != Sys.Date(),]
 }
-
+Indices[c(-1,-2)] = round(Indices[c(-1,-2)], 2)
 colnames(Indices)[1] = "date"
 ```
 
 ```{r, echo=FALSE, message=FALSE,  warning=FALSE, out.width = "98%", out.height="95%"}
-p <- Indices %>%
-  plot_ly(
-   type = 'scatter', 
-   mode = 'lines+markers',
-    x = ~date, 
-    y = ~value,
-    text      = ~paste('Date: ', date, '\n',
-                           'Index: ', name, '\n',
-                           '30-day moving average: ', value, '\n',
-                           'Daily Value: ', value2, '\n'),
-    hoverinfo = 'text',
-    transforms = list(
-      list(
-        type = 'filter',
-        target = ~name,
-        operation = '=',
-        value = unique(Indices$name)[1]
-      )
-  )) %>% layout(
+p <- plot_ly(Indices,   
+              type = 'scatter', 
+              mode = 'lines',
+              x = ~date, name = "epu-belgium",
+             hoverinfo = 'text',
+              y = ~epu_belgium_MA,line = list(color = "#00AEFF"),
+              text = ~paste('Date: ', date, '\n',
+                           'Index: ', "epu-belgium", '\n',
+                           '30-day moving average: ', epu_belgium_MA, '\n',
+                           'Daily Value: ', epu_belgium_DV, '\n')
+   )
+             
+  
+p <- add_trace(p,
+              type = 'scatter', 
+              mode = 'lines',
+              x = ~date,line = list(color = "#00AEFF"), 
+              y = ~epu_flanders_MA,name = "epu-flanders",
+              hoverinfo = 'text',
+              text = ~paste('Date: ', date, '\n',
+                           'Index: ', "epu-flanders", '\n',
+                           '30-day moving average: ', epu_flanders_MA, '\n',
+                           'Daily Value: ', epu_flanders_DV, '\n'), visible = FALSE
+)
+
+p <- add_trace(p,
+              type = 'scatter', 
+              mode = 'lines',
+              x = ~date,line = list(color = "#00AEFF"),
+              y = ~epu_walloon_MA,name = "epu-wallonia",
+              hoverinfo = 'text',
+              text = ~paste('Date: ', date, '\n',
+                           'Index: ', "epu-wallonia", '\n',
+                           '30-day moving average: ', epu_walloon_MA, '\n',
+                           'Daily Value: ', epu_walloon_DV, '\n'), visible = FALSE
+)
+
+
+p = hide_legend(p)
+
+
+p =  layout(p,
+        autosize=T,
+        height = 700,
+         xaxis=list(title="date"),
+         yaxis=list(title="EPU Belgium", range = c(0,500)),
     updatemenus = list(
       list(
-        type = 'dropdown',
-        active = 0,
+        type = "dropdown",
+        label = 'Category',
         buttons = list(
-          list(method = "restyle",
-               args = list("transforms[0].value", unique(Indices$name)[1]),
-               label = unique(Indices$name)[1]),
-          list(method = "restyle",
-               args = list("transforms[0].value", unique(Indices$name)[2]),
-               label = unique(Indices$name)[2]),
-          list(method = "restyle",
-               args = list("transforms[0].value", unique(Indices$name)[3]),
-               label = unique(Indices$name)[3])
+          list(method = "update",
+               args = list(
+                 list(visible = c(TRUE, FALSE, FALSE)),
+                 list(yaxis =  list(title="EPU Belgium", range = c(0,500)))     
+                ),
+               label = "epu-belgium"),
+          list(method = "update",
+               args = list(
+                 list(visible =  c(FALSE, TRUE, FALSE)),
+                 list(yaxis =  list(title="EPU Flanders", range = c(0,500)))     
+                ),
+               label = "epu-flanders"),
+          list(method = "update",
+               args = list(
+                 list(visible =  c(FALSE, FALSE, TRUE)),
+                 list(yaxis =  list(title="EPU Wallonia", range = c(0,500)))
+                ),
+               label = "epu-wallonia")
         )
       )
     )
-  )  %>% layout(autosize=T,height = 700)
+  )
 
 p
 ```
