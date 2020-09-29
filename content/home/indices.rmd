@@ -85,7 +85,10 @@ EPU_wal = transform_data(EPU_wal_tmp)
 Indices = rbind(EPU_belgium[,c(1:3,6)],
                 EPU_flanders[,c(1:3,6)],
                 EPU_wal[,c(1:3,6)])
-Indices = Indices[Indices$value2 != 0,]
+if(all(Indices$value2[Indices$timestamp == Sys.Date()] ==0)){
+ Indices =  Indices[Indices$timestamp != Sys.Date(),]
+}
+
 colnames(Indices)[1] = "date"
 ```
 
