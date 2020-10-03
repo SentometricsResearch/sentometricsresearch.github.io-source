@@ -47,7 +47,7 @@ Holidays = function(country, start, end){
 }
 transform_data = function(x, country){
   start = as.Date("2000-01-01")
-  end = as.Date(Sys.time())
+  end = as.Date(Sys.time())-1
   dates_total = seq(start, end, by = 1)
   dat  = data.frame(timestamp = dates_total)
   
@@ -86,7 +86,7 @@ EPU_flanders_tmp <- data.table::rbindlist(content(GET("https://api-dev.sentometr
                                                         query = list(version="1.4.0",
                                                                 frequency="D",
                                                                 start= "2000-01-01",
-                                                                end= as.character(as.Date(Sys.time()))),
+                                                                end= as.character(as.Date(Sys.time())-1)),
                                                         add_headers(Authorization = paste0("Bearer ", content(auth)$access_token)))))
 
 EPU_flanders = transform_data(EPU_flanders_tmp, country = "BE")
@@ -95,7 +95,7 @@ EPU_belgium_tmp <- data.table::rbindlist(content(GET("https://api-dev.sentometri
                                                      query = list(version="1.4.0",
                                                                 frequency="D",
                                                                 start= "2000-01-01",
-                                                                end= as.character(as.Date(Sys.time()))),
+                                                                end= as.character(as.Date(Sys.time())-1)),
                                                      add_headers(Authorization = paste0("Bearer ", content(auth)$access_token)))))
 
 EPU_belgium = transform_data(EPU_belgium_tmp, country = "BE")
@@ -104,7 +104,7 @@ EPU_wal_tmp <- data.table::rbindlist(content(GET("https://api-dev.sentometrics.c
                                                     query = list(version="1.4.0",
                                                                 frequency="D",
                                                                 start= "2000-01-01",
-                                                                end= as.character(as.Date(Sys.time()))),
+                                                                end= as.character(as.Date(Sys.time())-1)),
                                                     add_headers(Authorization = paste0("Bearer ", content(auth)$access_token)))))
 
 EPU_wal = transform_data(EPU_wal_tmp, country = "BE")
@@ -116,9 +116,7 @@ Indices = data.frame(EPU_belgium[,c(1:2)],
                        epu_flanders_DV = EPU_flanders[,"value"],
                      epu_walloon_MA = EPU_wal[,"MA"],
                       epu_walloon_DV = EPU_wal[,"value"])
-if(any(Indices[Indices$timestamp == Sys.Date(),c(-1,-2)] ==0)){
- Indices =  Indices[Indices$timestamp != Sys.Date(),]
-}
+
 Indices[c(-1,-2)] = round(Indices[c(-1,-2)], 2)
 colnames(Indices)[1] = "date"
 ```
