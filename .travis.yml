@@ -2,11 +2,6 @@ language: r
 dist: xenial
 latex: false
 
-cache:
-  packages: yes
-  directories:
-    - $HOME/bin
-
 branches:
   only:
     - master
