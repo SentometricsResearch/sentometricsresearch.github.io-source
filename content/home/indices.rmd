@@ -166,7 +166,32 @@ p = hide_legend(p)
 p =  layout(p,
         autosize=T,
         height = 700,
-         xaxis=list(title="date"),
+         xaxis  = list(
+      rangeselector = list(
+        buttons = list(
+          list(
+            count = 3,
+            label = "3 mo",
+            step = "month",
+            stepmode = "backward"),
+          list(
+            count = 6,
+            label = "6 mo",
+            step = "month",
+            stepmode = "backward"),
+          list(
+            count = 1,
+            label = "1 yr",
+            step = "year",
+            stepmode = "backward"),
+          list(
+            count = 1,
+            label = "YTD",
+            step = "year",
+            stepmode = "todate"),
+          list(step = "all"))),
+      rangeslider = list(type = "date"),
+      title="date"),
          yaxis=list(title="EPU Belgium", range = c(0,500)),
     updatemenus = list(
       list(
@@ -194,7 +219,8 @@ p =  layout(p,
         )
       )
     )
-  )
+  ) 
+p = plotly::toWebGL(p)
 
 p
 ```
