@@ -1,5 +1,5 @@
 blogdown::install_hugo()
-blogdown::build_site()
+blogdown::build_site(local=FALSE)
 file.copy("CNAME", "public")
 file.copy(".nojekyll", "public")
 print(Sys.Date())
