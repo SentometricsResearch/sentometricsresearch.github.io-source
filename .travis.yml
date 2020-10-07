@@ -6,6 +6,11 @@ branches:
   only:
     - master
 
+cache:	
+  packages: yes	
+  directories:	
+    - $HOME/bin	
+
 script:
   - Rscript build_website.R
 
