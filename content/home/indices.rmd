@@ -117,6 +117,9 @@ Indices = data.frame(EPU_belgium[,c(1:2)],
                      epu_walloon_MA = EPU_wal[,"MA"],
                       epu_walloon_DV = EPU_wal[,"value"])
 
+if(any(Indices[Indices$timestamp == Sys.Date(),c(-1,-2)] ==0)){
+ Indices =  Indices[Indices$timestamp != Sys.Date(),]
+}
 
 Indices[c(-1,-2)] = round(Indices[c(-1,-2)], 2)
 colnames(Indices)[1] = "date"
