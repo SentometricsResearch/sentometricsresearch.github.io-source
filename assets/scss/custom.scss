@@ -17,26 +17,6 @@ div.hero-lead img {
 	text-align: center;
 }
 
-.home-section:nth-of-type(2n) {
-    background-color: #fff;
-}
-
-.home-section:nth-of-type(even) {
-    background-color:#fff;
-}
-
-.home-section {
-    background-color: #f7f7f7;
-    padding: 110px 0px;
-    animation: 0.3s ease 0.15s 1 normal both running intro;
-}
-
-.home-section {
-    background-color: #f7f7f7;
-    padding: 110px 0px;
-    animation: 0.3s ease 0.15s 1 normal both running intro;
-}
-
 video:focus {
     outline: none;
 }
