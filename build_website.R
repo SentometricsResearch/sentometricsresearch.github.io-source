@@ -1,4 +1,5 @@
 blogdown::install_hugo(version = "0.75.0")
+blogdown:::touch_file("content/home/indices.rmd")
 blogdown::build_site(local=FALSE)
 file.copy("CNAME", "public")
 file.copy(".nojekyll", "public")
