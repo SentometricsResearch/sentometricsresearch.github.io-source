@@ -12,6 +12,8 @@ cache:
     - $HOME/bin	
 
 script:
+  - Rscript -e 'blogdown::install_hugo()'
+  - Rscript -e 'blogdown::build_site()'
   - Rscript build_website.R
 
 deploy:
@@ -24,3 +26,4 @@ deploy:
   repo: SentometricsResearch/sentometricsresearch.github.io 
   target_branch: master
   committer_from_gh: true
+  fqdn: sentometrics-research.com
