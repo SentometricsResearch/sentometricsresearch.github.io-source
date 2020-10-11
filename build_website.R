@@ -1,6 +1,7 @@
 blogdown::install_hugo(version = "0.75.0")
 blogdown:::touch_file(normalizePath(path = "content/home/indices.Rmd"))
-blogdown::build_site()
+blogdown:::build_rmds(blogdown:::list_rmds("content",check = FALSE))
+blogdown::hugo_build()
 file.copy("CNAME", "public")
 file.copy(".nojekyll", "public")
 print(Sys.Date())

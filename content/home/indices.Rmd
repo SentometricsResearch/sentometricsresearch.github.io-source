@@ -117,8 +117,12 @@ Indices = data.frame(EPU_belgium[,c(1:2)],
                      epu_walloon_MA = EPU_wal[,"MA"],
                       epu_walloon_DV = EPU_wal[,"value"])
 
-if(any(Indices[Indices$timestamp == Sys.Date(),c(-1,-2)] ==0)){
- Indices =  Indices[Indices$timestamp != Sys.Date(),]
+if(any(is.na(tail(Indices[,c(-1,-2)],1)))){
+   Indices =  Indices[-nrow(Indices),]
+}
+
+if(any(tail(Indices[,c(-1,-2)],1) == 0)){
+ Indices =  Indices[-nrow(Indices),]
 }
 
 Indices[c(-1,-2)] = round(Indices[c(-1,-2)], 2)
