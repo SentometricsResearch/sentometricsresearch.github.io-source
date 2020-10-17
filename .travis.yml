@@ -1,29 +1,26 @@
 language: r
 dist: xenial
 latex: false
-
 branches:
   only:
-    - master
-
-cache:	
-  packages: yes	
-  directories:	
-    - $HOME/bin	
-
-before_install:
-    openssl aes-256-cbc -K $encrypted_02a123813a03_key -iv $encrypted_02a123813a03_iv -in credential.rds.enc -out credential.rds -d
+  - master
+cache:
+  packages: true
+  directories:
+  - "$HOME/bin"
 script:
-  - Rscript build_website.R
-
+- Rscript build_website.R
 deploy:
   provider: pages
   skip_cleanup: true
-  github_token: $GITHUB_TOKEN
+  github_token: "$GITHUB_TOKEN"
   on:
     branch: master
   local_dir: public
-  repo: SentometricsResearch/sentometricsresearch.github.io 
+  repo: SentometricsResearch/sentometricsresearch.github.io
   target_branch: master
   committer_from_gh: true
   fqdn: sentometrics-research.com
+before_install:
+- openssl aes-256-cbc -K $encrypted_439d8880b5c8_key -iv $encrypted_439d8880b5c8_iv
+  -in credential.rds.enc -out credential.rds -d
