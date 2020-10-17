@@ -29,7 +29,7 @@ interests:
 education:
   courses:
   - course: PhD in Finance
-    institution: University of Neuchâte;
+    institution: University of Neuchâtel
     year: 2019
   - course: MBA Finance
     institution: Laval University
