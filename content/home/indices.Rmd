@@ -24,6 +24,7 @@ library(data.table)
 library(plotly)    
 library(RcppRoll)
 library(lubridate)
+library(openssl)
 library(timeDate)
 Holidays = function(country, start, end){
     year = unique(lubridate::year(  seq(start, end, by = 1)))
@@ -82,7 +83,10 @@ transform_data = function(x, country){
 auth <- POST("https://api-dev.sentometrics.com/token", 
              body = list(username=Sys.getenv("sento_username"),
                          password=Sys.getenv("sento_password")))
-auth_drop = load("../../credential.rds")
+key <- sha256(charToRaw(Sys.getenv("DP_pass")))
+
+auth_drop = readRDS("../../vault/credential.rds")
+auth_drop <- unserialize(aes_cbc_decrypt(auth_drop, key = key))
 EPU_flanders_tmp <- data.table::rbindlist(content(GET("https://api-dev.sentometrics.com/index/values/epu-flanders", 
                                                         query = list(version="1.4.0",
                                                                 frequency="D",
@@ -130,7 +134,7 @@ Indices[c(-1,-2)] = round(Indices[c(-1,-2)], 2)
 Indices = Indices[,-2]
 colnames(Indices)[1] = "date"
 write.csv(Indices, 'Indices.csv')
-drop_upload('Indices.csv',path = "SentometricsWebsite Data/files", dtoken = token)
+drop_upload('Indices.csv',path = "SentometricsWebsite Data/files", dtoken = auth_drop)
 ```
 
 ```{r, echo=FALSE, message=FALSE,  warning=FALSE, out.width = "98%", out.height="95%"}
