@@ -1,6 +1,7 @@
 ---
 date: "2020-09-08"
 diagram: true
+author: Samuel Borms
 image:
   caption: ""
   placement: 3
