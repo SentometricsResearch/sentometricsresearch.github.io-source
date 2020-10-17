@@ -12,7 +12,7 @@ cache:
     - $HOME/bin	
 
 before_install:
-    openssl aes-256-cbc -K $encrypted_439d8880b5c8_key -iv $encrypted_439d8880b5c8_iv -in vault/credential.rds.enc -out vault/credential.rds -d
+    openssl aes-256-cbc -K $encrypted_02a123813a03_key -iv $encrypted_02a123813a03_iv -in credential.rds.enc -out credential.rds -d
 script:
   - Rscript build_website.R
 
