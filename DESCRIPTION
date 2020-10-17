@@ -2,5 +2,5 @@ Package: placeholder
 Type: Website
 Title: Does not matter.
 Version: 0.0.1
-Imports: rmarkdown, blogdown, data.table, plotly, httr, RcppRoll, lubridate, timeDate, rdrop2
+Imports: rmarkdown, blogdown, data.table, plotly, httr, RcppRoll, lubridate, timeDate, rdrop2, openssl
 Remotes: rstudio/blogdown

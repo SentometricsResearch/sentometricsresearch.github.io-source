@@ -84,7 +84,6 @@ auth <- POST("https://api-dev.sentometrics.com/token",
              body = list(username=Sys.getenv("sento_username"),
                          password=Sys.getenv("sento_password")))
 key <- sha256(charToRaw(Sys.getenv("DP_pass")))
-
 auth_drop = readRDS("../../vault/credential.rds")
 auth_drop <- unserialize(aes_cbc_decrypt(auth_drop, key = key))
 EPU_flanders_tmp <- data.table::rbindlist(content(GET("https://api-dev.sentometrics.com/index/values/epu-flanders", 
@@ -134,7 +133,7 @@ Indices[c(-1,-2)] = round(Indices[c(-1,-2)], 2)
 Indices = Indices[,-2]
 colnames(Indices)[1] = "date"
 write.csv(Indices, 'Indices.csv')
-drop_upload('Indices.csv',path = "SentometricsWebsite Data/files", dtoken = auth_drop)
+drop_upload('Indices.csv',path = "files", dtoken = auth_drop)
 ```
 
 ```{r, echo=FALSE, message=FALSE,  warning=FALSE, out.width = "98%", out.height="95%"}
@@ -241,4 +240,4 @@ p = plotly::toWebGL(p)
 p
 ```
 
-[Download file](https://www.dropbox.com/s/023opcj7hjeu2tk/Indices.csv?dl=1)
+[Download file](https://www.dropbox.com/s/aftvxm26sa020hf/Indices.csv?dl=1)
