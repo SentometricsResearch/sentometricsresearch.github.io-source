@@ -27,6 +27,6 @@ subtitle = ""
  css_class = ""
 +++
 <div class = "hero-lead">
-<video controls="controls" height="320" width = "640" style="margin:auto;" src="video/20200929-sentometrics-anim-logo-research-lent.mp4">
+<video controls="controls" height="320" width = "640" style="margin:auto;" src="https://www.dropbox.com/s/do56ui479gr45cb/20200929-sentometrics-anim-logo-research-lent.mp4?raw=1">
 </video>
 </div>
