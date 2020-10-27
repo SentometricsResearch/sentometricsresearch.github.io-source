@@ -92,7 +92,7 @@ EPU_flanders_tmp <- data.table::rbindlist(content(GET("https://api-dev.sentometr
                                                                 start= "2000-01-01",
                                                                 end= as.character(as.Date(Sys.time()))),
                                                         add_headers(Authorization = paste0("Bearer ", content(auth)$access_token)))))
-
+EPU_flanders_tmp$value = as.numeric(EPU_flanders_tmp$value)
 EPU_flanders = transform_data(EPU_flanders_tmp, country = "BE")
 
 EPU_belgium_tmp <- data.table::rbindlist(content(GET("https://api-dev.sentometrics.com/index/values/epu-belgium", 
@@ -101,7 +101,7 @@ EPU_belgium_tmp <- data.table::rbindlist(content(GET("https://api-dev.sentometri
                                                                 start= "2000-01-01",
                                                                 end= as.character(as.Date(Sys.time()))),
                                                      add_headers(Authorization = paste0("Bearer ", content(auth)$access_token)))))
-
+EPU_belgium_tmp$value = as.numeric(EPU_belgium_tmp$value)
 EPU_belgium = transform_data(EPU_belgium_tmp, country = "BE")
 
 EPU_wal_tmp <- data.table::rbindlist(content(GET("https://api-dev.sentometrics.com/index/values/epu-wallonia", 
@@ -110,7 +110,7 @@ EPU_wal_tmp <- data.table::rbindlist(content(GET("https://api-dev.sentometrics.c
                                                                 start= "2000-01-01",
                                                                 end= as.character(as.Date(Sys.time()))),
                                                     add_headers(Authorization = paste0("Bearer ", content(auth)$access_token)))))
-
+EPU_wal_tmp$value = as.numeric(EPU_wal_tmp$value)
 EPU_wal = transform_data(EPU_wal_tmp, country = "BE")
 
 Indices = data.frame(EPU_belgium[,c(1:2)],
