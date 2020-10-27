@@ -31,18 +31,41 @@ Holidays = function(country, start, end){
     easter = timeDate::Easter(year)
     if(country == "BE"){
     easter = as.Date(easter)
-    holiday = easter
-    holiday = c(holiday, easter+1)
-    holiday = c(holiday, easter+39)
-    holiday = c(holiday, easter+49)
-    holiday = c(holiday, easter+50)
+    holiday = easter #easter
+    holiday = c(holiday, easter+1) #Easter Monday
+    holiday = c(holiday, easter+39) #Ascension
+    holiday = c(holiday, easter+49) #Pentecost
+    holiday = c(holiday, easter+50) #Pentecost Monday
     holiday = c(holiday,
-                as.Date(paste0(year,"-05-01")),
-                 as.Date(paste0(year,"-07-21")),
-                 as.Date(paste0(year,"-08-15")),
-                 as.Date(paste0(year,"-11-01")),
-                 as.Date(paste0(year,"-11-11")),
-                 as.Date(paste0(year,"-12-25")))
+                 as.Date(paste0(year,"-05-01")), # Labour Day
+                 as.Date(paste0(year,"-07-21")), # Belgian National Day
+                 as.Date(paste0(year,"-08-15")), # Assumption of Mary
+                 as.Date(paste0(year,"-11-01")), # All Saints' Day
+                 as.Date(paste0(year,"-11-11")), # Remembrance Day
+                 as.Date(paste0(year,"-12-25")), # Christmas
+                 as.Date(paste0(year,"-01-01")), # New year
+                 as.Date(paste0("2000","-02-29")), #missing leap years 29
+                 as.Date(paste0("2004","-02-29")), #missing leap years 29
+                 as.Date(paste0("2008","-02-29")), #missing leap years 29
+                 as.Date(paste0("2012","-02-29")), #missing leap years 29
+                 as.Date(paste0("2016","-02-29")), #missing leap years 29
+                 as.Date(paste0("2020","-02-29")), #missing leap years 29
+                 as.Date(paste0("2009","-10-19")), #missing data
+                 as.Date(paste0("2009","-10-20")), #missing data
+                 as.Date(paste0("2009","-10-21")), #missing data
+                 as.Date(paste0("2009","-10-22")), #missing data
+                 as.Date(paste0("2009","-10-23")), #missing data
+                 as.Date(paste0("2011","-10-28")), #missing data
+                 as.Date(paste0("2011","-10-29")), #missing data
+                 as.Date(paste0("2011","-10-29")), #missing data
+                 as.Date(paste0("2011","-10-31")), #missing data
+                 as.Date(paste0("2013","-10-04")), #missing data
+                 as.Date(paste0("2013","-10-08")), #missing data
+                 as.Date(paste0("2013","-10-15")), #missing data
+                 as.Date(paste0("2013","-10-16")), #missing data
+                 as.Date(paste0("2013","-10-18")), #missing data
+                 as.Date(paste0("2013","-10-29")) #missing data
+                )
     }
     return(as.Date(holiday))
     
@@ -118,8 +141,8 @@ Indices = data.frame(EPU_belgium[,c(1:2)],
                         epu_belgium_DV = EPU_belgium[,"value"],
                      epu_flanders_MA = EPU_flanders[,"MA"],
                        epu_flanders_DV = EPU_flanders[,"value"],
-                     epu_walloon_MA = EPU_wal[,"MA"],
-                      epu_walloon_DV = EPU_wal[,"value"])
+                     epu_wallonia_MA = EPU_wal[,"MA"],
+                      epu_wallonia_DV = EPU_wal[,"value"])
 
 if(any(is.na(tail(Indices[,c(-1,-2)],1)))){
    Indices =  Indices[-nrow(Indices),]
@@ -132,7 +155,17 @@ if(any(tail(Indices[,c(-1,-2)],1) == 0)){
 Indices[c(-1,-2)] = round(Indices[c(-1,-2)], 2)
 Indices = Indices[,-2]
 colnames(Indices)[1] = "date"
-write.csv(Indices, 'Indices.csv')
+export = Indices
+export[,8] = ""
+export[1,8] = "When using one of the indices, please cite as follows:"
+export[2,8] = "Algaba, A., Borms, S., Boudt, K. & Van Pelt, J. (2020). The Economic Policy Uncertainty index for Flanders, Wallonia and Belgium. Research note. doi: 10.2139/ssrn.3580000"
+export[3,8] = "The paper is available also at: https://www.financialforum.be/doc/doc/review/2020/bfw-digitaal-editie6-2020-06-algaba-borms-boudt-vanpelt.pdf"
+export[4,8] = "These data can be used freely with attribution to the authors, the paper, and the website."
+export[5,8] = "Monthly EPU available at: https://www.policyuncertainty.com/belgium_monthly.html"
+export[6,8] = "NA means that for this day the media data was not available for reasons of holidays (or Sundays) or technical issues in the database."
+export[7,8] = "These indices are not intended for trading purposes. These indices are not appropriate for the purposes of making a decision to carry out a transaction or trade. Nor does it provide any form of advice (investment, tax, legal) amounting to investment advice, or make any recommendations regarding particular financial instruments, investments or products. These indices may discontinue or change at any time, without notice. We do not guarantee or warrant the accuracy, completeness or timeliness of the indices. These indices are provided “as is”, without any warranties. Neither the providers (sentometrics-research.com) of these indices nor any of its affiliates shall be liable for any loss resulting from use of these indices."
+colnames(export)[8] = "Note"
+write.csv(export, 'Indices.csv')
 drop_upload('Indices.csv',path = "files", dtoken = auth_drop)
 ```
 
@@ -166,12 +199,12 @@ p <- add_trace(p,
               type = 'scatter', 
               mode = 'lines',
               x = ~date,line = list(color = "#00AEFF"),
-              y = ~epu_walloon_MA,name = "epu-wallonia",
+              y = ~epu_wallonia_MA,name = "epu-wallonia",
               hoverinfo = 'text',
               text = ~paste('Date: ', date, '\n',
                            'Index: ', "epu-wallonia", '\n',
-                           '30-day moving average: ', epu_walloon_MA, '\n',
-                           'Daily Value: ', epu_walloon_DV, '\n'), visible = FALSE
+                           '30-day moving average: ', epu_wallonia_MA, '\n',
+                           'Daily Value: ', epu_wallonia_DV, '\n'), visible = FALSE
 )
 
 
