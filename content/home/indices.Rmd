@@ -110,7 +110,7 @@ key <- sha256(charToRaw(Sys.getenv("DP_pass")))
 auth_drop = readRDS("../../vault/credential.rds")
 auth_drop <- unserialize(aes_cbc_decrypt(auth_drop, key = key))
 EPU_flanders_tmp <- data.table::rbindlist(content(GET("https://api-dev.sentometrics.com/index/values/epu-flanders", 
-                                                        query = list(version="1.4.0",
+                                                        query = list(version="1.5.0",
                                                                 frequency="D",
                                                                 start= "2000-01-01",
                                                                 end= as.character(as.Date(Sys.time()))),
@@ -119,7 +119,7 @@ EPU_flanders_tmp$value = as.numeric(EPU_flanders_tmp$value)
 EPU_flanders = transform_data(EPU_flanders_tmp, country = "BE")
 
 EPU_belgium_tmp <- data.table::rbindlist(content(GET("https://api-dev.sentometrics.com/index/values/epu-belgium", 
-                                                     query = list(version="1.4.0",
+                                                     query = list(version="1.5.0",
                                                                 frequency="D",
                                                                 start= "2000-01-01",
                                                                 end= as.character(as.Date(Sys.time()))),
@@ -128,7 +128,7 @@ EPU_belgium_tmp$value = as.numeric(EPU_belgium_tmp$value)
 EPU_belgium = transform_data(EPU_belgium_tmp, country = "BE")
 
 EPU_wal_tmp <- data.table::rbindlist(content(GET("https://api-dev.sentometrics.com/index/values/epu-wallonia", 
-                                                    query = list(version="1.4.0",
+                                                    query = list(version="1.5.0",
                                                                 frequency="D",
                                                                 start= "2000-01-01",
                                                                 end= as.character(as.Date(Sys.time()))),
