@@ -25,6 +25,7 @@ library(plotly)
 library(RcppRoll)
 library(lubridate)
 library(openssl)
+require(highcharter)
 library(timeDate)
 Holidays = function(country, start, end){
     year = unique(lubridate::year(  seq(start, end, by = 1)))
@@ -81,7 +82,7 @@ transform_data = function(x, country){
   dat$name = x$name[1]
   dat$value[!is.na(id.match)] = x$value
   dat$value[is.na(dat$value)] = 0
-  dat$value[lubridate::wday(dat$timestamp) == 1] = NA
+  dat$value[lubridate::wday(dat$timestamp) == 1  | lubridate::wday(dat$timestamp) == 7] = NA
   if(dat$name[1] == "epu-wallonia"){
     dat$value[lubridate::year(dat$timestamp) == 2006] = NA
   }
@@ -93,9 +94,9 @@ transform_data = function(x, country){
   dat$ind[-1:-29] = RcppRoll::roll_sum(!is.na(dat$value), 30,na.rm = TRUE)
   dat = dat[-1:-29,]
   
-  dat$MA[lubridate::wday(dat$timestamp) == 1] = NA
+  dat$MA[lubridate::wday(dat$timestamp) == 1 | lubridate::wday(dat$timestamp) == 7] = NA
   dat$MA[dat$ind < 20] = NA
-  dat$value[lubridate::wday(dat$timestamp) == 1] = NA
+  dat$value[lubridate::wday(dat$timestamp) == 1 | lubridate::wday(dat$timestamp) == 7] = NA
   dat$MA[!is.na(match(dat$timestamp, holiday))] = NA
   dat = dat[-1,]
   return(dat)
@@ -155,6 +156,7 @@ if(any(tail(Indices[,c(-1,-2)],1) == 0)){
 Indices[c(-1,-2)] = round(Indices[c(-1,-2)], 2)
 Indices = Indices[,-2]
 colnames(Indices)[1] = "date"
+Indices[!complete.cases(Indices),-1] = NA
 export = Indices
 export[,8] = ""
 export[1,8] = "When using one of the indices, please cite as follows:"
@@ -165,112 +167,26 @@ export[5,8] = "Monthly EPU available at: https://www.policyuncertainty.com/belgi
 export[6,8] = "NA means that for this day the media data was not available for reasons of holidays (or Sundays) or technical issues in the database."
 export[7,8] = "These indices are not intended for trading purposes. These indices are not appropriate for the purposes of making a decision to carry out a transaction or trade. Nor does it provide any form of advice (investment, tax, legal) amounting to investment advice, or make any recommendations regarding particular financial instruments, investments or products. These indices may discontinue or change at any time, without notice. We do not guarantee or warrant the accuracy, completeness or timeliness of the indices. These indices are provided “as is”, without any warranties. Neither the providers (sentometrics-research.com) of these indices nor any of its affiliates shall be liable for any loss resulting from use of these indices."
 colnames(export)[8] = "Note"
-write.csv(export, 'Indices.csv')
-drop_upload('Indices.csv',path = "files", dtoken = auth_drop)
+#write.csv(export, 'Indices.csv')
+#drop_upload('Indices.csv',path = "files", dtoken = auth_drop)
 ```
 
 ```{r, echo=FALSE, message=FALSE,  warning=FALSE, out.width = "98%", out.height="95%"}
-p <- plot_ly(Indices,   
-              type = 'scatter', 
-              mode = 'lines',
-              x = ~date, name = "epu-belgium",
-             hoverinfo = 'text',
-              y = ~epu_belgium_MA,line = list(color = "#00AEFF"),
-              text = ~paste('Date: ', date, '\n',
-                           'Index: ', "epu-belgium", '\n',
-                           '30-day moving average: ', epu_belgium_MA, '\n',
-                           'Daily Value: ', epu_belgium_DV, '\n')
-   )
-             
-  
-p <- add_trace(p,
-              type = 'scatter', 
-              mode = 'lines',
-              x = ~date,line = list(color = "#00AEFF"), 
-              y = ~epu_flanders_MA,name = "epu-flanders",
-              hoverinfo = 'text',
-              text = ~paste('Date: ', date, '\n',
-                           'Index: ', "epu-flanders", '\n',
-                           '30-day moving average: ', epu_flanders_MA, '\n',
-                           'Daily Value: ', epu_flanders_DV, '\n'), visible = FALSE
-)
+library(highcharter)
+library(widgetframe)
+hc <- highchart(type = "stock") %>% 
+  hc_add_series(data = Indices, hcaes(x = date,y = epu_belgium_MA),name = "epu-belgium", id = "epu_belgium_MA", type = "line",
+                  tooltip = list(useHTML = TRUE, headerFormat= '', pointFormat = "<b>{series.name}</b><br> Date {point.date} <br/>  Daily Value = {point.epu_belgium_DV} <br/> 30-MA = {point.epu_belgium_MA}"))  %>% 
+    hc_add_series(data = Indices, hcaes(x = date,epu_flanders_MA),name = "epu-flanders", id = "epu_belgium_MA", type = "line",
+                  tooltip = list(useHTML = TRUE, headerFormat= '', pointFormat = "<b>{series.name}</b><br> Date {point.date} <br/>  Daily Value = {point.epu_flanders_FL} <br/> 30-MA = {point.epu_flanders_MA}"))  %>% 
+    hc_add_series(data = Indices, hcaes(x = date,epu_wallonia_MA),name = "epu-wallonia", id = "epu_belgium_MA", type = "line",
+                  tooltip = list(useHTML = TRUE, headerFormat= '', pointFormat = "<b>{series.name}</b><br> Date {point.date} <br/>  Daily Value = {point.epu_wallonia_DV} <br/> 30-MA = {point.epu_wallonia_MA}"))  %>% 
+  hc_legend(enabled = TRUE)
+hc$height = 600
+widgetframe::saveWidgetframe(hc,file  = "../../static/widget/EPU.html", selfcontained = TRUE)
 
-p <- add_trace(p,
-              type = 'scatter', 
-              mode = 'lines',
-              x = ~date,line = list(color = "#00AEFF"),
-              y = ~epu_wallonia_MA,name = "epu-wallonia",
-              hoverinfo = 'text',
-              text = ~paste('Date: ', date, '\n',
-                           'Index: ', "epu-wallonia", '\n',
-                           '30-day moving average: ', epu_wallonia_MA, '\n',
-                           'Daily Value: ', epu_wallonia_DV, '\n'), visible = FALSE
-)
-
-
-p = hide_legend(p)
-
-
-p =  layout(p,
-        autosize=T,
-        height = 700,
-         xaxis  = list(
-      rangeselector = list(
-        buttons = list(
-          list(
-            count = 3,
-            label = "3 mo",
-            step = "month",
-            stepmode = "backward"),
-          list(
-            count = 6,
-            label = "6 mo",
-            step = "month",
-            stepmode = "backward"),
-          list(
-            count = 1,
-            label = "1 yr",
-            step = "year",
-            stepmode = "backward"),
-          list(
-            count = 1,
-            label = "YTD",
-            step = "year",
-            stepmode = "todate"),
-          list(step = "all"))),
-      rangeslider = list(type = "date"),
-      title="date"),
-         yaxis=list(title="EPU Belgium", range = c(0,500)),
-    updatemenus = list(
-      list(
-        type = "dropdown",
-        label = 'Category',
-        buttons = list(
-          list(method = "update",
-               args = list(
-                 list(visible = c(TRUE, FALSE, FALSE)),
-                 list(yaxis =  list(title="EPU Belgium", range = c(0,500)))     
-                ),
-               label = "epu-belgium"),
-          list(method = "update",
-               args = list(
-                 list(visible =  c(FALSE, TRUE, FALSE)),
-                 list(yaxis =  list(title="EPU Flanders", range = c(0,500)))     
-                ),
-               label = "epu-flanders"),
-          list(method = "update",
-               args = list(
-                 list(visible =  c(FALSE, FALSE, TRUE)),
-                 list(yaxis =  list(title="EPU Wallonia", range = c(0,500)))
-                ),
-               label = "epu-wallonia")
-        )
-      )
-    )
-  ) 
-p = plotly::toWebGL(p)
-
-p
 ```
-
+<div>
+<iframe height="700" width="100%" frameborder="no" src="widget/EPU.html"> </iframe>
+</div>
 [Download file](https://www.dropbox.com/s/aftvxm26sa020hf/Indices.csv?dl=1)
