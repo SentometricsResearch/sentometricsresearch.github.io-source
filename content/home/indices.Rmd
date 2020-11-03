@@ -156,7 +156,7 @@ if(any(tail(Indices[,c(-1,-2)],1) == 0)){
 Indices[c(-1,-2)] = round(Indices[c(-1,-2)], 2)
 Indices = Indices[,-2]
 colnames(Indices)[1] = "date"
-Indices[!complete.cases(Indices),-1] = NA
+
 export = Indices
 export[,8] = ""
 export[1,8] = "When using one of the indices, please cite as follows:"
