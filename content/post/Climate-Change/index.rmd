@@ -8,7 +8,7 @@ image:
   caption: ""
   placement: 3
 math: true
-title: Media Climate Change Concern Index
+title: Media Climate Change Concerns Index
 active: true  # Activate this widget? true/false
 ---
 
