@@ -1,7 +1,9 @@
 ---
-draft: true
-date: "2024-09-23"
+draft: false
+date: "2020-11-03"
 diagram: true
+authors: 
+- Keven Bluteau
 image:
   caption: ""
   placement: 3
@@ -12,21 +14,21 @@ active: true  # Activate this widget? true/false
 
 Many consider climate change as one of the biggest challenges of our times. However, there is disagreement on the magnitude of the climate change problem and how to solve it. Conditional on their view on the issue, some people may have a high preference for sustainable solutions and investments tackling the climate change problem, while others may not. Moreover, these preferences can evolve on the arrival of new information. In general, preference for sustainable solutions is largely a function of how concerned people are about climate change.
 
-Discerning concerns about climate change in almost real-time can be useful for many applications, particularly asset pricing. The theoretical model proposed by [Pastor et al. (2020)](https://www.nber.org/papers/w26549)  implies that the returns of green stocks vs. the returns of brown stocks is a function of unexpected increases in climate change concerns. In particular, when there is an unexpected increase in climate change concerns, green stocks outperform brown stocks.
+Discerning concerns about climate change in almost real-time can be useful for many applications, particularly asset pricing. The theoretical model proposed by [Pastor et al. (2020)](https://www.nber.org/papers/w26549)  implies that the returns of green stocks vs. the returns of brown stocks are a function of the unexpected changes in climate change concerns. In particular, when there is an unexpected increase in climate change concerns, green stocks outperform brown stocks.
 
-However, an issue is that the level of concern about climate change cannot be observed and needs to be proxied. This fact renders the analysis of the dynamics of climate change concerns more complicated than the analysis of observable macroeconomic variables such as GDP growth. Here, we propose an index derived from major U.S newspapers to proxy for unexpected increases in climate change concerns. Our corpus, or set of news articles, about climate change  to derive this index can be summarized in  multiple topics and theme, for which the most representative words are shown below:
+However, an issue is that the level of concern about climate change cannot be observed and needs to be proxied. This fact renders the analysis of the dynamics of climate change concerns more complicated than the analysis of observable macroeconomic variables such as GDP growth. Here, we propose an index derived from major U.S newspapers to proxy for change in climate change concerns. Our corpus, or set of news articles, about climate change  to derive this index can be summarized in  multiple topics and theme, for which the most representative words are shown below:
 
 
 ![](topics.png)
 
-Moreover, we provide an interactive graph to explore the aggregated and topical media climate change concerns indices dynamics. In particular, we report the monthly indices
 
-<div>
-<iframe height="700" width="100%" frameborder="no" src="../../widget/climatechangewidget.html"> </iframe>
-</div>
+_Check out the paper on this index!_
+
+
+- Ardia, D., Bluteau, K., Boudt, K., Inghelbrecht, K. (2020). **Climate change concerns and the performance of green versus brown stocks**. National Bank of Belgium, Working Paper Research, October 2020 No 395 [Link](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3717722)
 
 The full daily dataset is provided here is CSV format:
 
-[Download file](/files/MCCC_index.csv)
+[Download file](https://www.dropbox.com/s/6lrq2h7dxfs9zas/MCCC_indices.csv?dl=1)
 
-We will make the corresponding paper available here soon.
+
