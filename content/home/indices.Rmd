@@ -178,7 +178,7 @@ hc <- highchart(type = "stock") %>%
   hc_add_series(data = Indices, hcaes(x = date,y = epu_belgium_MA),name = "epu-belgium", id = "epu_belgium_MA", type = "line",
                   tooltip = list(useHTML = TRUE, headerFormat= '', pointFormat = "<b>{series.name}</b><br> Date {point.date} <br/>  Daily Value = {point.epu_belgium_DV} <br/> 30-MA = {point.epu_belgium_MA}"))  %>% 
     hc_add_series(data = Indices, hcaes(x = date,epu_flanders_MA),name = "epu-flanders", id = "epu_belgium_MA", type = "line",
-                  tooltip = list(useHTML = TRUE, headerFormat= '', pointFormat = "<b>{series.name}</b><br> Date {point.date} <br/>  Daily Value = {point.epu_flanders_FL} <br/> 30-MA = {point.epu_flanders_MA}"))  %>% 
+                  tooltip = list(useHTML = TRUE, headerFormat= '', pointFormat = "<b>{series.name}</b><br> Date {point.date} <br/>  Daily Value = {point.epu_flanders_DV} <br/> 30-MA = {point.epu_flanders_MA}"))  %>% 
     hc_add_series(data = Indices, hcaes(x = date,epu_wallonia_MA),name = "epu-wallonia", id = "epu_belgium_MA", type = "line",
                   tooltip = list(useHTML = TRUE, headerFormat= '', pointFormat = "<b>{series.name}</b><br> Date {point.date} <br/>  Daily Value = {point.epu_wallonia_DV} <br/> 30-MA = {point.epu_wallonia_MA}"))  %>% 
   hc_legend(enabled = TRUE)
