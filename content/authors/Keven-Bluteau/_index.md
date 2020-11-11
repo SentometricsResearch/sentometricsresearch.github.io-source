@@ -10,7 +10,7 @@ authors:
 superuser: false
 
 # Role/position
-role: PostDoctoral Student
+role: PostDoctoral Researcher
 # Organizations/Affiliations
 organizations:
 - name: "HEC Montreal and Ghent University"
