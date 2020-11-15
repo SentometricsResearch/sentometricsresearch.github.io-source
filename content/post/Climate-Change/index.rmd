@@ -27,4 +27,4 @@ _Check out the paper on this index!_
 
 - Ardia, D., Bluteau, K., Boudt, K., Inghelbrecht, K. (2020). **Climate change concerns and the performance of green versus brown stocks**. National Bank of Belgium, Working Paper Research, October 2020 No 395 [Link](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3717722)
 
-Download the data at [https://sentometrics-research.com/download/MCCC/](https://sentometrics-research.com/download/mccc/)
+Download the data [here](https://sentometrics-research.com/download/mccc/)
