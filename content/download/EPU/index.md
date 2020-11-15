@@ -1,6 +1,6 @@
 ---
 date: "2020-11-14"
-summary: Daily EPU Flander, Wallonia, and Belgium updated daily from 2003 to today.
+summary: Daily EPU Flanders, Wallonia, and Belgium updated daily from 2003 to today.
 title: EPU
 ---
 
