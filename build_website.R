@@ -1,7 +1,7 @@
 blogdown::install_hugo(version = "0.75.0")
 blogdown:::touch_file(normalizePath(path = "content/home/indices.Rmd"))
 blogdown:::build_rmds(blogdown:::list_rmds("content",check = FALSE))
-file.remove("content/home/Indices.csv")
+file.remove("content/home/Sentometrics_Belgium_EPU.csv")
 blogdown::hugo_build()
 file.copy("CNAME", "public")
 file.copy(".nojekyll", "public")

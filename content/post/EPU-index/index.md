@@ -23,16 +23,6 @@ The dynamics are interesting. January and February are calm months with a level 
 
 _Check out the paper on this index!_
 
-
 - Algaba, A., Borms, S., Boudt, K., Borms & S., Van Pelt, J. (2020). **The Economic Policy Uncertainty Index for Flanders, Wallonia and Belgium**.  [Link](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3580000)
 
-
-The data is made available for academic research. By downloading the data you agree to the following rules.
-
-1) You must cite the above reference in working papers and published papers that use any of these data.
-
-2) You must place the following url in a footnote to help others find the data: [https://sentometrics-research.com/post/epu-index/](https://sentometrics-research.com/post/epu-index/).
-
-3) You assume all risk for the use of the data.
-
-[Download file](https://www.dropbox.com/s/aftvxm26sa020hf/Indices.csv?dl=1)
+Download the data at ![](https://sentometrics-research.com/download/EPU/)
