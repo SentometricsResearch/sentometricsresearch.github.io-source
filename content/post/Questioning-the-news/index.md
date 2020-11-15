@@ -18,4 +18,4 @@ _Check out the paper_
 
 - Ardia, D., Bluteau, K., & Boudt, K. (2019). **Questioning the news about economic growth: Sparse forecasting using thousands of news-based sentiment values.** International Journal of Forecasting, 35(4), 1370-1386.[Link](https://www.sciencedirect.com/science/article/pii/S0169207018302036)
 
-Download the data at ![](https://sentometrics-research.com/download/us-econ/)
+Download the data at [https://sentometrics-research.com/download/us-econ/](https://sentometrics-research.com/download/us-econ/)
