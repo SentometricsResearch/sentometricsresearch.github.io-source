@@ -104,37 +104,41 @@ transform_data = function(x, country){
 }
 ```
 ```{r, echo=FALSE, message=FALSE,  warning=FALSE}
-auth <- POST("https://api-dev.sentometrics.com/token", 
+auth <- POST("https://api.sentometrics.com/token", 
              body = list(username=Sys.getenv("sento_username"),
                          password=Sys.getenv("sento_password")))
 key <- sha256(charToRaw(Sys.getenv("DP_pass")))
 auth_drop = readRDS("../../vault/credential.rds")
 auth_drop <- unserialize(aes_cbc_decrypt(auth_drop, key = key))
-EPU_flanders_tmp <- data.table::rbindlist(content(GET("https://api-dev.sentometrics.com/index/values/epu-flanders", 
-                                                        query = list(version="1.5.0",
-                                                                frequency="D",
-                                                                start= "2000-01-01",
-                                                                end= as.character(as.Date(Sys.time()))),
-                                                        add_headers(Authorization = paste0("Bearer ", content(auth)$access_token)))))
+dat = content(GET("https://api.sentometrics.com/indices/values/epu-flanders/D/1.0.0", 
+                                                        query = list(start= "2000-01-01",
+                                                                     end= as.character(as.Date(Sys.time()))),
+                                                        add_headers(Authorization = paste0("Bearer ", content(auth)$access_token))))
+EPU_flanders_tmp <- data.table::rbindlist(dat$data)
+EPU_flanders_tmp = EPU_flanders_tmp[order(EPU_flanders_tmp$timestamp),]
 EPU_flanders_tmp$value = as.numeric(EPU_flanders_tmp$value)
+EPU_flanders_tmp$name = dat$index_name
 EPU_flanders = transform_data(EPU_flanders_tmp, country = "BE")
 
-EPU_belgium_tmp <- data.table::rbindlist(content(GET("https://api-dev.sentometrics.com/index/values/epu-belgium", 
-                                                     query = list(version="1.5.0",
-                                                                frequency="D",
-                                                                start= "2000-01-01",
-                                                                end= as.character(as.Date(Sys.time()))),
-                                                     add_headers(Authorization = paste0("Bearer ", content(auth)$access_token)))))
+dat = content(GET("https://api.sentometrics.com/indices/values/epu-belgium/D/1.0.0", 
+                                                     query = list(start= "2000-01-01",
+                                                                  end= as.character(as.Date(Sys.time()))),
+                                                     add_headers(Authorization = paste0("Bearer ", content(auth)$access_token))))
+EPU_belgium_tmp <- data.table::rbindlist(dat$data)
 EPU_belgium_tmp$value = as.numeric(EPU_belgium_tmp$value)
+EPU_belgium_tmp = EPU_belgium_tmp[order(EPU_belgium_tmp$timestamp),]
+EPU_belgium_tmp$name = dat$index_name
 EPU_belgium = transform_data(EPU_belgium_tmp, country = "BE")
 
-EPU_wal_tmp <- data.table::rbindlist(content(GET("https://api-dev.sentometrics.com/index/values/epu-wallonia", 
-                                                    query = list(version="1.5.0",
-                                                                frequency="D",
-                                                                start= "2000-01-01",
-                                                                end= as.character(as.Date(Sys.time()))),
-                                                    add_headers(Authorization = paste0("Bearer ", content(auth)$access_token)))))
+dat = content(GET("https://api.sentometrics.com/indices/values/epu-wallonia/D/1.0.0", 
+                                                    query = list(start= "2000-01-01",
+                                                                 end= as.character(as.Date(Sys.time()))),
+                                                    add_headers(Authorization = paste0("Bearer ", content(auth)$access_token))))
+
+EPU_wal_tmp <- data.table::rbindlist(dat$data)
 EPU_wal_tmp$value = as.numeric(EPU_wal_tmp$value)
+EPU_wal_tmp = EPU_wal_tmp[order(EPU_wal_tmp$timestamp),]
+EPU_wal_tmp$name = dat$index_name
 EPU_wal = transform_data(EPU_wal_tmp, country = "BE")
 
 Indices = data.frame(EPU_belgium[,c(1:2)],
@@ -185,7 +189,8 @@ hc <- highchart(type = "stock") %>%
                   tooltip = list(useHTML = TRUE, headerFormat= '', pointFormat = "<b>{series.name}</b><br> Date {point.date} <br/>  Daily Value = {point.epu_flanders_DV} <br/> 30-MA = {point.epu_flanders_MA}"))  %>% 
     hc_add_series(data = Indices, hcaes(x = date,epu_wallonia_MA),name = "epu-wallonia", id = "epu_belgium_MA", type = "line",
                   tooltip = list(useHTML = TRUE, headerFormat= '', pointFormat = "<b>{series.name}</b><br> Date {point.date} <br/>  Daily Value = {point.epu_wallonia_DV} <br/> 30-MA = {point.epu_wallonia_MA}"))  %>% 
-  hc_legend(enabled = TRUE)
+  hc_legend(enabled = TRUE) %>%
+  hc_yAxis(offset= 30)
 hc$height = 600
 widgetframe::saveWidgetframe(hc,file  = "../../static/widget/EPU.html", selfcontained = TRUE)
 
