@@ -88,6 +88,7 @@ transform_data = function(x, country){
   }
   holiday = Holidays(country = country, start = start,end = end)
   dat$value[!is.na(match(dat$timestamp, holiday))] = NA
+  dat$value[dat$value == 0] = NA
   dat$MA = NA
   dat$ind = NA
   dat$MA[-1:-29] = RcppRoll::roll_mean(dat$value, 30,na.rm = TRUE)
@@ -149,17 +150,6 @@ Indices = data.frame(EPU_belgium[,c(1:2)],
                      epu_wallonia_MA = EPU_wal[,"MA"],
                       epu_wallonia_DV = EPU_wal[,"value"])
 
-if(any(is.na(tail(Indices[,c(-1,-2)],1)))){
-   Indices =  Indices[-nrow(Indices),]
-}
-
-if(any(is.na(tail(Indices[,c(-1,-2)],1)))){
-   Indices =  Indices[-nrow(Indices),]
-}
-
-if(any(tail(Indices[,c(-1,-2)],1) == 0)){
- Indices =  Indices[-nrow(Indices),]
-}
 
 Indices[c(-1,-2)] = round(Indices[c(-1,-2)], 2)
 Indices = Indices[,-2]
