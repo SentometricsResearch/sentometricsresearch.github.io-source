@@ -14,4 +14,6 @@ The data is made available for academic research. By downloading the data you ag
 
 3) You assume all risk for the use of the data.
 
-[Download file](https://www.dropbox.com/s/6lrq2h7dxfs9zas/MCCC_indices.csv?dl=1)
+[Download file](https://www.dropbox.com/s/way43an9xntvqwn/Sentometrics_US_Media_Climate_Change_Index.csv?dl=1)
+
+[Full License](https://www.dropbox.com/s/jwjh4b08zvq09nv/LICENSE.txt?dl=0)

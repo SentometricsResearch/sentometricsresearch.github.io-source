@@ -164,6 +164,7 @@ export[4,8] = "These data can be used freely with attribution to the authors, th
 export[5,8] = "Monthly EPU available at: https://www.policyuncertainty.com/belgium_monthly.html"
 export[6,8] = "NA means that for this day the media data was not available for reasons of holidays (or Sundays) or technical issues in the database."
 export[7,8] = "These indices are not intended for trading purposes. These indices are not appropriate for the purposes of making a decision to carry out a transaction or trade. Nor does it provide any form of advice (investment, tax, legal) amounting to investment advice, or make any recommendations regarding particular financial instruments, investments or products. These indices may discontinue or change at any time, without notice. We do not guarantee or warrant the accuracy, completeness or timeliness of the indices. These indices are provided “as is”, without any warranties. Neither the providers (sentometrics-research.com) of these indices nor any of its affiliates shall be liable for any loss resulting from use of these indices."
+export[8,8] = "The full license is available at: https://www.dropbox.com/s/jwjh4b08zvq09nv/LICENSE.txt?dl=0" 
 colnames(export)[8] = "Note"
 write.csv(export, 'Sentometrics_Belgium_EPU.csv')
 drop_upload('Sentometrics_Belgium_EPU.csv',path = "files", dtoken = auth_drop)
