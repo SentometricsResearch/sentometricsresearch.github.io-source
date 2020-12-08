@@ -4,5 +4,5 @@ image:
   caption: ""
   placement: 3
 title: Technology Transfer
-summary: "Research spin-off
+summary: Research spin-off
 ---
