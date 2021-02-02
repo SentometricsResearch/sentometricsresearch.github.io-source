@@ -1,5 +1,5 @@
 ---
-date: "2021-02-02"
+date: "2020-09-25"
 diagram: true
 authors: 
 - Keven Bluteau
@@ -10,10 +10,10 @@ math: true
 title: 	A Century of Economic Policy Uncertainty Through the French-Canadian Lens
 ---
 
-Leveraging a historical french Canadian newspaper data set provided by the Bibliothèque et Archives Nationales du Québec (BAnQ) 
+Leveraging a historical French-Canadian newspaper data set provided by the Bibliothèque et Archives Nationales du Québec (BAnQ) 
 as well as a research collaboration with Radio-Canada, we have developed a century-long historical Economic Policy Uncertainty (EPU) index for the Canadian province of Quebec. 
 In addition to providing a long historical view of the Quebec economy via the EPU,
-this index complements the already available Canadian EPU by focusing on french sources, which were notably a missing component of the index.
+this index complements the already available Canadian EPU by focusing on French-Canadian sources, which were notably a missing component of the index.
 
 When looking over our 100-year time horizon, three peaks are particularly large: (i)
 the Great Depression, (ii) the 2008 financial crisis, and (iii) the COVID-19 pandemic.
@@ -31,6 +31,6 @@ nowcasting major Canadian and Quebec macroeconomic variables.
 
 _Check out the paper on this index!_
 
-- Ardia, D., Bluteau, K., Kassem, A. (2021). **A Century of Economic Policy Uncertainty Through the French-Canadian Lens**.  [Link](https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=2519243)
+- Ardia, D., Bluteau, K., Kassem, A. (2021). **A Century of Economic Policy Uncertainty Through the French-Canadian Lens**.  [Link](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3773702)
 
 Download the data [here](https://sentometrics-research.com/download/epu-quebec/)
