@@ -14,6 +14,6 @@ The data is made available for academic research. By downloading the data you ag
 
 3) You assume all risk for the use of the data.
 
-[Download file](https://www.dropbox.com/s/37vl8pagi2ztoah/Sentometrics_EPU_QUEBEC.csv?dl=0)
+[Download file](https://www.dropbox.com/s/37vl8pagi2ztoah/Sentometrics_EPU_QUEBEC.csv?dl=1)
 
 [Full License](https://www.dropbox.com/s/jwjh4b08zvq09nv/LICENSE.txt?dl=0)
