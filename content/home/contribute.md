@@ -22,6 +22,6 @@ email_form = 2
   captcha = false  # Enable CAPTCHA challenge to reduce spam?
 +++
 
-You can contribute by submitting a resource using this form. Please include what type of ressources (index, post, software, publications) as well as a link to the ressource and we will get in touch!
+You can contribute by submitting a resource using this form. Please include what type of ressurces (index, post, software, publication) as well as a link to the resources and we will get in touch!
 
 
