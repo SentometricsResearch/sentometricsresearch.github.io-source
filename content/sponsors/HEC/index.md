@@ -4,5 +4,5 @@ image:
   caption: ""
   placement: 3
 title: HEC Montreal
-summary: Reseach professorship in Sentometrics
+summary: Research professorship in Sentometrics
 ---
