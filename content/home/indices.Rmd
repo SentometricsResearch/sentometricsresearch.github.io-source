@@ -96,7 +96,7 @@ transform_data = function(x, country){
   dat = dat[-1:-29,]
   
   dat$MA[lubridate::wday(dat$timestamp) == 1 | lubridate::wday(dat$timestamp) == 7] = NA
-  dat$MA[dat$ind < 20] = NA
+  dat$MA[dat$ind < 15] = NA
   dat$value[lubridate::wday(dat$timestamp) == 1 | lubridate::wday(dat$timestamp) == 7] = NA
   dat$MA[!is.na(match(dat$timestamp, holiday))] = NA
   dat$MA[is.na(dat$value)] = NA
