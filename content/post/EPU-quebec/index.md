@@ -31,6 +31,6 @@ nowcasting major Canadian and Quebec macroeconomic variables.
 
 _Check out the paper on this index!_
 
-- Ardia, D., Bluteau, K., Kassem, A. (2021). **A Century of Economic Policy Uncertainty Through the French-Canadian Lens**.  [Link](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3773702)
+- Ardia, D., Bluteau, K., & Kassem, A. (2021).  **A Century of Economic Policy Uncertainty Through the French-Canadian Lens**. Economics Letters, 205. [Link](https://doi.org/10.1016/j.econlet.2021.109938) [Link](https://arxiv.org/abs/2106.05240) 
 
 Download the data [here](https://sentometrics-research.com/download/epu-quebec/)
