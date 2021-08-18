@@ -17,8 +17,13 @@ jobs:
         env:
           sento_username: ${{ secrets.SENTO_USERNAME }}
           sento_password: ${{ secrets.SENTO_PASSWORD }}
-      - name: Deploy to gh-pages
-        uses: SentometricsResearch/sentometricsresearch.github.io@master
+      - name: Pushes to another repository
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.GITHUB_TOKEN }}
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+          source-directory: 'public'
+          destination-github-username: 'SentometricsResearch'
+          destination-repository-name: 'sentometricsresearch.github.io'
+          user-email: keven.bluteau@hec.ca
+          target-branch: test
