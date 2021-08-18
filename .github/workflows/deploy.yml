@@ -49,4 +49,4 @@ jobs:
           destination-github-username: 'SentometricsResearch'
           destination-repository-name: 'sentometricsresearch.github.io'
           user-email: keven.bluteau@hec.ca
-          target-branch: test
+          target-branch: master
