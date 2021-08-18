@@ -14,9 +14,6 @@ jobs:
         with:
           r-version: '4.0.3' # The R version to download (if necessary) and use.
       - uses: r-lib/actions/setup-pandoc@v1
-      - name: Query dependencies
-        run: |
-          Rscript -e 'install.packages("renv")'
       - name: Build site
         run:  Rscript ./build_website.R
         env:
