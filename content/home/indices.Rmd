@@ -170,7 +170,7 @@ colnames(export)[7] = "Note"
 tmp = tempdir()
 write.csv2(export,file =  paste0(tmp,'/Sentometrics_Belgium_EPU.csv'))
 drop_upload(paste0(tmp,'/Sentometrics_Belgium_EPU.csv'),path = "files", dtoken = auth_drop)
-file.remove(paste0(tmp,'/Sentometrics_Belgium_EPU.csv'))
+did.remove = file.remove(paste0(tmp,'/Sentometrics_Belgium_EPU.csv'))
 ```
 
 ```{r, echo=FALSE, message=FALSE,  warning=FALSE, out.width = "98%", out.height="95%"}
