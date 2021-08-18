@@ -5,18 +5,32 @@ on:
 
 name: deploy website
 
+  
 jobs:
   blogdown:
     runs-on: ubuntu-latest
+    env:
+      RENV_PATHS_ROOT: ~/.local/share/renv
     steps:
       - uses: actions/checkout@v1
       - uses: r-lib/actions/setup-r@v1
         with:
           r-version: '4.0.3' # The R version to download (if necessary) and use.
       - uses: r-lib/actions/setup-pandoc@v1
+      - uses: actions/setup-java@v2
+        with:
+          distribution: 'adopt' # See 'Supported distributions' for available options
+          java-version: '11'      
       - name: Install dependencies
         run: |
           sudo apt-get install libcurl4-openssl-dev
+      - name: Cache packages
+        uses: actions/cache@v1
+        with:
+          path: ${{ env.RENV_PATHS_ROOT }}
+          key: ${{ runner.os }}-renv-${{ hashFiles('**/renv.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-renv-    
       - name: Build site
         run:  Rscript ./build_website.R
         env:
