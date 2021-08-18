@@ -1,0 +1,24 @@
+on:
+  push:
+     branches:
+       - master
+
+name: deploy website
+
+jobs:
+  blogdown:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: r-lib/actions/setup-r@v1
+      - uses: r-lib/actions/setup-pandoc@v1
+      - name: Build site
+        run:  Rscript ./build_website.R
+        env:
+          sento_username: ${{ secrets.SENTO_USERNAME }}
+          sento_password: ${{ secrets.SENTO_PASSWORD }}
+      - name: Deploy to gh-pages
+        uses: SentometricsResearch/sentometricsresearch.github.io@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
