@@ -14,6 +14,9 @@ jobs:
         with:
           r-version: '4.0.3' # The R version to download (if necessary) and use.
       - uses: r-lib/actions/setup-pandoc@v1
+      - name: Install dependencies
+        run: |
+          sudo apt-get install libcurl4-openssl-dev
       - name: Build site
         run:  Rscript ./build_website.R
         env:
