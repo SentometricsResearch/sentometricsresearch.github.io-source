@@ -17,7 +17,7 @@ design:
 
 ---
 
-```{r, echo=FALSE, message=FALSE,  warning=FALSE}
+```{r, echo=FALSE, message=FALSE, include = FALSE, warning=FALSE}
 library(httr)
 library(rdrop2)
 library(data.table)
@@ -30,7 +30,7 @@ library(timeDate)
 library(rio)
 
 ```
-```{r, echo=FALSE, message=FALSE,  warning=FALSE}
+```{r, echo=FALSE, message=FALSE,include = FALSE,  warning=FALSE}
 
 key <- sha256(charToRaw(Sys.getenv("DP_pass")))
 auth_drop = readRDS("../../vault/credential.rds")
@@ -56,7 +56,7 @@ EPU_belgium = rio::import(paste0(tmp_dir,"/index.xlsx"))
 EPU_belgium_FR = rio::import(paste0(tmp_dir,"/sub_index_FR.xlsx"))
 EPU_belgium_NL = rio::import(paste0(tmp_dir,"/sub_index_NL.xlsx"))
 
-Indices = data.frame(Date = EPU_belgium[,1],
+Indices = data.frame(date = EPU_belgium[,1],
                      EPU_belgium_MA = EPU_belgium[,"Smoothed"],
                         EPU_belgium_DV = EPU_belgium[,"Signal"],
                      EPU_belgium_NL_MA = EPU_belgium_NL[,"Smoothed"],
@@ -66,8 +66,9 @@ Indices = data.frame(Date = EPU_belgium[,1],
 
 
 Indices[,c(-1)] = round(Indices[,c(-1)], 2)
+Indices$date = as.Date(Indices$date)
 export = Indices
-colnames(export) = c("Date","EPU Belgium (daily)", "EPU Belgium (smoothed)",
+colnames(export) = c("date","EPU Belgium (daily)", "EPU Belgium (smoothed)",
                          "EPU Belgium Dutch (daily)", "EPU Belgium Dutch (smoothed)",
                          "EPU Belgium French (daily)", "EPU Belgium French (smoothed)")
 
@@ -92,12 +93,12 @@ did.remove = file.remove(paste0(tmp,'/Sentometrics_Belgium_EPU.csv'))
 library(highcharter)
 library(widgetframe)
 hc <- highchart(type = "stock") %>% 
-  hc_add_series(data = Indices, hcaes(x = Date,y = EPU_belgium_MA),name = "EPU Belgium (smoothed)", id = "EPU_belgium_MA", type = "line",
-                  tooltip = list(useHTML = TRUE, headerFormat= '', pointFormat = "<b>{series.name}</b><br> Date {point.Date} <br/>  Daily Value = {point.epu_belgium_DV} <br/> 30-MA = {point.epu_belgium_MA}"))  %>% 
-    hc_add_series(data = Indices, hcaes(x = Date,EPU_belgium_NL_MA),name = "EPU Belgium Dutch (smoothed)", id = "EPU_belgium_NL_MA", type = "line",
-                  tooltip = list(useHTML = TRUE, headerFormat= '', pointFormat = "<b>{series.name}</b><br> Date {point.Date} <br/>  Daily Value = {point.EPU_belgium_NL_DV} <br/> 30-MA = {point.EPU_belgium_NL_DV}"))  %>% 
-    hc_add_series(data = Indices, hcaes(x = Date,EPU_belgium_FR_MA),name = "EPU Belgium French (smoothed)", id = "EPU_belgium_FR_MA", type = "line",
-                  tooltip = list(useHTML = TRUE, headerFormat= '', pointFormat = "<b>{series.name}</b><br> Date {point.Date} <br/>  Daily Value = {point.EPU_belgium_FR_DV} <br/> 30-MA = {point.EPU_belgium_FR_DV}"))  %>% 
+  hc_add_series(data = Indices, hcaes(x = date,y = EPU_belgium_MA),name = "EPU Belgium (smoothed)", id = "EPU_belgium_MA", type = "line",
+                  tooltip = list(useHTML = TRUE, headerFormat= '', pointFormat = "<b>{series.name}</b><br> Date {point.date} <br/>  Daily Value = {point.EPU_belgium_DV} <br/> 30-MA = {point.EPU_belgium_MA}"))  %>% 
+    hc_add_series(data = Indices, hcaes(x = date,EPU_belgium_NL_MA),name = "EPU Belgium Dutch (smoothed)", id = "EPU_belgium_NL_MA", type = "line",
+                  tooltip = list(useHTML = TRUE, headerFormat= '', pointFormat = "<b>{series.name}</b><br> Date {point.date} <br/>  Daily Value = {point.EPU_belgium_NL_DV} <br/> 30-MA = {point.EPU_belgium_NL_MA}"))  %>% 
+    hc_add_series(data = Indices, hcaes(x = date,EPU_belgium_FR_MA),name = "EPU Belgium French (smoothed)", id = "EPU_belgium_FR_MA", type = "line",
+                  tooltip = list(useHTML = TRUE, headerFormat= '', pointFormat = "<b>{series.name}</b><br> Date {point.date} <br/>  Daily Value = {point.EPU_belgium_FR_DV} <br/> 30-MA = {point.EPU_belgium_FR_MA}"))  %>% 
   hc_legend(enabled = TRUE) %>%
   hc_yAxis(offset= 30)
 hc$height = 600
