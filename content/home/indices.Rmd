@@ -27,136 +27,51 @@ library(lubridate)
 library(openssl)
 require(highcharter)
 library(timeDate)
-Holidays = function(country, start, end){
-    year = unique(lubridate::year(  seq(start, end, by = 1)))
-    easter = timeDate::Easter(year)
-    if(country == "BE"){
-    easter = as.Date(easter)
-    holiday = easter #easter
-    holiday = c(holiday, easter+1) #Easter Monday
-    holiday = c(holiday, easter+39) #Ascension
-    holiday = c(holiday, easter+49) #Pentecost
-    holiday = c(holiday, easter+50) #Pentecost Monday
-    holiday = c(holiday,
-                 as.Date(paste0(year,"-05-01")), # Labour Day
-                 as.Date(paste0(year,"-07-21")), # Belgian National Day
-                 as.Date(paste0(year,"-08-15")), # Assumption of Mary
-                 as.Date(paste0(year,"-11-01")), # All Saints' Day
-                 as.Date(paste0(year,"-11-11")), # Remembrance Day
-                 as.Date(paste0(year,"-12-25")), # Christmas
-                 as.Date(paste0(year,"-01-01")), # New year
-                 as.Date(paste0("2000","-02-29")), #missing leap years 29
-                 as.Date(paste0("2004","-02-29")), #missing leap years 29
-                 as.Date(paste0("2008","-02-29")), #missing leap years 29
-                 as.Date(paste0("2012","-02-29")), #missing leap years 29
-                 as.Date(paste0("2016","-02-29")), #missing leap years 29
-                 as.Date(paste0("2020","-02-29")), #missing leap years 29
-                 as.Date(paste0("2009","-10-19")), #missing data
-                 as.Date(paste0("2009","-10-20")), #missing data
-                 as.Date(paste0("2009","-10-21")), #missing data
-                 as.Date(paste0("2009","-10-22")), #missing data
-                 as.Date(paste0("2009","-10-23")), #missing data
-                 as.Date(paste0("2011","-10-28")), #missing data
-                 as.Date(paste0("2011","-10-29")), #missing data
-                 as.Date(paste0("2011","-10-29")), #missing data
-                 as.Date(paste0("2011","-10-31")), #missing data
-                 as.Date(paste0("2013","-10-04")), #missing data
-                 as.Date(paste0("2013","-10-08")), #missing data
-                 as.Date(paste0("2013","-10-15")), #missing data
-                 as.Date(paste0("2013","-10-16")), #missing data
-                 as.Date(paste0("2013","-10-18")), #missing data
-                 as.Date(paste0("2013","-10-29")) #missing data
-                )
-    }
-    return(as.Date(holiday))
-    
-}
-transform_data = function(x, country){
-  start = as.Date("2000-01-01")
-  end = as.Date(Sys.time())
-  dates_total = seq(start, end, by = 1)
-  dat  = data.frame(timestamp = dates_total)
-  
-  x$timestamp =as.Date(x$timestamp)
-  id.match = match(dat$timestamp,x$timestamp)
-  dat$name = x$name[1]
-  dat$value[!is.na(id.match)] = x$value
-  dat$value[is.na(dat$value)] = 0
-  dat$value[lubridate::wday(dat$timestamp) == 1  | lubridate::wday(dat$timestamp) == 7] = NA
-  if(dat$name[1] == "epu-wallonia"){
-    dat$value[lubridate::year(dat$timestamp) == 2006] = NA
-  }
-  holiday = Holidays(country = country, start = start,end = end)
-  dat$value[!is.na(match(dat$timestamp, holiday))] = NA
-  dat$value[dat$value == 0] = NA
-  dat$MA = NA
-  dat$ind = NA
-  dat$MA[-1:-29] = RcppRoll::roll_mean(dat$value, 30,na.rm = TRUE)
-  dat$ind[-1:-29] = RcppRoll::roll_sum(!is.na(dat$value), 30,na.rm = TRUE)
-  dat = dat[-1:-29,]
-  
-  dat$MA[lubridate::wday(dat$timestamp) == 1 | lubridate::wday(dat$timestamp) == 7] = NA
-  dat$MA[dat$ind < 15] = NA
-  dat$value[lubridate::wday(dat$timestamp) == 1 | lubridate::wday(dat$timestamp) == 7] = NA
-  dat$MA[!is.na(match(dat$timestamp, holiday))] = NA
-  dat$MA[is.na(dat$value)] = NA
-  dat = dat[-1,]
-  return(dat)
-  
-}
+library(rio)
+
 ```
 ```{r, echo=FALSE, message=FALSE,  warning=FALSE}
-auth <- POST("https://api.sentometrics.com/token", 
-             body = list(username=Sys.getenv("sento_username"),
-                         password=Sys.getenv("sento_password")))
+
 key <- sha256(charToRaw(Sys.getenv("DP_pass")))
 auth_drop = readRDS("../../vault/credential.rds")
 auth_drop <- unserialize(aes_cbc_decrypt(auth_drop, key = key))
-dat = content(GET("https://api.sentometrics.com/indices/values/epu-flanders/D/1.0.0", 
-                                                        query = list(start= "2000-01-01",
-                                                                     end= as.character(as.Date(Sys.time()))),
-                                                        add_headers(Authorization = paste0("Bearer ", content(auth)$access_token))))
-EPU_flanders_tmp <- data.table::rbindlist(dat$data)
-EPU_flanders_tmp = EPU_flanders_tmp[order(EPU_flanders_tmp$timestamp),]
-EPU_flanders_tmp$value = as.numeric(EPU_flanders_tmp$value)
-EPU_flanders_tmp$name = dat$index_name
-EPU_flanders = transform_data(EPU_flanders_tmp, country = "BE")
 
-dat = content(GET("https://api.sentometrics.com/indices/values/epu-belgium/D/1.0.0", 
-                                                     query = list(start= "2000-01-01",
-                                                                  end= as.character(as.Date(Sys.time()))),
-                                                     add_headers(Authorization = paste0("Bearer ", content(auth)$access_token))))
-EPU_belgium_tmp <- data.table::rbindlist(dat$data)
-EPU_belgium_tmp$value = as.numeric(EPU_belgium_tmp$value)
-EPU_belgium_tmp = EPU_belgium_tmp[order(EPU_belgium_tmp$timestamp),]
-EPU_belgium_tmp$name = dat$index_name
-EPU_belgium = transform_data(EPU_belgium_tmp, country = "BE")
+key2 <- sha256(charToRaw(Sys.getenv("drop_sento_shiny")))
+auth_drop2 = readRDS("../../vault/credential2.rds")
+auth_drop2 <- unserialize(aes_cbc_decrypt(auth_drop2, key = key2))
 
-dat = content(GET("https://api.sentometrics.com/indices/values/epu-wallonia/D/1.0.0", 
-                                                    query = list(start= "2000-01-01",
-                                                                 end= as.character(as.Date(Sys.time()))),
-                                                    add_headers(Authorization = paste0("Bearer ", content(auth)$access_token))))
+tmp_dir = tempdir()
+drop_download(local_path = tmp_dir,
+              path = "THEME/EPU-belgium/index.xlsx",
+              dtoken = auth_drop2,overwrite = TRUE)
+drop_download(local_path = tmp_dir,
+              path = "THEME/EPU-belgium/sub_index_FR.xlsx",
+              dtoken = auth_drop2,overwrite = TRUE)
 
-EPU_wal_tmp <- data.table::rbindlist(dat$data)
-EPU_wal_tmp$value = as.numeric(EPU_wal_tmp$value)
-EPU_wal_tmp = EPU_wal_tmp[order(EPU_wal_tmp$timestamp),]
-EPU_wal_tmp$name = dat$index_name
-EPU_wal = transform_data(EPU_wal_tmp, country = "BE")
+drop_download(local_path = tmp_dir,
+              path = "THEME/EPU-belgium/sub_index_NL.xlsx",
+              dtoken = auth_drop2,overwrite = TRUE)
 
-Indices = data.frame(EPU_belgium[,c(1:2)],
-                     epu_belgium_MA = EPU_belgium[,"MA"],
-                        epu_belgium_DV = EPU_belgium[,"value"],
-                     epu_flanders_MA = EPU_flanders[,"MA"],
-                       epu_flanders_DV = EPU_flanders[,"value"],
-                     epu_wallonia_MA = EPU_wal[,"MA"],
-                      epu_wallonia_DV = EPU_wal[,"value"])
+EPU_belgium = rio::import(paste0(tmp_dir,"/index.xlsx"))
+EPU_belgium_FR = rio::import(paste0(tmp_dir,"/sub_index_FR.xlsx"))
+EPU_belgium_NL = rio::import(paste0(tmp_dir,"/sub_index_NL.xlsx"))
+
+Indices = data.frame(Date = EPU_belgium[,1],
+                     EPU_belgium_MA = EPU_belgium[,"Smoothed"],
+                        EPU_belgium_DV = EPU_belgium[,"Signal"],
+                     EPU_belgium_NL_MA = EPU_belgium_NL[,"Smoothed"],
+                       EPU_belgium_NL_DV = EPU_belgium_NL[,"Signal"],
+                     EPU_belgium_FR_MA = EPU_belgium_FR[,"Smoothed"],
+                      EPU_belgium_FR_DV = EPU_belgium_FR[,"Signal"])
 
 
-Indices[c(-1,-2)] = round(Indices[c(-1,-2)], 2)
-Indices = Indices[,-2]
-colnames(Indices)[1] = "date"
-
+Indices[,c(-1)] = round(Indices[,c(-1)], 2)
 export = Indices
+colnames(export) = c("Date","EPU Belgium (daily)", "EPU Belgium (smoothed)",
+                         "EPU Belgium Dutch (daily)", "EPU Belgium Dutch (smoothed)",
+                         "EPU Belgium French (daily)", "EPU Belgium French (smoothed)")
+
+
 export[,7] = ""
 export[1,7] = "When using one of the indices, please cite as follows:"
 export[2,7] = "Algaba, A., Borms, S., Boudt, K. & Van Pelt, J. (2020). The Economic Policy Uncertainty index for Flanders, Wallonia and Belgium. Research note. doi: 10.2139/ssrn.3580000"
@@ -177,12 +92,12 @@ did.remove = file.remove(paste0(tmp,'/Sentometrics_Belgium_EPU.csv'))
 library(highcharter)
 library(widgetframe)
 hc <- highchart(type = "stock") %>% 
-  hc_add_series(data = Indices, hcaes(x = date,y = epu_belgium_MA),name = "epu-belgium", id = "epu_belgium_MA", type = "line",
-                  tooltip = list(useHTML = TRUE, headerFormat= '', pointFormat = "<b>{series.name}</b><br> Date {point.date} <br/>  Daily Value = {point.epu_belgium_DV} <br/> 30-MA = {point.epu_belgium_MA}"))  %>% 
-    hc_add_series(data = Indices, hcaes(x = date,epu_flanders_MA),name = "epu-flanders", id = "epu_belgium_MA", type = "line",
-                  tooltip = list(useHTML = TRUE, headerFormat= '', pointFormat = "<b>{series.name}</b><br> Date {point.date} <br/>  Daily Value = {point.epu_flanders_DV} <br/> 30-MA = {point.epu_flanders_MA}"))  %>% 
-    hc_add_series(data = Indices, hcaes(x = date,epu_wallonia_MA),name = "epu-wallonia", id = "epu_belgium_MA", type = "line",
-                  tooltip = list(useHTML = TRUE, headerFormat= '', pointFormat = "<b>{series.name}</b><br> Date {point.date} <br/>  Daily Value = {point.epu_wallonia_DV} <br/> 30-MA = {point.epu_wallonia_MA}"))  %>% 
+  hc_add_series(data = Indices, hcaes(x = Date,y = EPU_belgium_MA),name = "EPU Belgium (smoothed)", id = "EPU_belgium_MA", type = "line",
+                  tooltip = list(useHTML = TRUE, headerFormat= '', pointFormat = "<b>{series.name}</b><br> Date {point.Date} <br/>  Daily Value = {point.epu_belgium_DV} <br/> 30-MA = {point.epu_belgium_MA}"))  %>% 
+    hc_add_series(data = Indices, hcaes(x = Date,EPU_belgium_NL_MA),name = "EPU Belgium Dutch (smoothed)", id = "EPU_belgium_NL_MA", type = "line",
+                  tooltip = list(useHTML = TRUE, headerFormat= '', pointFormat = "<b>{series.name}</b><br> Date {point.Date} <br/>  Daily Value = {point.EPU_belgium_NL_DV} <br/> 30-MA = {point.EPU_belgium_NL_DV}"))  %>% 
+    hc_add_series(data = Indices, hcaes(x = Date,EPU_belgium_FR_MA),name = "EPU Belgium French (smoothed)", id = "EPU_belgium_FR_MA", type = "line",
+                  tooltip = list(useHTML = TRUE, headerFormat= '', pointFormat = "<b>{series.name}</b><br> Date {point.Date} <br/>  Daily Value = {point.EPU_belgium_FR_DV} <br/> 30-MA = {point.EPU_belgium_FR_DV}"))  %>% 
   hc_legend(enabled = TRUE) %>%
   hc_yAxis(offset= 30)
 hc$height = 600
