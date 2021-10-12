@@ -42,6 +42,7 @@ jobs:
           sento_username: ${{ secrets.SENTO_USERNAME }}
           sento_password: ${{ secrets.SENTO_PASSWORD }}
           DP_pass: ${{ secrets.DP_PASS }}
+          drop_sento_shiny: ${{ secrets.DROP_SENTO_SHINY }}
       - name: Pushes to another repository
         uses: cpina/github-action-push-to-another-repository@main
         env:
