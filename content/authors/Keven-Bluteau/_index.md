@@ -10,10 +10,10 @@ authors:
 superuser: false
 
 # Role/position
-role: PostDoctoral Researcher
+role: Assistant Professor of Finance
 # Organizations/Affiliations
 organizations:
-- name: "HEC Montreal and Ghent University"
+- name: "Université de Sherbrooke"
   url: ""
   
 
@@ -21,10 +21,11 @@ organizations:
 bio: My research interests are related to the quantification of textual data to enhance economic and financial decisions.
 
 interests:
-- Natural Languate Processing
+- Natural Language Processing
 - Econometrics
 - Asset Pricing
 - Risk and Volatility Modeling
+- Sustainable investment
 
 education:
   courses:
@@ -72,6 +73,6 @@ highlight_name: false
 user_groups:
 - Researchers
 ---
-Keven Bluteau is an SNSF Postdoctoral researcher, focusing on how the news media informed (or misinformed) financial markets. He hold a joint doctoral degree in Finance and Business Economics from the University of Neuchâtel and Vrije Universiteit Brussel, respectively. His current work is mainly centered around the field of Sentometrics, which lies at the intersection of text analysis (NLP) and econometrics.
+Keven Bluteau an assistant professor of finance at the Université de Sherbrooke focusing on how the news media informed (or misinformed) financial markets. He hold a joint doctoral degree in Finance and Business Economics from the University of Neuchâtel and Vrije Universiteit Brussel, respectively. His current work is mainly centered around the field of Sentometrics, which lies at the intersection of text analysis (NLP) and econometrics.
 
 He invested myself in computer programming from a young age. He now mainly focus on the R statistical language, and he is a proponent of open-source software and reproducible research. He is the author and co-author several R packages, including the MSGARCH, NSE, and the Sentometrics package, as well as the WordPower package, which is still in very early development.
