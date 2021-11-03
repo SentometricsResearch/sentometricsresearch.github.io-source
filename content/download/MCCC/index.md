@@ -4,7 +4,7 @@ summary: Daily U.S. Media Climate Change Concerns Index from 2003 to 2018.
 title: MCCC
 ---
 
-- Ardia, D., Bluteau, K., Boudt, K., Inghelbrecht, K. (2020). **Climate change concerns and the performance of green versus brown stocks**. National Bank of Belgium, Working Paper Research, October 2020 No 395 [Link](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3717722)
+- Ardia, D., Bluteau, K., Boudt, K., Inghelbrecht, K. (2020). **Climate change concerns and the performance of green versus brown stocks**. National Bank of Belgium, Working Paper Research, October 2020 No 395 [Preprint](https://doi.org/10.2139/ssrn.3717722)
 
 The data is made available for academic research. By downloading the data you agree to the following rules.
 

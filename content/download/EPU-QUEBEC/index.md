@@ -4,7 +4,7 @@ summary: Monthly EPU from French-Canadian sources. Index available from 1913 to 
 title: EPU Quebec
 ---
 
-- Ardia, D., Bluteau, K., Kassem, A. (2021). **A Century of Economic Policy Uncertainty Through the French-Canadian Lens**.  [Link](https://doi.org/10.1016/j.econlet.2021.109938) [Link](https://arxiv.org/abs/2106.05240) 
+- Ardia, D., Bluteau, K., Kassem, A. (2021). **A century of economic policy uncertainty through the French-Canadian lens**. Economics Letters, 205. [Link](https://doi.org/10.1016/j.econlet.2021.109938) [Preprint](https://doi.org/10.2139/ssrn.3773702)
 
 The data is made available for academic research. By downloading the data you agree to the following rules.
 

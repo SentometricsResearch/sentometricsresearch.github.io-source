@@ -5,7 +5,7 @@ title: U.S Topical Economic Sentiment
 ---
 
 
-- Ardia, D., Bluteau, K., & Boudt, K. (2019). **Questioning the news about economic growth: Sparse forecasting using thousands of news-based sentiment values.** International Journal of Forecasting, 35(4), 1370-1386.[Link](https://www.sciencedirect.com/science/article/pii/S0169207018302036)
+- Ardia, D., Bluteau, K., Boudt, K. (2019). **Questioning the news about economic growth: Sparse forecasting using thousands of news-based sentiment values**. International Journal of Forecasting 35, 1370-1386. [Link](https://doi.org/10.1016/j.ijforecast.2018.10.010)
 
 The data is made available for academic research. By downloading the data you agree to the following rules.
 
