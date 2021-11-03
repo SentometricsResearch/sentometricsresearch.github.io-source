@@ -1,0 +1,24 @@
+---
+draft: false
+date: "2021-11-02"
+diagram: true
+authors: 
+- David Ardia
+image:
+  caption: ""
+  placement: 3
+math: true
+title: Media Abnormal Tone, Earnings Announcements, and the Stock Market
+active: true  # Activate this widget? true/false
+---
+
+We show that media provide incremental information relative to the information contained in earnings press releases and earnings calls, and on aggregate, market participants overreact to it!
+ 
+The complementary role of the news media stems from their transformation of earnings-related information into a more easily understandable, contextualized, and condensed format and the additional information it can provide given critical contemporary events. 
+ 
+We get to this result thanks to our methodological contribution of extending the event-study framework to analyze both cumulative abnormal return and tone. In addition, the use of structural topic modeling allows us to pinpoint the difference in content between corporate disclosures and media articles. 
+
+![](car.png)
+_Check out the paper!_
+
+- Ardia, D., Bluteau, K., Boudt, K. (20xx). **Media abnormal tone, earnings announcements, and the stock market**, Journal of Financial Markets. [Link](https://doi.org/10.1016/j.finmar.2021.100683) [Preprint](https://doi.org/10.2139/ssrn.3192064)
