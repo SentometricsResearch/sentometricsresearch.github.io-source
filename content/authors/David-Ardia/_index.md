@@ -33,10 +33,10 @@ education:
     institution: University of Fribourg, Switzerland
     year: 2008
   - course: MAS Quantitative Finance
-    institution: Swiss Federal Institute of Technology Zürich, Switzerland
+    institution: Swiss Federal Institute of Technology ZÃ¼rich, Switzerland
     year: 2003
   - course: MSc Financial Engineering 
-    institution: University of Neuchâtel, Switzerland
+    institution: University of NeuchÃ¢tel, Switzerland
     year: 2002
 
 # Social/Academic Networking
@@ -73,5 +73,5 @@ highlight_name: false
 user_groups:
 - Researchers
 ---
-David is an IVADO professor in the Department of Decision Sciences at HEC Montréal. Trained in quantitative methods for finance, he 
-has have a keen interest in asset allocation, risk management, and text-mining. In 2018, the Swiss Risk Association awarded him ???Swiss risk manager of the year???. He is a regular member at GERAD, Quantact, and Fin-ML, an associate researcher at OBVIA, and an instructor at DataCamp. When he is not coding, he plays a foodie in downtown Montréal.
+David is an IVADO professor in the Department of Decision Sciences at HEC MontrÃ©al. Trained in quantitative methods for finance, he 
+has have a keen interest in asset allocation, risk management, and text-mining. In 2018, the Swiss Risk Association awarded him "Swiss risk manager of the year". He is a regular member at GERAD, Quantact, and Fin-ML, an associate researcher at OBVIA, and an instructor at DataCamp. When he is not coding, he plays a foodie in downtown MontrÃ©al.
