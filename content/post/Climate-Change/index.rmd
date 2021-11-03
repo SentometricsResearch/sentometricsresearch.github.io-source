@@ -25,6 +25,6 @@ To build our indices, we first propose a concern score: A combination of the lev
 
 _Check out the paper on this index!_
 
-- Ardia, D., Bluteau, K., Boudt, K., Inghelbrecht, K. (2020). **Climate change concerns and the performance of green versus brown stocks**. National Bank of Belgium, Working Paper Research, October 2020 No 395 [Link](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3717722)
+- Ardia, D., Bluteau, K., Boudt, K., Inghelbrecht, K. (2020). **Climate change concerns and the performance of green versus brown stocks**. National Bank of Belgium, Working Paper Research, October 2020 No 395 [Preprint](https://doi.org/10.2139/ssrn.3717722)
 
 Download the data [here](https://sentometrics-research.com/download/mccc/)

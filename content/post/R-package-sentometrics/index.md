@@ -13,3 +13,6 @@ The **sentometrics** package offers an integrated framework for textual sentimen
 
 Check out the [dedicated package website](https://sentometricsresearch.github.io/sentometrics) to find out more.
 
+_Check out the paper_
+
+- Ardia, D., Bluteau, K., Borms, S. & Boudt, K. (2021). **The R package sentometrics to compute, aggregate and predict with textual sentiment**. Journal of Statistical Software, 99, 1-40. [Link](https://doi.org/10.18637/jss.v099.i02)

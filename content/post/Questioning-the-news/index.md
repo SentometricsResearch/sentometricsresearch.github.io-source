@@ -16,6 +16,6 @@ To encourage research in this area, we share daily sentiment estimates for those
 
 _Check out the paper_
 
-- Ardia, D., Bluteau, K., & Boudt, K. (2019). **Questioning the news about economic growth: Sparse forecasting using thousands of news-based sentiment values.** International Journal of Forecasting, 35(4), 1370-1386.[Link](https://www.sciencedirect.com/science/article/pii/S0169207018302036)
+- Ardia, D., Bluteau, K., Boudt, K. (2019). **Questioning the news about economic growth: Sparse forecasting using thousands of news-based sentiment values**. International Journal of Forecasting 35, 1370-1386. [Link](https://doi.org/10.1016/j.ijforecast.2018.10.010)
 
 Download the data [here](https://sentometrics-research.com/download/us-econ/)
