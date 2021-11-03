@@ -1,7 +1,7 @@
 ---
 date: "2020-11-14"
 summary: Daily EPU Flanders, Wallonia, and Belgium updated daily from 2003 to today.
-title: EPU
+title: EPU Belgium
 ---
 
 - Algaba, A., Borms, S., Boudt, K., van Pelt, J. (2020). **The economic policy uncertainty index for Flanders, Wallonia and Belgium**. Bank- en Financiewezen digitaal 2020/6. [Link](https://www.financialforum.be/nl/articles/economic-policy-uncertainty-index-flanders-wallonia-and-belgium) [Preprint](https://doi.org/10.2139/ssrn.3580000)
