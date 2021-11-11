@@ -1,0 +1,21 @@
+---
+draft: false
+date: "2021-11-11"
+diagram: true
+authors: 
+- David Ardia
+image:
+  caption: ""
+  placement: 3
+math: true
+title: Our research featured in The New York Times and Les Affaires
+active: true  # Activate this widget? true/false
+---
+
+Our research on climate change concerns and financial markets has been featured in [The New York Times](https://www.nytimes.com/2021/11/05/business/climate-green-stock-market.html?smid=url-share) and [Les Affaires](https://www.lesaffaires.com/secteurs-d-activite/general/mauvaise-nouvelle-pour-le-climat-bonne-nouvelle-pour-la-bourse/628829)
+
+_Check out the paper on this index!_
+
+- Ardia, D., Bluteau, K., Boudt, K., Inghelbrecht, K. (2020). **Climate change concerns and the performance of green versus brown stocks**. National Bank of Belgium, Working Paper Research, October 2020 No 395 [Preprint](https://doi.org/10.2139/ssrn.3717722)
+
+Download the data [here](https://sentometrics-research.com/download/mccc/)
