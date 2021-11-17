@@ -1,0 +1,25 @@
+---
+draft: false
+date: "2021-11-17"
+diagram: true
+authors: 
+- David Ardia
+image:
+  caption: ""
+  placement: 3
+math: true
+title: A French introduction on Sentometrics published in CScience.ca
+active: true  # Activate this widget? true/false
+---
+
+The Sentometrics field is introduced in French in [CScience.ca](https://www.cscience.ca/2021/11/16/quand-lia-ausculte-les-emotions-contemporaines/).
+
+_Check out the paper on this index!_
+
+- Ardia, D., Bluteau, K., Boudt, K., Inghelbrecht, K. (2020). **Climate change concerns and the performance of green versus brown stocks**. National Bank of Belgium, Working Paper Research, October 2020 No 395 [Preprint](https://doi.org/10.2139/ssrn.3717722)
+
+- Ardia, D., Bluteau, K., Kassem, A. (2021). **A century of economic policy uncertainty through the French-Canadian lens**. Economics Letters, 205. [Link](https://doi.org/10.1016/j.econlet.2021.109938) [Preprint](https://doi.org/10.2139/ssrn.3773702)
+
+Download the EPU Quebec data [here](https://sentometrics-research.com/download/epu-quebec/)
+
+Download the Climate change index [here](https://sentometrics-research.com/download/mccc/)

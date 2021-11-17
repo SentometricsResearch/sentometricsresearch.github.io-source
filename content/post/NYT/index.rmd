@@ -12,7 +12,7 @@ title: Our research featured in The New York Times and Les Affaires
 active: true  # Activate this widget? true/false
 ---
 
-Our research on climate change concerns and financial markets has been featured in [The New York Times](https://www.nytimes.com/2021/11/05/business/climate-green-stock-market.html?smid=url-share) and [Les Affaires](https://www.lesaffaires.com/secteurs-d-activite/general/mauvaise-nouvelle-pour-le-climat-bonne-nouvelle-pour-la-bourse/628829)
+Our research on climate change concerns and financial markets has been featured in [The New York Times](https://www.nytimes.com/2021/11/05/business/climate-green-stock-market.html?smid=url-share) and [Les Affaires](https://www.lesaffaires.com/secteurs-d-activite/general/mauvaise-nouvelle-pour-le-climat-bonne-nouvelle-pour-la-bourse/628829).
 
 _Check out the paper on this index!_
 
