@@ -14,7 +14,7 @@ active: true  # Activate this widget? true/false
 
 The Sentometrics field is introduced in French in [CScience.ca](https://www.cscience.ca/2021/11/16/quand-lia-ausculte-les-emotions-contemporaines/).
 
-_Check out the paper on this index!_
+_Check out the papers and the indices discussed in the article !_
 
 - Ardia, D., Bluteau, K., Boudt, K., Inghelbrecht, K. (2020). **Climate change concerns and the performance of green versus brown stocks**. National Bank of Belgium, Working Paper Research, October 2020 No 395 [Preprint](https://doi.org/10.2139/ssrn.3717722)
 
