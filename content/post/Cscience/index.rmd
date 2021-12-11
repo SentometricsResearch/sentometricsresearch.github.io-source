@@ -8,7 +8,7 @@ image:
   caption: ""
   placement: 3
 math: true
-title: A French introduction on Sentometrics published in CScience.ca
+title: A French introduction to Sentometrics published in CScience.ca
 active: true  # Activate this widget? true/false
 ---
 
