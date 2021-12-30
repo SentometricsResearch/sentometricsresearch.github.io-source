@@ -1,0 +1,21 @@
+---
+draft: false
+date: "2021-12-29"
+diagram: true
+authors: 
+- David Ardia
+image:
+  caption: ""
+  placement: 3
+math: true
+title: Landscape of academic finance
+active: true  # Activate this widget? true/false
+---
+
+The preliminary version of our paper **Landscape of academic finance with the Structural Topic Model** has just been released.
+
+Using the structural topic model, we present a landscape of academic finance. We analyze more than 40,000 titles and abstracts published in 32 finance journals over a period ranging from 1992 to 2020. We identify the research topics and explore their relation and prevalence over time and across journals. Our analyses reveal that most journals have covered more topics over time, thus becoming more generalist.
+
+_Check out the paper!_
+
+- Ardia, D., Bluteau, K., Meghani, M.A. (2021). **Landscape of academic finance with the Structural Topic Model**. Working Paper  [Preprint](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3990436)
