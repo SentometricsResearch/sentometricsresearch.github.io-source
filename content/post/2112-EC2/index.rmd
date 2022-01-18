@@ -14,7 +14,7 @@ active: true  # Activate this widget? true/false
 
 Our paper **Climate change concerns and the performance of green versus brown stocks** was presented at the EC2 2021 conference.
 
-Have a look at the [video](https://www.dropbox.com/s/u8cu2gtkhui7q3i/Ardia.mp4?dl=0)!
+Have a look at the [video](https://www.dropbox.com/s/h711efzaay4zo66/202112%20EC2.mp4?dl=0)!
 
 _Check out the paper on this index!_
 
