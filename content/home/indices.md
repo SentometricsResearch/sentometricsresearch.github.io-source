@@ -53,6 +53,6 @@ subtitle = ""
  
 +++
 
-Thanks to a partnership with news agencies, daily updated indices are provided on [the satellite website](https://www.sentometrics.com/timo.html). Note that the live indices on [the satellite website](https://www.sentometrics.com/timo.html) may differ from those used in some of our academic research. The indices arising from academic research papers, which are in most cases not (or infrequently) updated, are available in the Data section of this website.
+Thanks to a partnership with news agencies, daily updated indices are provided on [the satellite website](https://www.sentometrics.com/timo). Note that the live indices on [the satellite website](https://www.sentometrics.com/timo) may differ from those used in some of our academic research. The indices arising from academic research papers, which are in most cases not (or infrequently) updated, are available in the Data section of this website.
 
 
