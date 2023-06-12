@@ -13,6 +13,7 @@ active: true  # Activate this widget? true/false
 ---
 
 Update of the Media Climate Change Concerns (MCCC) index! The index ranges now from January 2003 to August 2022. The MCCC is constructed from major U.S. newspapers and newswires to proxy for climate change concerns. Check our work published at Management Science for details. 
+
 We have extended the MCCC index and its subindices (topical and thematic) beyond their original timeframe of 2003 to June 2018, now encompassing data up to August 2022. This update provides approximately four years of additional data, allowing for a more comprehensive understanding of media coverage of climate change.
 
 To ensure consistency and accuracy, we have diligently followed the same procedure used to generate the original dataset while accounting for necessary changes in methodology for the new data (from July 2018 to August 2022).
