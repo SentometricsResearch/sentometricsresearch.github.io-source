@@ -26,7 +26,9 @@ First Dataset: This dataset corresponds to the initial 2020 NBB research paper v
 
 Second Dataset: The second dataset encompasses a corpus of ten newspapers and two newswires, representing the current version of the paper published in Management Science.
 
-Third Dataset: The third dataset extends the second dataset by incorporating additional data up to August 2023. For detailed information regarding this update, we encourage you to refer to the relevant blog post, which provides comprehensive insights.
+Third Dataset: The third dataset extends the second dataset by incorporating additional data up to August 2022. For detailed information regarding this update, we encourage you to refer to the relevant blog post, which provides comprehensive insights.
+
+Fourth Dataset: The fourth dataset extends the third dataset by incorporating additional data up to June 2024. For detailed information regarding this update, we encourage you to refer to the relevant blog post, which provides comprehensive insights.
 
 [Download file](https://www.dropbox.com/scl/fi/uucc6401uje293ofc3ahq/Sentometrics_US_Media_Climate_Change_Index.xlsx?dl=1&rlkey=jvgb6xg9w4ctdz5cdl6qun5md)
 
