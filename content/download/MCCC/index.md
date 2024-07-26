@@ -1,6 +1,6 @@
 ---
 date: "2020-11-14"
-summary: Daily U.S. Media Climate Change Concerns Index from 2003 to 2022.
+summary: Daily U.S. Media Climate Change Concerns Index from 2003 to 2024.
 title: MCCC
 ---
 
