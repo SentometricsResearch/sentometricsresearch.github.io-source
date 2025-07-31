@@ -1,6 +1,7 @@
 install.packages("renv")
 renv::restore()
 renv::activate()
+install.packages("blogdown")
 blogdown::install_hugo(version = "0.75.0")
 blogdown::build_site(build_rmd = TRUE)
 blogdown::hugo_build()
