@@ -763,9 +763,9 @@
     },
     "renv": {
       "Package": "renv",
-      "Version": "0.15.5",
+      "Version": "1.1.5",
       "Source": "Repository",
-      "Requirements": []
+      "Repository": "CRAN"
     },
     "rio": {
       "Package": "rio",
@@ -825,11 +825,9 @@
     },
     "stringi": {
       "Package": "stringi",
-      "Version": "1.7.3",
+      "Version": "1.8.7",
       "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "7943cfae120c77a255025e5f63856532",
-      "Requirements": []
+      "Repository": "CRAN"
     },
     "stringr": {
       "Package": "stringr",
@@ -953,11 +951,9 @@
     },
     "xml2": {
       "Package": "xml2",
-      "Version": "1.3.2",
+      "Version": "1.3.8",
       "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "d4d71a75dd3ea9eb5fa28cc21f9585e2",
-      "Requirements": []
+      "Repository": "CRAN"
     },
     "xts": {
       "Package": "xts",
