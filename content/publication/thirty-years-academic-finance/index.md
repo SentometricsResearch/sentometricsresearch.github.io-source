@@ -5,7 +5,7 @@ authors:
 - Keven Bluteau
 - Mohammad Abbas Meghani
 date: "2024-09-01"
-publication: "Journal of Economic Surveys"
+publication: "Journal of Economic Surveys, 38(3), 1008–1042"
 publication_types: ["2"]
 tags:
 - "Topic models"

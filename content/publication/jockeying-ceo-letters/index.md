@@ -4,7 +4,7 @@ authors:
 - Kris Boudt
 - James Thewissen
 date: "2019-03-01"
-publication: "Financial Management"
+publication: "Financial Management, 48(1), 77–115"
 publication_types: ["2"]
 tags:
 - "Firm disclosure"

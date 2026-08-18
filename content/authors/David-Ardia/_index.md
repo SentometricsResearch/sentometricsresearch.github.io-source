@@ -20,7 +20,7 @@ _build:
 
 
 # Role/position
-role: Full IVADO Professor, Department of Decision Sciences
+role: Professor of Quantitative Methods
 
 # Organizations/Affiliations
 organizations:

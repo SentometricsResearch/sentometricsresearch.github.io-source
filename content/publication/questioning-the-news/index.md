@@ -5,7 +5,7 @@ authors:
 - Keven Bluteau
 - Kris Boudt
 date: "2019-10-01"
-publication: "International Journal of Forecasting, 35, 1370–1386"
+publication: "International Journal of Forecasting, 35(4), 1370–1386"
 publication_types: ["2"]
 tags:
 - "Macro & forecasting"

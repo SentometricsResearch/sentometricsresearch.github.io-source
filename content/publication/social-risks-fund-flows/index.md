@@ -6,11 +6,12 @@ authors:
 - Céleste Hardy
 - Marie Lambert
 date: "2025-09-01"
-publication: "Working paper"
+publication: "Working paper, SSRN 7094078"
 publication_types: ["3"]
 tags:
-- "Social media"
+- "Textual sentiment"
 - "Asset pricing"
+- "Climate"
 featured: false
 summary: "Extending the concern-index approach from climate to social risk, and testing it on retail fund flows."
 doi: "10.2139/ssrn.7094078"

@@ -5,7 +5,7 @@ authors:
 - James Thewissen
 - Wouter Torsin
 date: "2018-05-01"
-publication: "International Review of Financial Analysis"
+publication: "International Review of Financial Analysis, 57, 231–245"
 publication_types: ["2"]
 tags:
 - "Firm disclosure"

@@ -6,7 +6,7 @@ authors:
 - Kris Boudt
 - Koen Inghelbrecht
 date: "2023-12-01"
-publication: "Management Science"
+publication: "Management Science, 69(12), 7607–7632"
 publication_types: ["2"]
 tags:
 - "Climate"
