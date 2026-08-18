@@ -4,10 +4,10 @@ authors:
 - David Ardia
 - Keven Bluteau
 date: "2024-06-01"
-publication: "International Review of Financial Analysis, 103479"
+publication: "International Review of Financial Analysis, 95, 103479"
 publication_types: ["2"]
 tags:
-- "Social media"
+- "Textual sentiment"
 - "Asset pricing"
 featured: false
 summary: "Social-media activity around coordinated cryptocurrency pump-and-dump schemes."

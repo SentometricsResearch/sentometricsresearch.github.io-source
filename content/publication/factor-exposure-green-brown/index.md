@@ -6,7 +6,7 @@ authors:
 - Thomas Lortie-Cloutier
 - Thien Duy Tran
 date: "2023-06-01"
-publication: "Finance Research Letters, 103900"
+publication: "Finance Research Letters, 55, 103900"
 publication_types: ["2"]
 tags:
 - "Climate"

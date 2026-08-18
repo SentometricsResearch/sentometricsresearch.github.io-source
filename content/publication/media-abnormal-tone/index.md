@@ -5,7 +5,7 @@ authors:
 - Keven Bluteau
 - Kris Boudt
 date: "2022-01-01"
-publication: "Journal of Financial Markets, 100683"
+publication: "Journal of Financial Markets, 61, 100683"
 publication_types: ["2"]
 tags:
 - "Firm disclosure"

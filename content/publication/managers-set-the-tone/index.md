@@ -5,7 +5,7 @@ authors:
 - Kris Boudt
 - James Thewissen
 date: "2016-02-01"
-publication: "Journal of Banking & Finance"
+publication: "Journal of Banking & Finance, 72, S132–S147"
 publication_types: ["2"]
 tags:
 - "Firm disclosure"

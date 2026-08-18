@@ -5,7 +5,7 @@ authors:
 - Keven Bluteau
 - Thien Duy Tran
 date: "2022-09-01"
-publication: "Finance Research Letters, 102992"
+publication: "Finance Research Letters, 48, 102992"
 publication_types: ["2"]
 tags:
 - "Climate"

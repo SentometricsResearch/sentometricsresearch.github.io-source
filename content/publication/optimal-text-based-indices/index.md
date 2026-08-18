@@ -4,7 +4,7 @@ authors:
 - David Ardia
 - Keven Bluteau
 date: "2026-01-01"
-publication: "International Journal of Forecasting, forthcoming"
+publication: "International Journal of Forecasting, 42(1), 44–60"
 publication_types: ["2"]
 tags:
 - "Methodology"

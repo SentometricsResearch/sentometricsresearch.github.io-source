@@ -7,7 +7,7 @@ authors:
 - Samuel Borms
 - Kris Boudt
 date: "2020-06-01"
-publication: "Journal of Economic Surveys, 34, 512–547"
+publication: "Journal of Economic Surveys, 34(3), 512–547"
 publication_types: ["2"]
 tags:
 - "Survey"
