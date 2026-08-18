@@ -1,35 +1,66 @@
 ---
-date: "2020-11-14"
-summary: Daily U.S. Media Climate Change Concerns Index from 2003 to 2024.
+date: "2025-07-25"
+summary: Daily U.S. Media Climate Change Concerns Index, with topical and thematic subindices. January 2003 to June 2025.
 title: MCCC
 ---
 
-We are pleased to make the Media Climate Change Concerns Index data available for academic research purposes. By downloading and utilizing the data, you agree to adhere to the following rules and guidelines:
+## What it measures
 
-1) Citing Relevant References: When incorporating any of these data into your working papers or published papers, it is mandatory to cite the following reference:
+Concern about climate change is not observable, so it has to be proxied. The **Media Climate Change
+Concerns (MCCC)** index does this from news: each climate-related article receives a concern score
+combining the level of risk and the sentiment it expresses, and the article-level scores are
+aggregated into a daily index that explicitly accounts for how much attention the media were paying
+to climate change at the time. Topical and thematic subindices are provided alongside the headline
+series.
 
-[Ardia, D., Bluteau, K., Boudt, K., Inghelbrecht, K. (2023). Climate change concerns and the performance of green versus brown stocks. Management Science](https://doi.org/10.1287/mnsc.2022.4636).
+The index is the empirical core of
+[Climate change concerns and the performance of green versus brown stocks](https://sentometrics-research.com/publication/climate-change-concerns/)
+(*Management Science*), which shows that green stocks outperform brown stocks when concerns rise
+unexpectedly.
 
-Citing this reference ensures proper acknowledgment of the original source and contributes to the scholarly community's collective knowledge.
+## Coverage
 
-2) Footnote Placement: To assist other researchers in locating the data, please include the following URL in a footnote within your paper:
+| | |
+|---|---|
+| **Frequency** | Daily |
+| **Period** | January 2003 – June 2025 |
+| **Region** | United States |
+| **Sources** | Ten major newspapers and two newswires (see version history) |
+| **Series** | Headline index, plus topical and thematic subindices |
+| **Format** | `.xlsx`, one sheet per vintage |
 
-[https://sentometrics-research.com](https://sentometrics-research.com).
+<!-- TODO équipe : ajouter ici la liste des colonnes du fichier (nom, définition, unité).
+     C'est la seule pièce du codebook qui manque. -->
 
-Providing this URL facilitates access to the data and promotes transparency and reproducibility in academic research.
+## Version history
 
-3) Assumption of Risk: You acknowledge and assume all risks associated with using the data. While we have taken extensive measures to ensure data accuracy and integrity, it is essential to exercise caution and conduct thorough analyses.
+The file ships **all** vintages, because published work relies on different ones. Cite the vintage
+you actually used.
 
-Please note that the Media Climate Change Concerns Index comprises three distinct datasets, each serving specific purposes:
+| Vintage | Coverage | Corpus | Notes |
+|---|---|---|---|
+| 1 — 2020 | 2003 – Jun 2018 | 8 newspapers | The original National Bank of Belgium working-paper version. Kept for historical reproducibility. |
+| 2 — published | 2003 – Jun 2018 | 10 newspapers + 2 newswires | The version in the *Management Science* paper. |
+| 3 — 2023 update | 2003 – Aug 2022 | 9 newspapers + 2 newswires | *Houston Chronicle* dropped (access lost); alternative news aggregators used for some sources; LIWC2022 software with the LIWC2015 dictionary. Correlations with vintage 2 exceed 0.95 on the overlapping year. |
+| 4 — 2024 update | 2003 – Jun 2024 | unchanged | No methodological change. |
+| 5 — 2025 update | 2003 – Jun 2025 | unchanged | No methodological change. |
 
-First Dataset: This dataset corresponds to the initial 2020 NBB research paper version and is based on a corpus of eight newspapers. We have made this index available for historical reasons, as some research papers have utilized this first version of the index in their analyses.
+The methodological break sits between vintages 2 and 3. If your sample crosses mid-2018, read the
+[2023 update note](https://sentometrics-research.com/post/2023-climate-change/) before choosing.
 
-Second Dataset: The second dataset encompasses a corpus of ten newspapers and two newswires, representing the current version of the paper published in Management Science.
+## How to cite
 
-Third Dataset: The third dataset extends the second dataset by incorporating additional data up to August 2022. For detailed information regarding this update, we encourage you to refer to the relevant blog post, which provides comprehensive insights.
+Ardia, D., Bluteau, K., Boudt, K., Inghelbrecht, K. (2023). **Climate change concerns and the
+performance of green versus brown stocks**. *Management Science*.
+[doi:10.1287/mnsc.2022.4636](https://doi.org/10.1287/mnsc.2022.4636)
 
-Fourth Dataset: The fourth dataset extends the third dataset by incorporating additional data up to June 2024. For detailed information regarding this update, we encourage you to refer to the relevant blog post, which provides comprehensive insights.
+BibTeX is on the [How to cite](https://sentometrics-research.com/cite/) page.
 
-[Download file](https://www.dropbox.com/scl/fi/uucc6401uje293ofc3ahq/Sentometrics_US_Media_Climate_Change_Index.xlsx?dl=1&rlkey=jvgb6xg9w4ctdz5cdl6qun5md)
+## Terms
 
-[Full License](https://www.dropbox.com/s/jwjh4b08zvq09nv/LICENSE.txt?dl=0)
+Free for academic research. By downloading you agree to cite the reference above, to place
+`https://sentometrics-research.com` in a footnote so others can find the data, and to assume all
+risk associated with its use.
+
+[**Download the data**](https://www.dropbox.com/scl/fi/uucc6401uje293ofc3ahq/Sentometrics_US_Media_Climate_Change_Index.xlsx?dl=1&rlkey=jvgb6xg9w4ctdz5cdl6qun5md) ·
+[Full licence](https://www.dropbox.com/s/jwjh4b08zvq09nv/LICENSE.txt?dl=0)

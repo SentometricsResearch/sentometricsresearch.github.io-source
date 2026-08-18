@@ -10,15 +10,15 @@ authors:
 superuser: false
 
 # Role/position
-role: Associate Professor in Quantitative Methods for Finance
+role: Full IVADO Professor, Department of Decision Sciences
 # Organizations/Affiliations
 organizations:
 - name: "HEC Montreal"
-  url: "https://ardiad.github.io/"
+  url: "https://davidardia.com/"
   
 
 # Short bio (displayed in user profile at end of posts)
-bio: Professor in Quantitative Methods for Finance at HEC Montreal.
+bio: Full IVADO Professor at HEC Montreal, holder of the Research Professorship in Sentometrics.
 
 interests:
 - Quantitative Asset Management
@@ -73,5 +73,4 @@ highlight_name: false
 user_groups:
 - Researchers
 ---
-David is an IVADO professor in the Department of Decision Sciences at HEC Montréal. Trained in quantitative methods for finance, he 
-has have a keen interest in asset allocation, risk management, and text-mining. In 2018, the Swiss Risk Association awarded him "Swiss risk manager of the year". He is a regular member at GERAD, Quantact, and Fin-ML, an associate researcher at OBVIA, and an instructor at DataCamp. When he is not coding, he plays a foodie in downtown Montréal.
+David is a Full IVADO Professor in the Department of Decision Sciences at HEC Montréal, where he holds the Research Professorship in Sentometrics and directs the MSc in Financial Engineering. Trained in quantitative methods for finance, he works on asset allocation, risk management, and text mining. In 2018, the Swiss Risk Association awarded him "Swiss risk manager of the year". He is a regular member at GERAD, Quantact, and Fin-ML, an associate researcher at OBVIA, and an instructor at DataCamp. When he is not coding, he plays a foodie in downtown Montréal.
