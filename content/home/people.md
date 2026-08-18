@@ -13,7 +13,7 @@ subtitle = ""
 
 [design]
   show_social = false
-  show_interests = true
+  show_interests = false
   show_role = true
   show_organizations = true
 
