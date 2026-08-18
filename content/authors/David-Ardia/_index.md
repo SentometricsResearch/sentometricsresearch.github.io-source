@@ -12,6 +12,12 @@ superuser: false
 
 # Personal website — the People widget links the name here.
 website: "https://davidardia.com/"
+# The personal profile pages are not rendered: every name links straight to the
+# person's own site, so an internal profile page would only duplicate it. The
+# entry still exists as data for the People widget.
+_build:
+  render: false
+
 
 # Role/position
 role: Full IVADO Professor, Department of Decision Sciences
@@ -44,33 +50,6 @@ education:
     institution: University of Neuchâtel, Switzerland
     year: 2002
 
-# Social/Academic Networking
-#   For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
-#   The `ai` pack needs academicons >= 1.9 for the SSRN glyph — see data/assets.toml.
-social:
-- icon: globe
-  icon_pack: fas
-  link: https://davidardia.com/
-- icon: twitter
-  icon_pack: fab
-  link: https://twitter.com/ArdiaD1
-- icon: linkedin
-  icon_pack: fab
-  link: https://ca.linkedin.com/in/davidardia
-- icon: github
-  icon_pack: fab
-  link: https://github.com/ArdiaD
-- icon: google-scholar
-  icon_pack: ai
-  link: https://scholar.google.ca/citations?user=BPNrOUYAAAAJ&hl=en
-- icon: orcid
-  icon_pack: ai
-  link: https://orcid.org/0000-0003-2823-782X
-- icon: ssrn
-  icon_pack: ai
-  link: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=372409
-
-# Highlight the author in author lists? (true/false)
 highlight_name: false
 
 # Organizational groups that you belong to (for People widget)

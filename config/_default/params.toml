@@ -179,6 +179,19 @@ plugins_js  = []
 # Avatars.
 # An avatar is an image that appears next to a user's name.
 # An avatar can be uploaded as an image named `avatar` to each user's profile or fetched from Gravatar.com.
+############################
+## Author profile box
+############################
+
+# Show the author profile card at the foot of posts? The hub carries no personal
+# profiles: names link to each person's own site and the profile pages are not
+# built, so the card would duplicate that content — and it rendered an empty
+# link for authors whose profile page is not generated.
+#
+# NOTE: this must stay above every [section] header — a bare TOML key placed
+# after one belongs to that section, not to the root.
+profile = false
+
 [avatar]
   # Get user avatars from Gravatar.com? (true/false)
   gravatar = false

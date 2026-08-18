@@ -9,13 +9,27 @@ authors:
 
 superuser: false
 
-# TODO confirm: exact title, and a personal website URL for the `website` key so
-# the People widget links the name there rather than to the internal author page.
-role: Professor
+# Personal website — the People widget links the name here.
+website: "https://research.vu.nl/en/persons/kris-boudt/"
+
+# The personal profile pages are not rendered: every name links straight to the
+# person's own site, so an internal profile page would only duplicate it. The
+# entry still exists as data for the People widget.
+_build:
+  render: false
+
+# Title and affiliations as stated on his VU Amsterdam research portal page:
+# Associate Professor in Econometrics and Data Science at VU Amsterdam, and
+# professor of finance and econometrics at Ghent University and the VUB.
+role: Professor of Finance and Econometrics
 
 organizations:
+- name: "Ghent University"
+  url: "https://www.ugent.be/en"
 - name: "Vrije Universiteit Brussel"
   url: "https://www.vub.be/en"
+- name: "Vrije Universiteit Amsterdam"
+  url: "https://research.vu.nl/en/persons/kris-boudt/"
 
 bio: Co-author of the sentometrics framework, working at the intersection of textual analysis and financial econometrics.
 
@@ -26,23 +40,8 @@ interests:
 - Corporate disclosure
 - Risk management
 
-social:
-- icon: orcid
-  icon_pack: ai
-  link: https://orcid.org/0000-0002-1000-5142
-
 highlight_name: false
 
 user_groups:
 - Researchers
 ---
-
-Kris is a co-author of the sentometrics framework — the
-[survey](https://sentometrics-research.com/publication/econometrics-meets-sentiment/) that defines
-the field, the [R package](https://sentometrics-research.com/publication/sentometrics-r-package/),
-and the empirical work behind several of the indices published here, including the
-[Media Climate Change Concerns index](https://sentometrics-research.com/download/mccc/) and the
-[Belgian economic policy uncertainty index](https://sentometrics-research.com/download/epu-belgium/).
-
-He has co-supervised much of the doctoral work in the field, at the University of Neuchâtel and at
-Ghent University.

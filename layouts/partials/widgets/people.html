@@ -31,21 +31,12 @@
 
   {{ range $query }}
   {{ $avatar := (.Resources.ByType "image").GetMatch "*avatar*" }}
-  {{/* Project override: link a person to their own site when their profile sets
-       `website`, since that is where a reader actually wants to land. Falls back
-       to the theme's internal author page when it is not set. */}}
-  {{ $link := "" }}
-  {{ $external := false }}
-  {{ with .Params.website }}
-    {{ $link = . }}
-    {{ $external = true }}
-  {{ else }}
-    {{ with site.GetPage (printf "/authors/%s" (path.Base (path.Split .Path).Dir)) }}
-      {{ $link = .RelPermalink }}
-    {{ end }}
-  {{ end }}
-  {{ $attrs := "" }}
-  {{ if $external }}{{ $attrs = " target=\"_blank\" rel=\"noopener\"" }}{{ end }}
+  {{/* Project override: a person's name links straight to their own site. The
+       theme linked to an internal profile page, which now only duplicated it —
+       those pages are no longer rendered (see `_build` in each profile). A
+       profile without `website` simply renders as plain text. */}}
+  {{ $link := .Params.website | default "" }}
+  {{ $attrs := " target=\"_blank\" rel=\"noopener\"" }}
   <div class="col-12 col-sm-auto people-person">
     {{ $src := "" }}
     {{ if site.Params.avatar.gravatar }}
