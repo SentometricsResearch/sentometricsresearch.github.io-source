@@ -51,14 +51,18 @@ subtitle = ""
  # CSS class.
  css_class = ""
  
-[cta_alt]
-  url = "https://onlinelibrary.wiley.com/doi/full/10.1111/joes.12370"
-  label = "Survey paper"
 +++
 
-Within the growing and fascinating landscape at the frontier of text mining, sentiment analysis, and econometrics, the field **sentometrics** has emerged. Researchers in sentometrics investigate the transformation of qualitative sentiment embedded in textual data (and other alternative data sources) into quantitative sentiment variables, and their subsequent application in an econometric analysis of the relationships between sentiment and other variables.
+Within the growing landscape at the frontier of text mining, sentiment analysis, and econometrics,
+the field **sentometrics** has emerged. Researchers in sentometrics study how the qualitative
+sentiment embedded in textual data becomes a quantitative variable — and how that variable behaves
+once it enters an econometric analysis.
 
-Many researchers steer forward sentometrics by doing tremendous work across the domains of economics, finance, politics and beyond. The objective of this hub is to provide resources and open-source software to help the community of these researchers interact with each other and showcase their work, while also introducing those interested to enter the field.
+This hub is where our team publishes what it builds. Not a directory of the field: search engines
+do that better, and a list that falls behind misleads. What you will find here is what we produce
+and keep alive — the **indices**, the **papers** behind them, the **packages** that compute them,
+the **students** who work on them, and everything we do to make all of it reusable.
 
-This [survey paper](https://onlinelibrary.wiley.com/doi/full/10.1111/joes.12370) and the R package [sentometrics](https://sentometricsresearch.github.io/sentometrics) are perfect starting points to dive into this exciting field.
-
+New here? Read the [survey paper](https://onlinelibrary.wiley.com/doi/full/10.1111/joes.12370), then
+the R package [sentometrics](https://sentometricsresearch.github.io/sentometrics). If you want to
+work with us, start [here](https://sentometrics-research.com/join/).

@@ -32,14 +32,20 @@ weight = 1 # Order that this section will appear.
 # Call to action links (optional).
 #   Display link(s) by specifying a URL and label below. Icon is optional for `[cta]`.
 #   Remove a link/note by deleting a cta/note block.
-# [cta]
-#   url = "https://onlinelibrary.wiley.com/doi/full/10.1111/joes.12370"
-#   label = "Survey paper"
+[cta]
+  url = "#download"
+  label = "Browse the indices"
+  icon_pack = "fas"
+  icon = "database"
+
+[cta_alt]
+  url = "https://onlinelibrary.wiley.com/doi/full/10.1111/joes.12370"
+  label = "Read the survey paper"
 +++
 
 ![SentoResearch](img/sentometrics-research-logo.png)
 
-Research material & open-source software by and for the community
+Research material & open-source software for the community
 
 <!-- <span style="text-shadow: none;"><a class="github-button" href="https://github.com/SentometricsResearch/sentometrics" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star this on GitHub">Star</a><script async defer src="https://buttons.github.io/buttons.js"></script></span> --->
 

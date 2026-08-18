@@ -25,4 +25,4 @@ _Check out the paper on this index!_
 
 - Algaba, A., Borms, S., Boudt, K., van Pelt, J. (2020). **The economic policy uncertainty index for Flanders, Wallonia and Belgium**. Bank- en Financiewezen digitaal 2020/6. [Link](https://www.financialforum.be/nl/articles/economic-policy-uncertainty-index-flanders-wallonia-and-belgium) [Preprint](https://doi.org/10.2139/ssrn.3580000)
 
-Download the data [here](https://sentometrics-research.com/download/epu/)
+Download the data [here](https://sentometrics-research.com/download/epu-belgium/)

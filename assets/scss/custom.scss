@@ -26,4 +26,14 @@ video {
     height: auto;
     max-height: 400px;
 }
-   
+
+/* The People widget centres and shrinks everything so the avatar cards align.
+   Our intro paragraph is body copy and should read at body size. */
+.people-widget > .col-md-12:not(.section-heading) > p {
+  font-size: 1rem;
+}
+
+/* With a single user group the group heading only repeats the section title. */
+.people-widget > .col-md-12 > h2.mb-4 {
+  display: none;
+}

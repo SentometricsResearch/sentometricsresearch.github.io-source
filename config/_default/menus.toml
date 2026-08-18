@@ -14,24 +14,33 @@
   name = "Home"
   url = "#home-1"
   weight = 2
- 
+
 [[main]]
-  name = "Data"
+  name = "Indices"
   url = "#download"
   weight = 3
-  
+
 [[main]]
-  name = "Posts"
-  url = "#posts"
+  name = "Packages"
+  url = "#software"
   weight = 4
 
 [[main]]
-  name = "Software"
-  url = "#software"
+  name = "Papers"
+  url = "#research"
   weight = 5
 
 [[main]]
-  name = "Research"
-  url = "#research"
+  name = "Team"
+  url = "#people"
   weight = 6
 
+[[main]]
+  name = "Transfer"
+  url = "#transfer"
+  weight = 7
+
+[[main]]
+  name = "Posts"
+  url = "#posts"
+  weight = 8

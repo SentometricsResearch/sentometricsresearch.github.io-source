@@ -1,47 +1,36 @@
-on:
-  push:
-     branches:
-       - master
-  
 name: deploy website
 
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
 jobs:
-  blogdown:
+  deploy:
     runs-on: ubuntu-latest
-    env:
-      RENV_PATHS_ROOT: ~/.local/share/renv
     steps:
-      - uses: actions/checkout@v3
-      - uses: r-lib/actions/setup-r@v2
+      - uses: actions/checkout@v4
+
+      # Hugo 0.75.0 is pinned on purpose: the vendored Academic theme predates
+      # the breaking changes in later releases. `extended` is required because
+      # the theme compiles SCSS.
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3.2.1
         with:
-          r-version: '4.2.3' # The R version to download (if necessary) and use.
-      - uses: r-lib/actions/setup-pandoc@v2
-      - uses: actions/setup-java@v2
-        with:
-          distribution: 'adopt' # See 'Supported distributions' for available options
-          java-version: '11'      
-      - name: Install dependencies
+          hugo-version: '0.75.0'
+          extended: true
+
+      - name: Build
+        run: hugo
+
+      - name: Add CNAME and .nojekyll
         run: |
-          sudo apt-get install libcurl4-openssl-dev
-      - name: java conf
-        run: |
-          sudo R CMD javareconf
-      - name: Cache packages
-        uses: actions/cache@v3
-        with:
-          path: ${{ env.RENV_PATHS_ROOT }}
-          key: ${{ runner.os }}-renv-${{ hashFiles('**/renv.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-renv-    
-      - name: Build site
-        run:  Rscript ./build_website.R
-        env:
-          sento_username: ${{ secrets.SENTO_USERNAME }}
-          sento_password: ${{ secrets.SENTO_PASSWORD }}
-          DP_pass: ${{ secrets.DP_PASS }}
-          drop_sento_shiny: ${{ secrets.DROP_SENTO_SHINY }}
-      - name: Pushes to another repository
-        uses: cpina/github-action-push-to-another-repository@main
+          cp CNAME public/
+          cp .nojekyll public/
+
+      - name: Push to sentometricsresearch.github.io
+        uses: cpina/github-action-push-to-another-repository@v1.7.3
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_GITHUB }}
         with:

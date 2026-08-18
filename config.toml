@@ -38,7 +38,8 @@ paginate = 10  # Number of items per page in paginated lists.
 enableEmoji = true
 enableRobotsTXT = true
 footnotereturnlinkcontents = "<sup>^</sup>"
-ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+# No ignoreFiles: the site is plain Hugo. The previous list excluded blogdown's
+# .Rmd sources and caches, which no longer exist — every post is markdown.
 
 # Workaround Hugo publishing taxonomy URLs as plurals - consistently use singular across Academic.
 [permalinks]
