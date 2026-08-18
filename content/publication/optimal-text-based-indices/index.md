@@ -9,7 +9,7 @@ publication_types: ["2"]
 tags:
 - "Methodology"
 - "Macro & forecasting"
-featured: false
+featured: true
 summary: "Choosing the aggregation scheme by optimising it against the target, instead of fixing it in advance."
 doi: "10.1016/j.ijforecast.2025.07.003"
 url_pdf: https://doi.org/10.1016/j.ijforecast.2025.07.003

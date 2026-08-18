@@ -1,6 +1,7 @@
 ---
 # Display name
 title: David Ardia
+name: David Ardia
 
 # Username (this should match the folder name)
 authors:

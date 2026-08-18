@@ -31,7 +31,7 @@ countries. This is the lineage.
 
 - **Keven Bluteau** — *Modeling Latent Variables in Economics and Finance* (University of Neuchâtel,
   2016–2019, with Kris Boudt), then postdoctoral researcher on media bias and the informational
-  efficiency of capital markets (SNSF 191730, 2020–2021). Now Assistant Professor of Finance at
+  efficiency of capital markets (SNSF 191730, 2020–2021). Now Associate Professor of Finance at
   Université de Sherbrooke and co-lead of this hub.
 - **Samuel Borms** — *Sentiment and Econometrics: Toward a Unified Framework of Textual Sentiment
   Analysis for Economic and Financial Applications* (University of Neuchâtel, 2017–2020, with Kris
