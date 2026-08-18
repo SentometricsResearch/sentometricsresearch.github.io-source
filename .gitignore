@@ -1,5 +1,6 @@
-.Rproj.user
-.Rhistory
-.RData
-.Ruserdata
-.httr-oauth
+# macOS Finder metadata — never useful in the repo, and inside a page bundle
+# Hugo treats it as a page resource.
+.DS_Store
+
+# Hugo build output
+/public/
