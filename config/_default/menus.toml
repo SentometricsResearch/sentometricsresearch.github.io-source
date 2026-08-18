@@ -16,17 +16,17 @@
   weight = 2
 
 [[main]]
-  name = "Data"
+  name = "Indices"
   url = "#download"
   weight = 3
 
 [[main]]
-  name = "Software"
+  name = "Packages"
   url = "#software"
   weight = 4
 
 [[main]]
-  name = "Our work"
+  name = "Papers"
   url = "#research"
   weight = 5
 
@@ -36,16 +36,11 @@
   weight = 6
 
 [[main]]
-  name = "Impact"
-  url = "#impact"
+  name = "Transfer"
+  url = "#transfer"
   weight = 7
 
 [[main]]
   name = "Posts"
   url = "#posts"
   weight = 8
-
-[[main]]
-  name = "Reading"
-  url = "/reading/"
-  weight = 9

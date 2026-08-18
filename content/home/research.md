@@ -7,7 +7,7 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 5 # Order that this section will appear.
 
-title = "Our work"
+title = "Papers"
 subtitle = ""
 
 [content]
@@ -66,7 +66,3 @@ subtitle = ""
  # CSS class.
  css_class = ""
 +++
-
-{{% alert note %}}
-These are the papers behind the indices and the software. For a guided entry into the wider literature, see the [reading list](https://sentometrics-research.com/reading/).
-{{% /alert %}}

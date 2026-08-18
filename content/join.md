@@ -15,7 +15,8 @@ to start.
    the [JSS vignette](https://sentometrics-research.com/publication/sentometrics-r-package/).
 3. Pick an index from [Indices & data](https://sentometrics-research.com/#download) and reproduce a result from the paper behind it.
    This is the fastest way to find out whether the field suits you.
-4. When you want to go wider, use the [reading list](https://sentometrics-research.com/reading/).
+4. When you want to go wider, the [survey](https://sentometrics-research.com/publication/econometrics-meets-sentiment/)
+   maps the literature and its open problems.
 
 ## Data you can build on
 

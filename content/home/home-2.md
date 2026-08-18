@@ -55,18 +55,17 @@ subtitle = ""
   url = "https://onlinelibrary.wiley.com/doi/full/10.1111/joes.12370"
   label = "Survey paper"
 +++
+
 Within the growing landscape at the frontier of text mining, sentiment analysis, and econometrics,
 the field **sentometrics** has emerged. Researchers in sentometrics study how the qualitative
 sentiment embedded in textual data becomes a quantitative variable — and how that variable behaves
 once it enters an econometric analysis.
 
-This hub is the **infrastructure** of that field rather than its directory. We do not try to list
-what everyone publishes: search engines do that better, and a list that falls behind misleads. What
-we provide is what a researcher actually needs to work — the **indices** we build and keep updated,
-the **open-source software** that computes them, the **methods papers** behind both, and the people
-who can help.
+This hub is where our team publishes what it builds. Not a directory of the field: search engines
+do that better, and a list that falls behind misleads. What you will find here is what we produce
+and keep alive — the **indices**, the **papers** behind them, the **packages** that compute them,
+the **students** who work on them, and everything we do to make all of it reusable.
 
 New here? Read the [survey paper](https://onlinelibrary.wiley.com/doi/full/10.1111/joes.12370), then
-the R package [sentometrics](https://sentometricsresearch.github.io/sentometrics). If you want a
-guided path into the literature, we keep a short, opinionated
-[reading list](https://sentometrics-research.com/reading/).
+the R package [sentometrics](https://sentometricsresearch.github.io/sentometrics). If you want to
+work with us, start [here](https://sentometrics-research.com/join/).
