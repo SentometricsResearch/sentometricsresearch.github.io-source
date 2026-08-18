@@ -13,11 +13,16 @@
   {{ end }}
   {{ end }}
 
-  {{/* Project override of the theme partial: the upstream version prints the date
-       unconditionally, so a page with no `date` in its front matter rendered
-       Hugo's zero time (0001-01-01) — visible under every entry in the packages
-       list. Guarded on the date actually existing. */}}
-  {{ if and (not (in (slice "talk" "page") $page.Type)) (not $page.Lastmod.IsZero) }}
+  {{/* Project override of the theme partial. Two changes to the upstream date logic:
+
+       1. It printed the date unconditionally, so a page with no `date` in its
+          front matter rendered Hugo's zero time (0001-01-01) — visible under
+          every entry in the packages list. Guarded on the date existing.
+
+       2. `download` joins the excluded types. The front-matter date of an index
+          is not its last update and reads as staleness; each index documents its
+          real coverage and version history in its own page instead. */}}
+  {{ if and (not (in (slice "talk" "page" "download") $page.Type)) (not $page.Lastmod.IsZero) }}
   <span class="article-date">
     {{ $date := $page.Lastmod.Format site.Params.date_format }}
     {{ if eq $page.Type "publication" }}
