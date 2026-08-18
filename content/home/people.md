@@ -12,7 +12,7 @@ subtitle = ""
   user_groups = ["Researchers"]
 
 [design]
-  show_social = true
+  show_social = false
   show_interests = true
   show_role = true
   show_organizations = true

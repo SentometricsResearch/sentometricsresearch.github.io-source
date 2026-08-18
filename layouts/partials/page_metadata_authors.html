@@ -1,0 +1,40 @@
+{{/* Display author list.
+
+     Project override of the theme partial. The upstream version emits
+     <a href="{{$profile_page.RelPermalink}}"> whenever a profile page exists,
+     which produced <a href=""> for our team members: their profiles are data
+     only (`_build.render: false`), so the permalink is empty and the name
+     became a link that reloaded the page.
+
+     Here the link target is, in order: the person's own website when their
+     profile sets one, then the rendered profile/taxonomy page, then no link at
+     all. A team member's name therefore points at their own site — the same
+     target as in the Team section — and co-authors without a profile keep
+     linking to their list of papers on this site. */}}
+
+{{- $taxonomy := "authors" }}
+{{ with .Param $taxonomy }}
+  {{ $link_authors := site.Params.link_authors | default true }}
+  {{ range $index, $value := . }}
+    {{- $profile_page := site.GetPage (printf "/%s/%s" $taxonomy (. | urlize)) -}}
+    {{- $name := $profile_page.Params.name | default ($value|markdownify) -}}
+    {{- $href := "" -}}
+    {{- $external := false -}}
+    {{- with $profile_page -}}
+      {{- with .Params.website -}}
+        {{- $href = . -}}
+        {{- $external = true -}}
+      {{- else -}}
+        {{- $href = .RelPermalink -}}
+      {{- end -}}
+    {{- end -}}
+    {{- if gt $index 0 }}, {{ end -}}
+    <span>
+      {{- if and $href $link_authors -}}
+        <a href="{{ $href }}"{{ if $external }} target="_blank" rel="noopener"{{ end }}>{{ $name }}</a>
+      {{- else -}}
+        {{ $name }}
+      {{- end -}}
+    </span>
+  {{- end -}}
+{{- end -}}
