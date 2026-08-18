@@ -26,31 +26,14 @@ video {
     height: auto;
     max-height: 400px;
 }
-   
 
-/* The People widget sets `text-align: center` and `font-size: 0.8rem` on its
-   whole subtree so the avatar cards line up. Our body copy in that section is
-   prose — an intro plus the student lineage — and has to read as prose, not as
-   captions. Scoped to the widget body so the avatar cards keep their centring. */
-.people-widget > .col-md-12:not(.section-heading) > p,
-.people-widget > .col-md-12:not(.section-heading) > ul,
-.people-widget > .col-md-12:not(.section-heading) > ol,
-.people-widget > .col-md-12:not(.section-heading) > h3,
-.people-widget > .col-md-12:not(.section-heading) > h4 {
-  text-align: left;
+/* The People widget centres and shrinks everything so the avatar cards align.
+   Our intro paragraph is body copy and should read at body size. */
+.people-widget > .col-md-12:not(.section-heading) > p {
   font-size: 1rem;
 }
 
-.people-widget > .col-md-12:not(.section-heading) > h3 {
-  font-size: 1.25rem;
-  margin-top: 1.75rem;
-  margin-bottom: 0.75rem;
-}
-
-.people-widget > .col-md-12:not(.section-heading) > ul {
-  padding-left: 1.25rem;
-}
-
-.people-widget > .col-md-12:not(.section-heading) > ul li {
-  margin-bottom: 0.4rem;
+/* With a single user group the group heading only repeats the section title. */
+.people-widget > .col-md-12 > h2.mb-4 {
+  display: none;
 }

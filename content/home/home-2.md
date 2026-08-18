@@ -51,9 +51,6 @@ subtitle = ""
  # CSS class.
  css_class = ""
  
-[cta_alt]
-  url = "https://onlinelibrary.wiley.com/doi/full/10.1111/joes.12370"
-  label = "Survey paper"
 +++
 
 Within the growing landscape at the frontier of text mining, sentiment analysis, and econometrics,

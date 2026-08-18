@@ -2,13 +2,13 @@
 widget = "blank"
 headless = true
 active = true
-weight = 7
+weight = 8
 
 title = "Knowledge transfer"
 subtitle = ""
 
 [design]
-  columns = "1"
+  columns = "2"
 
 [design.spacing]
   padding = ["20px", "0", "20px", "0"]

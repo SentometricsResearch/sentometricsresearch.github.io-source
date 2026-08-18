@@ -32,9 +32,15 @@ weight = 1 # Order that this section will appear.
 # Call to action links (optional).
 #   Display link(s) by specifying a URL and label below. Icon is optional for `[cta]`.
 #   Remove a link/note by deleting a cta/note block.
-# [cta]
-#   url = "https://onlinelibrary.wiley.com/doi/full/10.1111/joes.12370"
-#   label = "Survey paper"
+[cta]
+  url = "#download"
+  label = "Browse the indices"
+  icon_pack = "fas"
+  icon = "database"
+
+[cta_alt]
+  url = "https://onlinelibrary.wiley.com/doi/full/10.1111/joes.12370"
+  label = "Read the survey paper"
 +++
 
 ![SentoResearch](img/sentometrics-research-logo.png)
