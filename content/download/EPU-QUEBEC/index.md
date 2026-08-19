@@ -2,6 +2,8 @@
 date: "2021-02-02"
 summary: Monthly economic policy uncertainty for Quebec, built from French-Canadian newspaper archives. A century of data.
 title: EPU Quebec
+aliases:
+- /post/2102-epu-quebec/
 ---
 
 ## What it measures

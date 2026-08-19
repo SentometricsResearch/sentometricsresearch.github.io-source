@@ -20,6 +20,11 @@ image:
   caption: ""
   focal_point: ""
   preview_only: false
+aliases:
+- /post/2009-introducing-sentometrics/
+- /post/2111-cscience/
+- /post/2112-ivado/
+- /post/2202-cafe/
 ---
 
 The reference entry point to sentometrics. It walks through the full chain of an econometric analysis of textual sentiment — corpus construction, sentiment computation, aggregation into time series, and use in a model — and organises the applications across economics, finance and politics.

@@ -2,6 +2,11 @@
 date: "2025-07-25"
 summary: Daily U.S. Media Climate Change Concerns Index, with topical and thematic subindices. January 2003 to June 2025.
 title: MCCC
+aliases:
+- /post/2011-climate-change/
+- /post/2023-climate-change/
+- /post/2024-climate-change/
+- /post/2025-climate-change/
 ---
 
 ## What it measures

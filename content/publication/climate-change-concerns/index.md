@@ -20,6 +20,10 @@ image:
   caption: ""
   focal_point: ""
   preview_only: false
+aliases:
+- /post/2111-nyt/
+- /post/2112-ec2/
+- /post/2212-ms/
 ---
 
 Concern about climate change is not observable, so it has to be proxied. The paper builds a daily index from major US newspapers and newswires that combines the level of risk and the sentiment expressed in climate-related articles, weighted by media attention, and shows that unexpected increases in that index move green stocks relative to brown ones.

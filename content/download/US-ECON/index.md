@@ -2,6 +2,8 @@
 date: "2020-11-14"
 summary: Daily sentiment indices for topics relevant to the U.S. economy, computed with several lexicon-based methods.
 title: U.S. Topical Economic Sentiment
+aliases:
+- /post/2009-questioning-the-news/
 ---
 
 ## What it measures

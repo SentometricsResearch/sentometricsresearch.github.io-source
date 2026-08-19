@@ -19,6 +19,8 @@ image:
   caption: ""
   focal_point: ""
   preview_only: false
+aliases:
+- /post/2112-topics/
 ---
 
 The field's own literature treated as the corpus. The analysis identifies research topics, traces their prevalence over time and across journals, and finds that most journals have broadened their topical coverage — becoming more generalist.

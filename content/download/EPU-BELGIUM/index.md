@@ -2,6 +2,9 @@
 date: "2021-11-23"
 summary: Daily economic policy uncertainty for Flanders, Wallonia and Belgium, built separately from French- and Dutch-language sources.
 title: EPU Belgium
+aliases:
+- /post/2009-epu-index/
+- /post/2111-epu-belgium-update/
 ---
 
 ## What it measures
