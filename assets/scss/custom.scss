@@ -1,3 +1,14 @@
+// Self-hosted @font-face declarations (generated — see fonts.scss).
+@import "fonts";
+
+// A webfont for code was disproportionate: `pre, code` only carries BibTeX on
+// the How-to-cite page. The theme quotes $sta-font-mono as a single family, so
+// the stack is set here instead; custom.scss is imported last and wins.
+pre, code, kbd, samp {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
+               "Liberation Mono", monospace;
+}
+
 .hero-lead {
     max-width: 100%;
     margin-left: auto;
