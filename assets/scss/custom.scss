@@ -57,3 +57,125 @@ video {
   .ml-3 { width: auto; }
   .ml-3 img { max-width: 150px; }
 }
+
+/* ---- Interactive index charts ------------------------------------------- */
+
+.index-chart-wrap {
+  margin: 1.5rem 0 2rem;
+
+  figcaption {
+    font-size: 0.85rem;
+    color: #6c757d;
+    margin-top: 0.5rem;
+    line-height: 1.5;
+  }
+}
+
+.index-chart {
+  position: relative;
+  min-height: 200px;
+
+  .index-chart-select {
+    display: inline-block;
+    width: auto;
+    max-width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .index-chart-canvas { display: block; width: 100%; cursor: crosshair; }
+
+  /* Follows the pointer along the series. */
+  .index-chart-tip {
+    position: absolute;
+    pointer-events: none;
+    background: rgba(255, 255, 255, 0.96);
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 3px;
+    padding: 3px 8px;
+    font-size: 0.78rem;
+    line-height: 1.35;
+    white-space: nowrap;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+
+    .d { color: #6c757d; margin-right: 0.5rem; }
+    .v { font-variant-numeric: tabular-nums; font-weight: 600; }
+  }
+
+  .index-chart-fail { font-size: 0.9rem; color: #6c757d; }
+}
+
+.dark .index-chart {
+  .index-chart-tip {
+    background: rgba(32, 34, 38, 0.96);
+    border-color: rgba(255, 255, 255, 0.14);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+    .d { color: #9aa0a6; }
+  }
+}
+
+/* ---- Students: a lineage rather than three bullet lists ------------------ */
+
+.lineage {
+  margin: 1.25rem 0 0;
+
+  .row-item {
+    display: grid;
+    grid-template-columns: 8.5rem 1fr;
+    gap: 0 1rem;
+    padding: 0.5rem 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.07);
+  }
+  .row-item:last-child { border-bottom: 1px solid rgba(0, 0, 0, 0.07); }
+
+  .yr {
+    font-variant-numeric: tabular-nums;
+    font-size: 0.85rem;
+    color: #6c757d;
+    padding-top: 0.15rem;
+    white-space: nowrap;
+  }
+  .who { font-weight: 600; }
+  .what { color: #495057; }
+}
+
+.dark .lineage {
+  .row-item { border-color: rgba(255, 255, 255, 0.1); }
+  .yr { color: #9aa0a6; }
+  .what { color: #c8ccd2; }
+}
+
+@media (max-width: 575px) {
+  .lineage .row-item { grid-template-columns: 1fr; gap: 0.15rem; }
+}
+
+/* The sparkline is the thumbnail in the Indices list, where it does its job. On
+   the index page itself the interactive chart says the same thing better, so the
+   theme's featured-image header would only repeat it.
+
+   Not scoped further on purpose: the four index pages are the only ones on the
+   site that render this header — nothing else ships a *featured* resource. */
+.article .featured-image-wrapper { display: none; }
+
+/* The index drawn faintly across the foot of the hero. Decorative: it sits
+   behind the content, ignores the pointer, and is hidden from assistive tech. */
+.hero-series {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 170px;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.5;
+  min-height: 0;
+
+  canvas { display: block; width: 100%; }
+}
+
+/* The hero section is `position: static` in the theme, so the absolutely
+   positioned series would resolve against the document instead. */
+.wg-hero { position: relative; }
+.wg-hero > .container { position: relative; z-index: 1; }
+
+@media (max-width: 767px) { .hero-series { height: 110px; opacity: 0.35; } }
+@media (prefers-reduced-motion: reduce) { .hero-series { opacity: 0.35; } }

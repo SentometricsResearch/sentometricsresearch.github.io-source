@@ -6,6 +6,7 @@ aliases:
 - /post/2102-epu-quebec/
 ---
 
+{{< index-chart data="epu-quebec" caption="Monthly, from 1913. The three tallest peaks are the Great Depression, the 2008 crisis and the COVID-19 pandemic." >}}
 ## What it measures
 
 Economic policy uncertainty — the economic risk that comes from not knowing the future path of

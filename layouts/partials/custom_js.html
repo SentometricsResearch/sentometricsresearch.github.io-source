@@ -1,0 +1,7 @@
+{{/* The theme's designated hook for project JavaScript.
+
+     Loaded when the page carries an index chart — the four index pages via the
+     shortcode, and the homepage via the hero's ambient series. */}}
+{{ if or (findRE "index-chart" .Content) .IsHome }}
+  <script src="{{ "js/index-chart.js" | relURL }}"></script>
+{{ end }}
