@@ -48,3 +48,12 @@ video {
 .people-widget > .col-md-12 > h2.mb-4 {
   display: none;
 }
+
+/* The compact list caps its thumbnail at 80px, which suits a square cover but
+   turns a sparkline into a smudge. The theme resizes the source to 150px wide,
+   so that is the ceiling here — wider would upscale and blur. Scoped to the
+   Indices section; nothing else in the site uses a wide thumbnail. */
+#download {
+  .ml-3 { width: auto; }
+  .ml-3 img { max-width: 150px; }
+}

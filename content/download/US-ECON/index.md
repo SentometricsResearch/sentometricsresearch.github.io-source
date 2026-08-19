@@ -1,6 +1,6 @@
 ---
 date: "2020-11-14"
-summary: Daily sentiment indices for topics relevant to the U.S. economy, computed with several lexicon-based methods.
+summary: Daily sentiment indices for topics relevant to the U.S. economy, computed with several lexicon-based methods. January 1994 to December 2017.
 title: U.S. Topical Economic Sentiment
 aliases:
 - /post/2009-questioning-the-news/
@@ -19,15 +19,12 @@ Winner of the *International Journal of Forecasting* best paper award 2018–201
 
 ## Coverage
 
-<!-- TODO équipe : la couverture affichée ici (1996) contredit le billet de blog d'origine,
-     qui indique « from 1993 to 2016 ». À trancher. -->
-
 | | |
 |---|---|
 | **Frequency** | Daily |
-| **Period** | 1996 – 2016 |
+| **Period** | 2 January 1994 – 31 December 2017 |
 | **Region** | United States |
-| **Series** | One per economic topic, several sentiment methods each |
+| **Series** | One value per date, lexicon and topic — long format, 1.37 million rows |
 | **Format** | `.csv` |
 
 Dates missing from the file mean no news articles were available for that date.
@@ -49,7 +46,22 @@ Free for academic research. By downloading you agree to cite the reference above
 `https://sentometrics-research.com` in a footnote so others can find the data, and to assume all
 risk associated with its use.
 
-[**Download the data**](https://www.dropbox.com/s/9rdmbtdkgqg9uqt/Sentometrics_US_Topical_Economic_Sentiment.csv?dl=1) ·
+### Download
+
+- [`us-topical-economic-sentiment.csv.gz`](https://sentometrics-research.com/data/us-econ/us-topical-economic-sentiment.csv.gz) — daily, long format
+
+Gzipped CSV, one header row, ISO 8601 dates. No decompression step needed:
+
+```r
+read.csv(gzfile(url("https://sentometrics-research.com/data/us-econ/us-topical-economic-sentiment.csv.gz")))
+```
+
+See the [folder README](https://sentometrics-research.com/data/us-econ/README.md) for every column, and
+[what differs](https://sentometrics-research.com/data/README.md) from the archived original.
+
+**Original as published** — the file this is derived from, byte for byte:
+[`Sentometrics_US_Topical_Economic_Sentiment.csv`](https://www.dropbox.com/s/9rdmbtdkgqg9uqt/Sentometrics_US_Topical_Economic_Sentiment.csv?dl=1). It will move to a Zenodo deposit with a citable DOI.
+
 [Full licence](https://www.dropbox.com/s/jwjh4b08zvq09nv/LICENSE.txt?dl=0)
 
 <!-- schema.org/Dataset markup, so the index is discoverable in Google Dataset
@@ -72,7 +84,7 @@ risk associated with its use.
     "forecasting",
     "United States"
   ],
-  "temporalCoverage": "1996/2016",
+  "temporalCoverage": "1994-01-02/2017-12-31",
   "spatialCoverage": {
     "@type": "Place",
     "name": "United States"
@@ -96,8 +108,8 @@ risk associated with its use.
   "distribution": [
     {
       "@type": "DataDownload",
-      "encodingFormat": "text/csv",
-      "contentUrl": "https://www.dropbox.com/s/9rdmbtdkgqg9uqt/Sentometrics_US_Topical_Economic_Sentiment.csv?dl=1"
+      "encodingFormat": "application/gzip",
+      "contentUrl": "https://sentometrics-research.com/data/us-econ/us-topical-economic-sentiment.csv.gz"
     }
   ]
 }

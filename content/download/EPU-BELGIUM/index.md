@@ -1,6 +1,6 @@
 ---
 date: "2021-11-23"
-summary: Daily economic policy uncertainty for Flanders, Wallonia and Belgium, built separately from French- and Dutch-language sources.
+summary: Daily economic policy uncertainty for Flanders, Wallonia and Belgium, built separately from French- and Dutch-language sources. January 2000 to June 2022.
 title: EPU Belgium
 aliases:
 - /post/2009-epu-index/
@@ -21,16 +21,17 @@ French- and Dutch-language indices are more closely aligned as a result.
 
 ## Coverage
 
-<!-- TODO équipe : la couverture affichée ici (2003) contredit le billet de blog d'origine,
-     qui indique « beginning January 2001 ». À trancher avant la prochaine mise à jour. -->
-
 | | |
 |---|---|
 | **Frequency** | Daily |
-| **Period** | 2003 – present |
+| **Period** | 3 January 2000 – 22 June 2022 |
 | **Region** | Flanders, Wallonia, Belgium |
 | **Sources** | Major Belgian newspapers, French and Dutch language |
-| **Format** | `.csv` |
+| **Series** | Belgium, Dutch-language and French-language, each daily and smoothed |
+| **Format** | `.csv`, semicolon-separated, comma as decimal mark |
+
+The series is **not currently maintained**: it ends on 22 June 2022. Earlier descriptions of this
+index said it was updated daily, which has not been the case since then.
 
 <!-- TODO équipe : ajouter la liste des colonnes du CSV (nom, définition, unité). -->
 
@@ -49,7 +50,22 @@ Free for academic research. By downloading you agree to cite the reference above
 `https://sentometrics-research.com` in a footnote so others can find the data, and to assume all
 risk associated with its use.
 
-[**Download the data**](https://www.dropbox.com/s/aftvxm26sa020hf/Sentometrics_Belgium_EPU.csv?dl=1) ·
+### Download
+
+- [`epu-belgium-daily.csv.gz`](https://sentometrics-research.com/data/epu-belgium/epu-belgium-daily.csv.gz) — daily
+
+Gzipped CSV, one header row, ISO 8601 dates. No decompression step needed:
+
+```r
+read.csv(gzfile(url("https://sentometrics-research.com/data/epu-belgium/epu-belgium-daily.csv.gz")))
+```
+
+See the [folder README](https://sentometrics-research.com/data/epu-belgium/README.md) for every column, and
+[what differs](https://sentometrics-research.com/data/README.md) from the archived original.
+
+**Original as published** — the file this is derived from, byte for byte:
+[`Sentometrics_Belgium_EPU.csv`](https://www.dropbox.com/s/aftvxm26sa020hf/Sentometrics_Belgium_EPU.csv?dl=1). It will move to a Zenodo deposit with a citable DOI.
+
 [Full licence](https://www.dropbox.com/s/jwjh4b08zvq09nv/LICENSE.txt?dl=0)
 
 <!-- schema.org/Dataset markup, so the index is discoverable in Google Dataset
@@ -73,7 +89,7 @@ risk associated with its use.
     "Wallonia",
     "multilingual"
   ],
-  "temporalCoverage": "2003/..",
+  "temporalCoverage": "2000-01-03/2022-06-22",
   "spatialCoverage": {
     "@type": "Place",
     "name": "Belgium"
@@ -97,8 +113,8 @@ risk associated with its use.
   "distribution": [
     {
       "@type": "DataDownload",
-      "encodingFormat": "text/csv",
-      "contentUrl": "https://www.dropbox.com/s/aftvxm26sa020hf/Sentometrics_Belgium_EPU.csv?dl=1"
+      "encodingFormat": "application/gzip",
+      "contentUrl": "https://sentometrics-research.com/data/epu-belgium/epu-belgium-daily.csv.gz"
     }
   ]
 }
