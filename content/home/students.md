@@ -2,7 +2,7 @@
 widget = "blank"
 headless = true
 active = true
-weight = 7
+weight = 8
 
 title = "Students & alumni"
 subtitle = ""

@@ -3,7 +3,7 @@
 widget = "people"
 headless = true
 active = true
-weight = 6
+weight = 7
 
 title = "Team"
 subtitle = ""
