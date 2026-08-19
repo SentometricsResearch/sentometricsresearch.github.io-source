@@ -1,6 +1,6 @@
 ---
 date: "2020-11-14"
-summary: Daily sentiment indices for topics relevant to the U.S. economy, computed with several lexicon-based methods.
+summary: Daily sentiment indices for topics relevant to the U.S. economy, computed with several lexicon-based methods. January 1994 to December 2017.
 title: U.S. Topical Economic Sentiment
 aliases:
 - /post/2009-questioning-the-news/
@@ -19,15 +19,12 @@ Winner of the *International Journal of Forecasting* best paper award 2018–201
 
 ## Coverage
 
-<!-- TODO équipe : la couverture affichée ici (1996) contredit le billet de blog d'origine,
-     qui indique « from 1993 to 2016 ». À trancher. -->
-
 | | |
 |---|---|
 | **Frequency** | Daily |
-| **Period** | 1996 – 2016 |
+| **Period** | 2 January 1994 – 31 December 2017 |
 | **Region** | United States |
-| **Series** | One per economic topic, several sentiment methods each |
+| **Series** | One value per date, lexicon and topic — long format, 1.37 million rows |
 | **Format** | `.csv` |
 
 Dates missing from the file mean no news articles were available for that date.
@@ -72,7 +69,7 @@ risk associated with its use.
     "forecasting",
     "United States"
   ],
-  "temporalCoverage": "1996/2016",
+  "temporalCoverage": "1994-01-02/2017-12-31",
   "spatialCoverage": {
     "@type": "Place",
     "name": "United States"

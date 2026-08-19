@@ -1,6 +1,6 @@
 ---
 date: "2021-11-23"
-summary: Daily economic policy uncertainty for Flanders, Wallonia and Belgium, built separately from French- and Dutch-language sources.
+summary: Daily economic policy uncertainty for Flanders, Wallonia and Belgium, built separately from French- and Dutch-language sources. January 2000 to June 2022.
 title: EPU Belgium
 aliases:
 - /post/2009-epu-index/
@@ -21,16 +21,17 @@ French- and Dutch-language indices are more closely aligned as a result.
 
 ## Coverage
 
-<!-- TODO équipe : la couverture affichée ici (2003) contredit le billet de blog d'origine,
-     qui indique « beginning January 2001 ». À trancher avant la prochaine mise à jour. -->
-
 | | |
 |---|---|
 | **Frequency** | Daily |
-| **Period** | 2003 – present |
+| **Period** | 3 January 2000 – 22 June 2022 |
 | **Region** | Flanders, Wallonia, Belgium |
 | **Sources** | Major Belgian newspapers, French and Dutch language |
-| **Format** | `.csv` |
+| **Series** | Belgium, Dutch-language and French-language, each daily and smoothed |
+| **Format** | `.csv`, semicolon-separated, comma as decimal mark |
+
+The series is **not currently maintained**: it ends on 22 June 2022. Earlier descriptions of this
+index said it was updated daily, which has not been the case since then.
 
 <!-- TODO équipe : ajouter la liste des colonnes du CSV (nom, définition, unité). -->
 
@@ -73,7 +74,7 @@ risk associated with its use.
     "Wallonia",
     "multilingual"
   ],
-  "temporalCoverage": "2003/..",
+  "temporalCoverage": "2000-01-03/2022-06-22",
   "spatialCoverage": {
     "@type": "Place",
     "name": "Belgium"
