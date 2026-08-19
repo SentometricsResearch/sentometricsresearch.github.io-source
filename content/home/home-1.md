@@ -47,5 +47,4 @@ weight = 1 # Order that this section will appear.
 
 Research material & open-source software for the community
 
-<!-- <span style="text-shadow: none;"><a class="github-button" href="https://github.com/SentometricsResearch/sentometrics" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star this on GitHub">Star</a><script async defer src="https://buttons.github.io/buttons.js"></script></span> --->
 

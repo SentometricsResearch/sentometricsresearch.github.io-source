@@ -2,6 +2,9 @@
 date: "2021-11-23"
 summary: Daily economic policy uncertainty for Flanders, Wallonia and Belgium, built separately from French- and Dutch-language sources.
 title: EPU Belgium
+aliases:
+- /post/2009-epu-index/
+- /post/2111-epu-belgium-update/
 ---
 
 ## What it measures
@@ -14,8 +17,7 @@ moving average of the daily index is the series most commonly used.
 
 A **November 2021 revision** made the index more local to Belgium — and so less driven by
 international events with no Belgian impact — and handled several specificities of Dutch. The
-French- and Dutch-language indices are more closely aligned as a result. See the
-[update note](https://sentometrics-research.com/post/2111-epu-belgium-update/).
+French- and Dutch-language indices are more closely aligned as a result.
 
 ## Coverage
 
@@ -49,3 +51,55 @@ risk associated with its use.
 
 [**Download the data**](https://www.dropbox.com/s/aftvxm26sa020hf/Sentometrics_Belgium_EPU.csv?dl=1) ·
 [Full licence](https://www.dropbox.com/s/jwjh4b08zvq09nv/LICENSE.txt?dl=0)
+
+<!-- schema.org/Dataset markup, so the index is discoverable in Google Dataset
+     Search rather than only through the paper. Goldmark passes raw HTML through
+     (unsafe = true); JSON-LD is valid anywhere in the document. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "Dataset",
+  "name": "Economic Policy Uncertainty Index for Flanders, Wallonia and Belgium",
+  "description": "Daily economic policy uncertainty indices for Flanders, Wallonia and Belgium as a whole, derived from major Belgian newspapers in French and Dutch. Articles are detected through triplets of economy, policy and uncertainty terms defined by expert judgment and NLP.",
+  "url": "https://sentometrics-research.com/download/epu-belgium/",
+  "sameAs": "https://doi.org/10.2139/ssrn.3580000",
+  "license": "https://www.dropbox.com/s/jwjh4b08zvq09nv/LICENSE.txt?dl=0",
+  "isAccessibleForFree": true,
+  "keywords": [
+    "economic policy uncertainty",
+    "textual analysis",
+    "Belgium",
+    "Flanders",
+    "Wallonia",
+    "multilingual"
+  ],
+  "temporalCoverage": "2003/..",
+  "spatialCoverage": {
+    "@type": "Place",
+    "name": "Belgium"
+  },
+  "creator": {
+    "@type": "Organization",
+    "name": "Sentometrics Research",
+    "url": "https://sentometrics-research.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Sentometrics Research",
+    "url": "https://sentometrics-research.com"
+  },
+  "citation": "Algaba, A., Borms, S., Boudt, K., Van Pelt, J. (2020). The economic policy uncertainty index for Flanders, Wallonia and Belgium. Bank- en Financiewezen, 2020/6.",
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "Sentometrics Research",
+    "url": "https://sentometrics-research.com"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "text/csv",
+      "contentUrl": "https://www.dropbox.com/s/aftvxm26sa020hf/Sentometrics_Belgium_EPU.csv?dl=1"
+    }
+  ]
+}
+</script>

@@ -2,6 +2,11 @@
 date: "2025-07-25"
 summary: Daily U.S. Media Climate Change Concerns Index, with topical and thematic subindices. January 2003 to June 2025.
 title: MCCC
+aliases:
+- /post/2011-climate-change/
+- /post/2023-climate-change/
+- /post/2024-climate-change/
+- /post/2025-climate-change/
 ---
 
 ## What it measures
@@ -45,8 +50,8 @@ you actually used.
 | 4 — 2024 update | 2003 – Jun 2024 | unchanged | No methodological change. |
 | 5 — 2025 update | 2003 – Jun 2025 | unchanged | No methodological change. |
 
-The methodological break sits between vintages 2 and 3. If your sample crosses mid-2018, read the
-[2023 update note](https://sentometrics-research.com/post/2023-climate-change/) before choosing.
+The methodological break sits between vintages 2 and 3, and the table above records what changed.
+If your sample crosses mid-2018, pick your vintage accordingly.
 
 ## How to cite
 
@@ -64,3 +69,55 @@ risk associated with its use.
 
 [**Download the data**](https://www.dropbox.com/scl/fi/uucc6401uje293ofc3ahq/Sentometrics_US_Media_Climate_Change_Index.xlsx?dl=1&rlkey=jvgb6xg9w4ctdz5cdl6qun5md) ·
 [Full licence](https://www.dropbox.com/s/jwjh4b08zvq09nv/LICENSE.txt?dl=0)
+
+<!-- schema.org/Dataset markup, so the index is discoverable in Google Dataset
+     Search rather than only through the paper. Goldmark passes raw HTML through
+     (unsafe = true); JSON-LD is valid anywhere in the document. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "Dataset",
+  "name": "Media Climate Change Concerns Index (MCCC)",
+  "description": "Daily index of concern about climate change, built from major U.S. newspapers and newswires. Each climate-related article receives a concern score combining the level of risk and the sentiment it expresses; article scores are aggregated into a daily index weighted by media attention. Topical and thematic subindices are provided alongside the headline series.",
+  "url": "https://sentometrics-research.com/download/mccc/",
+  "sameAs": "https://doi.org/10.1287/mnsc.2022.4636",
+  "license": "https://www.dropbox.com/s/jwjh4b08zvq09nv/LICENSE.txt?dl=0",
+  "isAccessibleForFree": true,
+  "keywords": [
+    "climate change",
+    "textual sentiment",
+    "news media",
+    "asset pricing",
+    "green stocks",
+    "sentometrics"
+  ],
+  "temporalCoverage": "2003-01/2025-06",
+  "spatialCoverage": {
+    "@type": "Place",
+    "name": "United States"
+  },
+  "creator": {
+    "@type": "Organization",
+    "name": "Sentometrics Research",
+    "url": "https://sentometrics-research.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Sentometrics Research",
+    "url": "https://sentometrics-research.com"
+  },
+  "citation": "Ardia, D., Bluteau, K., Boudt, K., Inghelbrecht, K. (2023). Climate change concerns and the performance of green versus brown stocks. Management Science, 69(12), 7607–7632.",
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "Sentometrics Research",
+    "url": "https://sentometrics-research.com"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "contentUrl": "https://www.dropbox.com/scl/fi/uucc6401uje293ofc3ahq/Sentometrics_US_Media_Climate_Change_Index.xlsx?dl=1&rlkey=jvgb6xg9w4ctdz5cdl6qun5md"
+    }
+  ]
+}
+</script>

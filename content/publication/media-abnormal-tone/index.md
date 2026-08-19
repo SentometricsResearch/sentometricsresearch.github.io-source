@@ -18,6 +18,8 @@ image:
   caption: ""
   focal_point: ""
   preview_only: false
+aliases:
+- /post/2111-cat/
 ---
 
 The paper extends the event-study framework to analyse cumulative abnormal *tone* alongside cumulative abnormal return, and uses structural topic modelling to show where media coverage differs in content from corporate disclosure. The media's contribution comes from recontextualising and condensing earnings information rather than from reporting new facts.

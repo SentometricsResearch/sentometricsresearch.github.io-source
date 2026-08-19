@@ -1,0 +1,24 @@
+# Project override of themes/academic/data/fonts/minimal.toml.
+#
+# Hugo merges a theme data file with this one at the level of TOP-LEVEL KEYS:
+# a key defined here wins, a key left out keeps the theme's value. Simply
+# omitting `google_fonts` was not enough — the theme's value survived and the
+# request was still emitted. It has to be set empty, which makes the theme's
+# `{{ with ... }}` guard skip the <link> altogether.
+#
+# Montserrat and Roboto are served from static/fonts/ — see assets/scss/fonts.scss.
+
+# Empty on purpose: no third-party font request.
+google_fonts = ""
+
+# Font style metadata
+name = "Minimal"
+
+# Font families
+heading_font = "Montserrat"
+body_font = "Roboto"
+nav_font = "Roboto"
+# Roboto Mono is no longer downloaded: it styled `pre, code`, which on this site
+# means BibTeX blocks on one page. custom.scss sets a system mono stack instead;
+# this generic is the fallback if that rule is ever removed.
+mono_font = "monospace"

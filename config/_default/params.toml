@@ -48,7 +48,9 @@ local_business_type = ""
 org_name = ""
 
 # Description for social sharing and search engines. If undefined, superuser role is used in place.
-description = ""
+# Used for the meta description and og:description on every page. Left empty,
+# search results and shared links carried no text at all.
+description = "Indices, open-source software and research at the frontier of text mining, sentiment analysis and econometrics — from the team that defined the field of sentometrics."
 
 ############################
 ## Site Features
@@ -57,7 +59,8 @@ description = ""
 # Enable source code highlighting? true/false
 # Documentation: https://sourcethemes.com/academic/docs/writing-markdown-latex/#highlighting-options
 highlight = true
-highlight_languages = ["r"]  # Add support for highlighting additional languages
+highlight_languages = []  # le seul code du site est du BibTeX, que highlight.js
+                          # 9 ne connaît pas — le pack R était chargé pour rien  # Add support for highlighting additional languages
 # highlight_style = "github"  # For supported styles, see https://cdnjs.com/libraries/highlight.js/
 
 # Enable LaTeX math rendering? true/false
@@ -124,7 +127,11 @@ contact_links = [
 ############################
 
 # Default image for social sharing and search engines. Place image in `static/img/` folder and specify image name here.
-sharing_image = ""
+# Must be set. Left empty, the theme falls through its fallback chain to
+# `site.Params.avatar`, which in this version is a TABLE and not a filename —
+# so every page shipped og:image="img/map[gravatar:%!s(bool=false) shape:circle]"
+# and every shared link showed a broken preview.
+sharing_image = "sentometrics-logo-full.png"
 
 # Twitter username (without @). Used when a visitor shares your site on Twitter.
 twitter = ""
@@ -286,7 +293,8 @@ profile = false
   #   1: Google Maps
   #   2: OpenStreetMap (Mapnik)
   #   3: OpenStreetMap (Mapbox)
-  engine = 2
+  engine = 0  # 0 = pas de carte. Non nul, le thème charge Leaflet sur chaque page
+              # alors qu'aucun widget contact n'est actif.
   api_key = ""
   zoom = 15
 
@@ -302,4 +310,6 @@ profile = false
 ############################
 [cms]
   # See https://sourcethemes.com/academic/docs/install/#install-with-web-browser
-  netlify_cms = true
+  # false: the /admin/ panel needs Netlify Identity, and this site is on GitHub
+  # Pages. It published a live editing surface that could never work.
+  netlify_cms = false

@@ -2,6 +2,8 @@
 date: "2021-02-02"
 summary: Monthly economic policy uncertainty for Quebec, built from French-Canadian newspaper archives. A century of data.
 title: EPU Quebec
+aliases:
+- /post/2102-epu-quebec/
 ---
 
 ## What it measures
@@ -48,3 +50,54 @@ risk associated with its use.
 
 [**Download the data**](https://www.dropbox.com/s/37vl8pagi2ztoah/Sentometrics_EPU_QUEBEC.csv?dl=1) ·
 [Full licence](https://www.dropbox.com/s/jwjh4b08zvq09nv/LICENSE.txt?dl=0)
+
+<!-- schema.org/Dataset markup, so the index is discoverable in Google Dataset
+     Search rather than only through the paper. Goldmark passes raw HTML through
+     (unsafe = true); JSON-LD is valid anywhere in the document. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "Dataset",
+  "name": "Economic Policy Uncertainty Index for Quebec",
+  "description": "Monthly economic policy uncertainty index for the Canadian province of Quebec, built from French-Canadian newspaper archives and spanning a century. Uses a token-distance-based triple detection and a dynamic normalisation across sources to handle historical archives digitised by edition rather than by article.",
+  "url": "https://sentometrics-research.com/download/epu-quebec/",
+  "sameAs": "https://doi.org/10.1016/j.econlet.2021.109938",
+  "license": "https://www.dropbox.com/s/jwjh4b08zvq09nv/LICENSE.txt?dl=0",
+  "isAccessibleForFree": true,
+  "keywords": [
+    "economic policy uncertainty",
+    "textual analysis",
+    "newspaper archives",
+    "Quebec",
+    "macroeconomics"
+  ],
+  "temporalCoverage": "1913/2020",
+  "spatialCoverage": {
+    "@type": "Place",
+    "name": "Quebec, Canada"
+  },
+  "creator": {
+    "@type": "Organization",
+    "name": "Sentometrics Research",
+    "url": "https://sentometrics-research.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Sentometrics Research",
+    "url": "https://sentometrics-research.com"
+  },
+  "citation": "Ardia, D., Bluteau, K., Kassem, A. (2021). A century of economic policy uncertainty through the French-Canadian lens. Economics Letters, 205, 109938.",
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "Sentometrics Research",
+    "url": "https://sentometrics-research.com"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "text/csv",
+      "contentUrl": "https://www.dropbox.com/s/37vl8pagi2ztoah/Sentometrics_EPU_QUEBEC.csv?dl=1"
+    }
+  ]
+}
+</script>

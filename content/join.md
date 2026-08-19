@@ -1,6 +1,8 @@
 ---
 title: Working on sentometrics
 summary: "Open topics, ready-to-use data, and who to contact — for students and researchers who want to enter the field."
+aliases:
+- /post/2201-randonnees/
 ---
 
 Sentometrics is a small field with a low barrier to entry: the methods are documented, the software

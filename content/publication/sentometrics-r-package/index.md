@@ -20,6 +20,8 @@ image:
   caption: ""
   focal_point: ""
   preview_only: false
+aliases:
+- /post/2009-r-package-sentometrics/
 ---
 
 Textual sentiment can be computed in many ways, and pooled into a time series in many more. The package treats that multiplicity as the problem to be solved rather than a nuisance: it computes sentiment, generates many candidate aggregation schemes, and selects among them within the prediction step.
