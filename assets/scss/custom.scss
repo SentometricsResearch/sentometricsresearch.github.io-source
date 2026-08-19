@@ -177,5 +177,6 @@ video {
 .wg-hero { position: relative; }
 .wg-hero > .container { position: relative; z-index: 1; }
 
-@media (max-width: 767px) { .hero-series { height: 110px; opacity: 0.35; } }
-@media (prefers-reduced-motion: reduce) { .hero-series { opacity: 0.35; } }
+/* On a narrow screen the hero stacks and the series ran straight through the
+   call-to-action buttons. There is no room for decoration there. */
+@media (max-width: 767px) { .hero-series { display: none; } }
