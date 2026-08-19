@@ -46,7 +46,22 @@ Free for academic research. By downloading you agree to cite the reference above
 `https://sentometrics-research.com` in a footnote so others can find the data, and to assume all
 risk associated with its use.
 
-[**Download the data**](https://www.dropbox.com/s/9rdmbtdkgqg9uqt/Sentometrics_US_Topical_Economic_Sentiment.csv?dl=1) ·
+### Download
+
+- [`us-topical-economic-sentiment.csv.gz`](https://sentometrics-research.com/data/us-econ/us-topical-economic-sentiment.csv.gz) — daily, long format
+
+Gzipped CSV, one header row, ISO 8601 dates. No decompression step needed:
+
+```r
+read.csv(gzfile(url("https://sentometrics-research.com/data/us-econ/us-topical-economic-sentiment.csv.gz")))
+```
+
+See the [folder README](https://sentometrics-research.com/data/us-econ/README.md) for every column, and
+[what differs](https://sentometrics-research.com/data/README.md) from the archived original.
+
+**Original as published** — the file this is derived from, byte for byte:
+[`Sentometrics_US_Topical_Economic_Sentiment.csv`](https://www.dropbox.com/s/9rdmbtdkgqg9uqt/Sentometrics_US_Topical_Economic_Sentiment.csv?dl=1). It will move to a Zenodo deposit with a citable DOI.
+
 [Full licence](https://www.dropbox.com/s/jwjh4b08zvq09nv/LICENSE.txt?dl=0)
 
 <!-- schema.org/Dataset markup, so the index is discoverable in Google Dataset
@@ -93,8 +108,8 @@ risk associated with its use.
   "distribution": [
     {
       "@type": "DataDownload",
-      "encodingFormat": "text/csv",
-      "contentUrl": "https://www.dropbox.com/s/9rdmbtdkgqg9uqt/Sentometrics_US_Topical_Economic_Sentiment.csv?dl=1"
+      "encodingFormat": "application/gzip",
+      "contentUrl": "https://sentometrics-research.com/data/us-econ/us-topical-economic-sentiment.csv.gz"
     }
   ]
 }

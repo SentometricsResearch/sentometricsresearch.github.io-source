@@ -67,7 +67,23 @@ Free for academic research. By downloading you agree to cite the reference above
 `https://sentometrics-research.com` in a footnote so others can find the data, and to assume all
 risk associated with its use.
 
-[**Download the data**](https://www.dropbox.com/scl/fi/uucc6401uje293ofc3ahq/Sentometrics_US_Media_Climate_Change_Index.xlsx?dl=1&rlkey=jvgb6xg9w4ctdz5cdl6qun5md) ·
+### Download
+
+- [`mccc-2025-update-daily.csv.gz`](https://sentometrics-research.com/data/mccc/mccc-2025-update-daily.csv.gz) — 2025 vintage, daily
+- [`mccc-2025-update-monthly.csv.gz`](https://sentometrics-research.com/data/mccc/mccc-2025-update-monthly.csv.gz) — 2025 vintage, monthly
+
+Gzipped CSV, one header row, ISO 8601 dates. No decompression step needed:
+
+```r
+read.csv(gzfile(url("https://sentometrics-research.com/data/mccc/mccc-2025-update-daily.csv.gz")))
+```
+
+See the [folder README](https://sentometrics-research.com/data/mccc/README.md) for every column, and
+[what differs](https://sentometrics-research.com/data/README.md) from the archived original.
+
+**Original as published** — the file this is derived from, byte for byte:
+[`Sentometrics_US_Media_Climate_Change_Index.xlsx`](https://www.dropbox.com/scl/fi/uucc6401uje293ofc3ahq/Sentometrics_US_Media_Climate_Change_Index.xlsx?dl=1&rlkey=jvgb6xg9w4ctdz5cdl6qun5md). It will move to a Zenodo deposit with a citable DOI.
+
 [Full licence](https://www.dropbox.com/s/jwjh4b08zvq09nv/LICENSE.txt?dl=0)
 
 <!-- schema.org/Dataset markup, so the index is discoverable in Google Dataset
@@ -115,8 +131,8 @@ risk associated with its use.
   "distribution": [
     {
       "@type": "DataDownload",
-      "encodingFormat": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-      "contentUrl": "https://www.dropbox.com/scl/fi/uucc6401uje293ofc3ahq/Sentometrics_US_Media_Climate_Change_Index.xlsx?dl=1&rlkey=jvgb6xg9w4ctdz5cdl6qun5md"
+      "encodingFormat": "application/gzip",
+      "contentUrl": "https://sentometrics-research.com/data/mccc/mccc-2025-update-daily.csv.gz"
     }
   ]
 }

@@ -1,0 +1,17 @@
+Terms of use — Sentometrics indices
+
+These data are made available for academic research. By downloading them you agree to the
+following:
+
+1. You must cite the reference given in the README of the index you use, in working papers and
+   published papers that use any of these data.
+
+2. You must place the following URL in a footnote to help others find the data:
+   https://sentometrics-research.com
+
+3. You assume all risk for the use of the data.
+
+These are the terms under which the indices have been distributed since 2020, reproduced here
+unchanged. They are not a standard open-data licence: the academic-use restriction has no
+equivalent in the Creative Commons family. A licence must still be chosen for the Zenodo
+deposit, where the field is mandatory.
