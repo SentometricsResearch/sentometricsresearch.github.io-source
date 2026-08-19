@@ -40,7 +40,3 @@
   url = "#transfer"
   weight = 7
 
-[[main]]
-  name = "Posts"
-  url = "#posts"
-  weight = 8

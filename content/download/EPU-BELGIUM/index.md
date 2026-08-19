@@ -14,8 +14,7 @@ moving average of the daily index is the series most commonly used.
 
 A **November 2021 revision** made the index more local to Belgium — and so less driven by
 international events with no Belgian impact — and handled several specificities of Dutch. The
-French- and Dutch-language indices are more closely aligned as a result. See the
-[update note](https://sentometrics-research.com/post/2111-epu-belgium-update/).
+French- and Dutch-language indices are more closely aligned as a result.
 
 ## Coverage
 

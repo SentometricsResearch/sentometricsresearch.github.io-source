@@ -45,8 +45,8 @@ you actually used.
 | 4 — 2024 update | 2003 – Jun 2024 | unchanged | No methodological change. |
 | 5 — 2025 update | 2003 – Jun 2025 | unchanged | No methodological change. |
 
-The methodological break sits between vintages 2 and 3. If your sample crosses mid-2018, read the
-[2023 update note](https://sentometrics-research.com/post/2023-climate-change/) before choosing.
+The methodological break sits between vintages 2 and 3, and the table above records what changed.
+If your sample crosses mid-2018, pick your vintage accordingly.
 
 ## How to cite
 
