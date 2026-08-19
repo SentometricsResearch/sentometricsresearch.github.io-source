@@ -6,6 +6,7 @@ aliases:
 - /post/2009-questioning-the-news/
 ---
 
+{{< index-chart data="us-econ" caption="Monthly mean across the 44 topics, one series per lexicon. The lexicons do not share a scale — compare shapes, not levels." >}}
 ## What it measures
 
 Daily sentiment for a range of topics relevant to the U.S. economy, computed from a large news

@@ -1,0 +1,12 @@
+{{/* Interactive chart for one index.
+
+     Usage:  {{< index-chart data="mccc" >}}
+
+     Reads static/data/<data>/chart.csv — plain CSV, compressed by GitHub Pages
+     on the wire. The container is empty until the script fills it, so a reader
+     without JavaScript sees nothing here and still has the sparkline and the
+     download links below. */}}
+<figure class="index-chart-wrap">
+  <div class="index-chart" data-src="{{ printf "data/%s/chart.csv" (.Get "data") | relURL }}"></div>
+  {{ with .Get "caption" }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}
+</figure>

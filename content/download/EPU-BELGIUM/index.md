@@ -7,6 +7,7 @@ aliases:
 - /post/2111-epu-belgium-update/
 ---
 
+{{< index-chart data="epu-belgium" caption="Monthly averages of the smoothed daily series, Belgium and its Dutch-language component. The series ends in June 2022." >}}
 ## What it measures
 
 Economic policy uncertainty for Belgium, derived daily from major Belgian newspapers in French and

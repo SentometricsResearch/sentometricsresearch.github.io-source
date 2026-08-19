@@ -20,35 +20,21 @@ subtitle = ""
 
 Sentometrics is also a training programme. Since 2016 the field has produced doctoral theses,
 master's theses and open-source packages across five universities in three countries. This is the
-lineage.
+lineage — every thesis links to its entry here, which carries the full text.
 
-### Doctoral researchers and postdocs
-
-- **Keven Bluteau** — [*Modeling Latent Variables in Economics and Finance*](https://sentometrics-research.com/publication/thesis-bluteau/) (University of Neuchâtel,
-  2016–2019, with Kris Boudt), then postdoctoral researcher on media bias and the informational
-  efficiency of capital markets (SNSF 191730, 2020–2021). Now Associate Professor of Finance at
-  Université de Sherbrooke and co-lead of this hub.
-- **Samuel Borms** — [*Sentiment and Econometrics: Toward a Unified Framework of Textual Sentiment
-  Analysis for Economic and Financial Applications*](https://sentometrics-research.com/publication/thesis-borms/) (University of Neuchâtel, 2017–2020, with Kris
-  Boudt). Author and maintainer of the **sentometrics** R package.
-- **Olivier Delmarcelle** — Ghent University, 2020–, with Kris Boudt. Author of the **sentopics** R
-  package.
-- **Céleste Hardy** — HEC Liège, 2022–, with Marie Lambert. Retail fund flows and social concern.
-
-### Master's theses
-
-- [*Strategies to Monetize the Sentiment Extracted With NLP Techniques From Earnings Call
-  Transcripts*](https://sentometrics-research.com/publication/thesis-seguin/) — **Benjamin Séguin**, HEC Montréal, 2025.
-- [*Does Unexpected Change in Climate Risk Concerns Affect IV Surface Dynamics? A VAR Approach Using
-  the UMC Index*](https://sentometrics-research.com/publication/thesis-tong/) — **Shihao Tong**, HEC Montréal, 2025.
-- [*Examining the Relation Between Stocks' Option-Implied Moments and Climate Change Concerns*](https://sentometrics-research.com/publication/thesis-boyer/) —
-  **Thomas Boyer**, HEC Montréal, 2024.
-- [*Impact of Climate Change Concerns on the Volatility of Green and Brown Stocks*](https://sentometrics-research.com/publication/thesis-bhaya/) — **Kriti Bhaya**,
-  HEC Montréal, 2024.
-- [*Weathering the Markets: Exploring the Empirical Relationship Between Climate Change Concerns and
-  Commodity Futures Contracts*](https://sentometrics-research.com/publication/thesis-pimentel/) — **Michael Pimentel**, HEC Montréal, 2024.
-- [*Application of Textual Sentiment Scores in Value-at-Risk Models*](https://sentometrics-research.com/publication/thesis-casigay/) — **Jaime Casigay**,
-  HEC Montréal, 2022.
+<div class="lineage">
+<div class="row-item"><div class="yr">2016–2019</div><div><span class="who">Keven Bluteau</span> — <span class="what">PhD, *[Modeling Latent Variables in Economics and Finance](https://sentometrics-research.com/publication/thesis-bluteau/)*, University of Neuchâtel, with Kris Boudt</span></div></div>
+<div class="row-item"><div class="yr">2017–2020</div><div><span class="who">Samuel Borms</span> — <span class="what">PhD, *[Sentiment and Econometrics](https://sentometrics-research.com/publication/thesis-borms/)*, University of Neuchâtel, with Kris Boudt — author of the **sentometrics** package</span></div></div>
+<div class="row-item"><div class="yr">2020–2021</div><div><span class="who">Keven Bluteau</span> — <span class="what">Postdoc, media bias and the informational efficiency of capital markets (SNSF 191730)</span></div></div>
+<div class="row-item"><div class="yr">2020–</div><div><span class="who">Olivier Delmarcelle</span> — <span class="what">PhD, Ghent University, with Kris Boudt — author of the **sentopics** package</span></div></div>
+<div class="row-item"><div class="yr">2022</div><div><span class="who">Jaime Casigay</span> — <span class="what">MSc, *[Application of Textual Sentiment Scores in Value-at-Risk Models](https://sentometrics-research.com/publication/thesis-casigay/)*</span></div></div>
+<div class="row-item"><div class="yr">2022–</div><div><span class="who">Céleste Hardy</span> — <span class="what">PhD, HEC Liège, with Marie Lambert — retail fund flows and social concern</span></div></div>
+<div class="row-item"><div class="yr">2024</div><div><span class="who">Michael Pimentel</span> — <span class="what">MSc, *[Climate Change Concerns and Commodity Futures Contracts](https://sentometrics-research.com/publication/thesis-pimentel/)*</span></div></div>
+<div class="row-item"><div class="yr">2024</div><div><span class="who">Kriti Bhaya</span> — <span class="what">MSc, *[Impact of Climate Change Concerns on the Volatility of Green and Brown Stocks](https://sentometrics-research.com/publication/thesis-bhaya/)*</span></div></div>
+<div class="row-item"><div class="yr">2024</div><div><span class="who">Thomas Boyer</span> — <span class="what">MSc, *[Option-Implied Moments and Climate Change Concerns](https://sentometrics-research.com/publication/thesis-boyer/)*</span></div></div>
+<div class="row-item"><div class="yr">2025</div><div><span class="who">Shihao Tong</span> — <span class="what">MSc, *[Climate Risk Concerns and IV Surface Dynamics](https://sentometrics-research.com/publication/thesis-tong/)*</span></div></div>
+<div class="row-item"><div class="yr">2025</div><div><span class="who">Benjamin Séguin</span> — <span class="what">MSc, *[Monetizing Sentiment from Earnings Call Transcripts](https://sentometrics-research.com/publication/thesis-seguin/)*</span></div></div>
+</div>
 
 ### Student co-authors
 
@@ -58,7 +44,5 @@ Lortie-Cloutier** (green and brown stocks, *Finance Research Letters* 2022 and 2
 
 Beyond these, the sentiment and NLP strand of more than sixty supervised master's projects — many
 with industry partners — has been built on the indices and software published here.
-
-Every thesis above links to its entry on this site, which carries the full text.
 
 Want to work on sentometrics? See [how to get started](https://sentometrics-research.com/join/).

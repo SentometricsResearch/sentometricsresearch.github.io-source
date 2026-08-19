@@ -9,6 +9,7 @@ aliases:
 - /post/2025-climate-change/
 ---
 
+{{< index-chart data="mccc" caption="Monthly aggregate and the four thematic clusters. Pick a series above; hover for the value. The daily file goes further, down to thirty topical subindices." >}}
 ## What it measures
 
 Concern about climate change is not observable, so it has to be proxied. The **Media Climate Change
