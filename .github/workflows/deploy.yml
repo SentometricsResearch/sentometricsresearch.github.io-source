@@ -21,8 +21,15 @@ jobs:
           hugo-version: '0.75.0'
           extended: true
 
+      # HUGO_ENV=production is what makes the theme fingerprint the stylesheet.
+      # Without it the CSS ships at the fixed path css/academic.css with a
+      # four-hour cache, while the HTML is cached for ten minutes — so for four
+      # hours after every deploy, returning visitors got new markup styled by the
+      # previous stylesheet. That is what broke the hero after #7.
       - name: Build
         run: hugo
+        env:
+          HUGO_ENV: production
 
       - name: Add CNAME and .nojekyll
         run: |
