@@ -1,0 +1,19 @@
+{{/* Light by default, without giving up the toggle.
+
+     The theme has three modes — 0 light, 1 dark, 2 auto — and with no stored
+     preference it falls through to `prefers-color-scheme`, so a visitor whose
+     system is dark lands on a dark site. We want white as the starting point.
+
+     Setting the stored preference to light only when nothing is stored leaves
+     the navbar toggle fully working: a visitor who picks dark keeps dark.
+     This has to run in <head>, before the theme's own script, or the page would
+     flash dark before correcting itself. */}}
+<script>
+  (function () {
+    try {
+      if (localStorage.getItem('dark_mode') === null) {
+        localStorage.setItem('dark_mode', '0');
+      }
+    } catch (e) { /* private browsing: fall back to the theme's behaviour */ }
+  })();
+</script>
