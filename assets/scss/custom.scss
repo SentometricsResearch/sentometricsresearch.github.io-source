@@ -180,3 +180,85 @@ video {
 /* On a narrow screen the hero stacks and the series ran straight through the
    call-to-action buttons. There is no room for decoration there. */
 @media (max-width: 767px) { .hero-series { display: none; } }
+
+/* ---- What we have done: three projects, all visible at once ---------------
+   Deliberately not a carousel. The point of the section is an overview, and a
+   rotating panel shows a third of it at a time — the opposite. It also spares us
+   a pause control, and the banner blindness that moving blocks attract. */
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+  margin-top: 0.5rem;
+}
+
+.project {
+  border-top: 3px solid #6b2880;
+  padding-top: 1rem;
+
+  h3 {
+    font-size: 1.15rem;
+    margin: 0 0 0.6rem;
+    line-height: 1.3;
+  }
+
+  .lead {
+    font-size: 0.95rem;
+    line-height: 1.55;
+    margin-bottom: 0.9rem;
+  }
+
+  .facts {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem;
+    font-size: 0.85rem;
+    line-height: 1.45;
+    color: #6c757d;
+
+    li {
+      padding-left: 0.9rem;
+      position: relative;
+      margin-bottom: 0.35rem;
+    }
+    li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.55em;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: #6b2880;
+      opacity: 0.55;
+    }
+    strong { color: inherit; font-weight: 600; }
+  }
+
+  .links {
+    margin: 0;
+    font-size: 0.88rem;
+
+    a {
+      display: inline-block;
+      margin-right: 1rem;
+      white-space: nowrap;
+    }
+    a::after { content: " →"; opacity: 0.6; }
+  }
+}
+
+.dark .project {
+  .facts { color: #9aa0a6; }
+}
+
+@media (max-width: 991px) {
+  .projects { grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+  .project:last-child { grid-column: 1 / -1; }
+}
+
+@media (max-width: 767px) {
+  .projects { grid-template-columns: 1fr; gap: 1.75rem; }
+  .project:last-child { grid-column: auto; }
+}
