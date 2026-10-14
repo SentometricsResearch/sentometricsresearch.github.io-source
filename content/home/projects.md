@@ -27,7 +27,7 @@ subtitle = ""
     weighted by how much attention the media were paying — and showed that green stocks
     outperform brown ones when that concern rises unexpectedly.</p>
     <ul class="facts">
-      <li><strong>2003 to 2025</strong>, updated every year</li>
+      <li><strong>2003 to 2026</strong>, updated every year</li>
       <li><em>Management Science</em> · National Bank of Belgium research award</li>
       <li>Covered by <em>The New York Times</em>; four master's theses built on it</li>
     </ul>
