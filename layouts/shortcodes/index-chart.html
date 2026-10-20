@@ -6,7 +6,11 @@
      on the wire. The container is empty until the script fills it, so a reader
      without JavaScript sees nothing here and still has the sparkline and the
      download links below. */}}
+{{/* ?v=<hash of the file>: the CSV is cached four hours under a fixed URL, so
+     without it a returning reader kept last year's series after the annual
+     update (October 2026). The hash changes only when the data does. */}}
+{{ $csv := printf "data/%s/chart.csv" (.Get "data") }}
 <figure class="index-chart-wrap">
-  <div class="index-chart" data-src="{{ printf "data/%s/chart.csv" (.Get "data") | relURL }}"></div>
+  <div class="index-chart" data-src="{{ $csv | relURL }}?v={{ readFile (printf "static/%s" $csv) | md5 | truncate 8 "" }}"></div>
   {{ with .Get "caption" }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}
 </figure>
