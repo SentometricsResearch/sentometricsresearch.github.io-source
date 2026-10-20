@@ -11,7 +11,7 @@
      Placed before the theme's markup, and outside the `hero_media` branch: that
      condition is false here, so anything inside it never renders. */}}
 <div class="hero-series index-chart" data-mode="ambient"
-     data-src="{{ "data/mccc/chart.csv" | relURL }}" aria-hidden="true"></div>
+     data-src="{{ "data/mccc/chart.csv" | relURL }}?v={{ readFile "static/data/mccc/chart.csv" | md5 | truncate 8 "" }}" aria-hidden="true"></div>
 
 {{ if $page.Params.hero_media }}
 <div class="row">
