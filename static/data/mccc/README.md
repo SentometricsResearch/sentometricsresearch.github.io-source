@@ -6,7 +6,7 @@ Ardia, D., Bluteau, K., Boudt, K., Inghelbrecht, K. (2023). Climate change conce
 
 ## Coverage
 
-Daily and monthly, 1 January 2003 to 30 June 2025, in five vintages — one file each.
+Daily and monthly, 1 January 2003 to 30 June 2026, in 6 vintages — one file each.
 
 The methodological break sits between the `ms-2022` and `2023-update` vintages: the
 Houston Chronicle was dropped, some sources came from alternative aggregators, and
@@ -22,9 +22,9 @@ overlapping year. Cite the vintage you actually used.
 
 ## Differences from the deposited original
 
-One file per vintage and frequency instead of a ten-sheet workbook, so each vintage
-can be cited on its own. The six citation and licence rows that preceded the header
-of every sheet appear once, above.
+One file per vintage and frequency instead of a single multi-sheet workbook, so each
+vintage can be cited on its own. The citation and licence rows that precede the header
+on most sheets appear once, above.
 
 ## Licence
 

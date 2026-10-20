@@ -1,6 +1,6 @@
 ---
-date: "2025-07-25"
-summary: Daily U.S. Media Climate Change Concerns Index, with topical and thematic subindices. January 2003 to June 2025.
+date: "2026-10-13"
+summary: Daily U.S. Media Climate Change Concerns Index, with topical and thematic subindices. January 2003 to June 2026.
 title: MCCC
 aliases:
 - /post/2011-climate-change/
@@ -29,7 +29,7 @@ unexpectedly.
 | | |
 |---|---|
 | **Frequency** | Daily |
-| **Period** | January 2003 – June 2025 |
+| **Period** | January 2003 – June 2026 |
 | **Region** | United States |
 | **Sources** | Ten major newspapers and two newswires (see version history) |
 | **Series** | Headline index, plus topical and thematic subindices |
@@ -50,6 +50,7 @@ you actually used.
 | 3 — 2023 update | 2003 – Aug 2022 | 9 newspapers + 2 newswires | *Houston Chronicle* dropped (access lost); alternative news aggregators used for some sources; LIWC2022 software with the LIWC2015 dictionary. Correlations with vintage 2 exceed 0.95 on the overlapping year. |
 | 4 — 2024 update | 2003 – Jun 2024 | unchanged | No methodological change. |
 | 5 — 2025 update | 2003 – Jun 2025 | unchanged | No methodological change. |
+| 6 — 2026 update | 2003 – Jun 2026 | unchanged | No methodological change. |
 
 The methodological break sits between vintages 2 and 3, and the table above records what changed.
 If your sample crosses mid-2018, pick your vintage accordingly.
@@ -70,13 +71,13 @@ risk associated with its use.
 
 ### Download
 
-- [`mccc-2025-update-daily.csv.gz`](https://sentometrics-research.com/data/mccc/mccc-2025-update-daily.csv.gz) — 2025 vintage, daily
-- [`mccc-2025-update-monthly.csv.gz`](https://sentometrics-research.com/data/mccc/mccc-2025-update-monthly.csv.gz) — 2025 vintage, monthly
+- [`mccc-2026-update-daily.csv.gz`](https://sentometrics-research.com/data/mccc/mccc-2026-update-daily.csv.gz) — 2026 vintage, daily
+- [`mccc-2026-update-monthly.csv.gz`](https://sentometrics-research.com/data/mccc/mccc-2026-update-monthly.csv.gz) — 2026 vintage, monthly
 
 Gzipped CSV, one header row, ISO 8601 dates. No decompression step needed:
 
 ```r
-read.csv(gzfile(url("https://sentometrics-research.com/data/mccc/mccc-2025-update-daily.csv.gz")))
+read.csv(gzfile(url("https://sentometrics-research.com/data/mccc/mccc-2026-update-daily.csv.gz")))
 ```
 
 See the [folder README](https://sentometrics-research.com/data/mccc/README.md) for every column, and
@@ -108,7 +109,7 @@ See the [folder README](https://sentometrics-research.com/data/mccc/README.md) f
     "green stocks",
     "sentometrics"
   ],
-  "temporalCoverage": "2003-01/2025-06",
+  "temporalCoverage": "2003-01/2026-06",
   "spatialCoverage": {
     "@type": "Place",
     "name": "United States"
@@ -133,7 +134,7 @@ See the [folder README](https://sentometrics-research.com/data/mccc/README.md) f
     {
       "@type": "DataDownload",
       "encodingFormat": "application/gzip",
-      "contentUrl": "https://sentometrics-research.com/data/mccc/mccc-2025-update-daily.csv.gz"
+      "contentUrl": "https://sentometrics-research.com/data/mccc/mccc-2026-update-daily.csv.gz"
     }
   ]
 }
