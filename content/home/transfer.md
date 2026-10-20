@@ -44,4 +44,6 @@ on CRAN and GitHub, and the methodology is documented in open-access papers.
 
 Research professorship in Sentometrics (HEC Montréal, 2020) · National Bank of Belgium research
 award 2020 · Best paper 2018–2019, *International Journal of Forecasting* · Open data quality award,
-Canadian Open Data Society, 2024 · Research impact award, HEC Montréal, 2025
+Canadian Open Data Society, 2024 · Research impact award, HEC Montréal, 2025 ·
+Fellowship, [Institute for Sustainable Finance](https://smith.queensu.ca/centres/isf/index.php),
+Smith School of Business, Queen's University, 2026
